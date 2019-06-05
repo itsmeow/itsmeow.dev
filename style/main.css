@@ -8,7 +8,7 @@ body {
     padding-top: 50px;
 }
 
-.center {
+main {
   margin: auto;
   width: 50%;
 }
@@ -22,14 +22,6 @@ body {
   max-width:20%;
   height:auto;
   border: 2px solid #404040;
-}
-
-.center h2 {
-  text-align: center;
-}
-
-.center h1 {
-  text-align: center;
 }
 
 .list {
