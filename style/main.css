@@ -27,11 +27,34 @@ footer {
 	left: 0;
 	overflow:hidden;
 	margin-top:50px;
+	border-top:1px solid black;
+	max-height:10%;
+}
+
+footer div.footersection {
+	clear: left;
 }
 
 footer p {
-	padding-left: 10px;
+	padding-left: 20px;
 	font-size: 0.6rem;
+	float: left;
+}
+
+footer a.footerlink {
+	background-color:#202020;
+    display: block;
+    color: #e2e2e2;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+	float:left;
+	border-top:1px solid gray;
+	border-bottom: 1px dotted black;
+}
+
+#topfooter {
+	border-right: 1px dotted black;
 }
 
 .centerimg {
@@ -56,9 +79,7 @@ footer p {
 .list {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(var(--repeat, auto-fit), 202px);
-  //grid-template-columns: repeat(3, 202px);
-  //grid-template-columns: 202px 202px 202px;
+  grid-template-columns: repeat(var(--repeat, auto-fit), 12.65rem);
 }
 
 .element {
@@ -70,7 +91,7 @@ footer p {
 
 .element img {
   vertical-align: middle;
-  width: 180px;
+  width: 11.25rem;
   box-sizing:border-box;
   -moz-box-sizing:border-box;
   -webkit-box-sizing:border-box;
@@ -78,7 +99,7 @@ footer p {
 }
 
 .element p {
-  width: 180px;
+  width: 11.25rem;
   margin-bottom: 8px;
   padding-top: 8px;
   margin-top: 0px;
@@ -148,11 +169,11 @@ li.header a {
 }
 
 li.header a.active {
-    background-color: #303030;
+    background-color: #323232;
 }
 
 li.header a.active:hover {
-    background-color: #333;
+    background-color: #323232;
 }
 
 li.header a:hover {
