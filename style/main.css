@@ -25,9 +25,20 @@ main {
 }
 
 .list {
-  display: flex;
-  flex-wrap: wrap;
+  --repeat: auto-fit;
+}
+@media (min-width: calc(250 * 3px)) {
+  .list {
+    --repeat: 3;
+  }
+}
+
+.list {
+  display: grid;
   justify-content: center;
+  grid-template-columns: repeat(var(--repeat, auto-fit), 202px);
+  //grid-template-columns: repeat(3, 202px);
+  //grid-template-columns: 202px 202px 202px;
 }
 
 .element {
