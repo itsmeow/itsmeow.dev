@@ -179,3 +179,17 @@ li.header a.active:hover {
 li.header a:hover {
     background-color: #404040;
 }
+
+.headlogo {
+	height:40px;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:1;
+}
+
+@media screen and (max-width: 600px) {
+  .headlogo {
+	display: none;
+  }
+}
