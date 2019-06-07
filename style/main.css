@@ -89,6 +89,14 @@ footer a.footerlink {
   background-color: #202020;
 }
 
+.element_downloads {
+  text-align: center;
+  font-family: 'Arial', sans;
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+  margin-top: 0px;
+}
+
 .element img {
   vertical-align: middle;
   width: 11.25rem;
