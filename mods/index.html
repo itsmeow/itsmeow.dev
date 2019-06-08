@@ -36,6 +36,10 @@
     </header>
     <body>
 		<main>
+			<div align="center" style="width:30%;margin-left:35%;margin-right:35%;" class="text_box">
+				<h3 align="center" style="font-family: 'Verdana', sans-serif;">Cumulative Downloads</h3>
+				<p align="center" id="total_download_counter">? Total Downloads</p>
+			</div>
 			<h2 align="center">Major Mods (Active)</h2>
 			<div class="list">
 				<div class="element" id="betteranimalsplus" api="https://api.cfwidget.com/minecraft/mc-mods/betteranimalsplus">
@@ -204,6 +208,7 @@
 			</div>
 		</main>
 	<script>
+		var totalDownloads = 0;
 		Array.from(document.getElementsByClassName("element")).forEach(getDownloadsForElement);
 		
 		function getDownloadsForElement(element, index, array) {
@@ -233,6 +238,9 @@
 			title[0].innerHTML = obj.title;
 			link[0].setAttribute("href", obj.urls.curseforge);
 			img[0].setAttribute("src", obj.thumbnail.replace("120/120/", "").replace("thumbnails/", ""));
+			totalDownloads += obj.downloads.total;
+			var total = document.getElementById("total_download_counter");
+			total.innerHTML = numberWithCommas(totalDownloads) + " Total Downloads";
 		}
 		
 		function numberWithCommas(x) {

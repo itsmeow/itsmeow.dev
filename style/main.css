@@ -151,6 +151,16 @@ footer a.footerlink {
   color: #e2e2e2;
 }
 
+.text_box {
+  text-align: center;
+  font-family: 'Arial', sans;
+  font-size: 0.8rem;
+  margin:5px;
+  border-radius: 5px;
+  border: 1px #323232 solid;
+  background-color: #202020;
+}
+
 ul.header {
     position: fixed;
     top: 0;
