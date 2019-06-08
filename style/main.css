@@ -146,6 +146,11 @@ footer a.footerlink {
   font-size:0.7rem;
 }
 
+a.nodecor {
+  text-decoration: none;
+  color: #e2e2e2;
+}
+
 .element a {
   text-decoration: none;
   color: #e2e2e2;

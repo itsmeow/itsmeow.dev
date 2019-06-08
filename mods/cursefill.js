@@ -1,65 +1,68 @@
 var totalDownloads = 0;
-var prevTotalDownloads = 0;
-var elements = Array.from(document.getElementsByClassName("element"));
-var totalElements = elements.length;
-var doReplaceDownloads = true;
-var iteration = 0;
-getDownloads();
-setInterval(reloadDownloads, 60000);
+var cards = Array.from(document.getElementsByClassName("element"));
 
 function reloadDownloads() {
-	doReplaceDownloads = false;
-	getDownloads();
+	var iteration = 0;
+	var totalElements = cards.length;
+	getDownloads(function(card, obj) {
+		replaceDownloads(card, obj);
+		iteration++;
+		if(iteration == totalElements) {
+			replaceTotalDownloads(card, obj);
+			iteration = 0;
+		}
+	});
 }
 
-function onLoadComplete() {
-	if(iteration + 1 == totalElements) {
-		replaceTotalDownloads();
-	}
-}
-
-function getDownloads() {
+function getDownloads(onComplete) {
 	totalDownloads = 0;
-	iteration = 0;
-	elements.forEach(getDownloadsForElement);
+	cards.forEach((c, i, a) => getDownloadsForElement(c, i, a, onComplete));
 }
 
-function getDownloadsForElement(element, index, array) {
-	var id = element.id;
+function getDownloadsForElement(card, index, array, onComplete) {
+	var id = card.id;
 	if(id != "") {
-		httpGetAsync(element, element.getAttribute("api"), fillInfoForResponse);
+		httpGetAsync(card, card.getAttribute("api"), updateInformation, onComplete);
 	}
 }
 
-function httpGetAsync(element, theUrl, callback) {
+function httpGetAsync(card, url, callback, onCompleteCallback) {
 	var xmlHttp = new XMLHttpRequest();
 	xmlHttp.onreadystatechange = function() { 
 		if(xmlHttp.readyState == 4 && xmlHttp.status == 200)
-			callback(element, xmlHttp.responseText);
+			callback(onCompleteCallback, card, xmlHttp.responseText);
 	}
-	xmlHttp.open("GET", theUrl, true);
+	xmlHttp.open("GET", url, true);
 	xmlHttp.send(null);
 }
 
-function fillInfoForResponse(element, response) {
-	var downloads = document.querySelectorAll("div#" + element.id + " .element_downloads");
-	var title = document.querySelectorAll("div#" + element.id + " .element_text");
-	var link = document.querySelectorAll("div#" + element.id + " .element_link");
-	var img = document.querySelectorAll("div#" + element.id + " .element_img");
+function updateInformation(onComplete, card, response) {
 	var obj = JSON.parse(response);
-	downloads[0].innerHTML = numberWithCommas(obj.downloads.total) + " Downloads";
-	title[0].innerHTML = obj.title;
-	link[0].setAttribute("href", obj.urls.curseforge);
-	img[0].setAttribute("src", obj.thumbnail.replace("120/120/", "").replace("thumbnails/", ""));
-	totalDownloads += obj.downloads.total;
-	if(doReplaceDownloads) {
-		replaceTotalDownloads();
-	}
-	iteration += 1;
-	onLoadComplete();
+	onComplete(card, obj);
 }
 
-function replaceTotalDownloads() {
+function replaceAll(card, obj) {
+	replaceInformation(card, obj);
+	replaceTotalDownloads(card, obj);
+}
+
+function replaceInformation(card, obj) {
+	var title = document.querySelectorAll("div#" + card.id + " .element_text");
+	var lnk = document.querySelectorAll("div#" + card.id + " .element_link");
+	var img = document.querySelectorAll("div#" + card.id + " .element_img");
+	replaceDownloads(card, obj);
+	title[0].innerHTML = obj.title;
+	lnk[0].setAttribute("href", obj.urls.curseforge);
+	img[0].setAttribute("src", obj.thumbnail.replace("120/120/", "").replace("thumbnails/", ""));
+}
+
+function replaceDownloads(card, obj) {
+	var downloads = document.querySelectorAll("div#" + card.id + " .element_downloads");
+	downloads[0].innerHTML = numberWithCommas(obj.downloads.total) + " Downloads";
+	totalDownloads += obj.downloads.total;
+}
+
+function replaceTotalDownloads(card, obj) {
 	var total = document.getElementById("total_download_counter");
 	total.innerHTML = numberWithCommas(totalDownloads) + " Total Downloads";
 }

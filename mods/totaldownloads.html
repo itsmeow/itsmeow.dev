@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>its_meow/Mods</title>
+        <meta charset="utf-8">
+        <link href="../style/main.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="Minecraft,its_meow,mods,Better Animals Plus,ClaimIt,BA+,developer,itsmeow,forge">
+        <meta name="author" content="its_meow">
+        <meta name="description" content="its_meow's mod list/mod info">
+        <meta property="og:title" content="its_meow/Mods">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="http://itsmeow.github.io/icon.png">
+        <meta property="og:url" content="http://itsmeow.github.io/mods/index.html">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="its_meow/Mods">
+        <meta name="twitter:description" content="its_meow's mod list/mod info">
+        <meta name="twitter:image" content="http://itsmeow.github.io/icon.png">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141623735-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-141623735-1');
+		</script>
+    </head>
+    <header>
+        <nav>
+			<img class="headlogo" src="../modslogo_2.png">
+            <ul class="header">
+                <li class="header"><a href="index.html" style="width:100%;">Back to My Mods</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+		<main>
+			<div align="center" style="width:80%;margin-left:10%;margin-right:10%;margin-bottom:30%;" class="text_box">
+				<h3 align="center" style="font-family: 'Verdana', sans-serif;padding-top:100px;font-size:3em;">Cumulative Downloads</h3>
+				<p align="center" id="total_download_counter" style="padding-bottom:100px;font-size:2em;">? Total Downloads</p>
+			</div>
+			<div class="list" style="display:none;">
+				<div class="element" id="betteranimalsplus" api="https://api.cfwidget.com/minecraft/mc-mods/betteranimalsplus">
+				</div>
+				<div class="element" id="sbm-fluid-gun" api="https://api.cfwidget.com/minecraft/mc-mods/sbm-fluid-gun">
+				</div>
+				<div class="element" id="better-animal-models" api="https://api.cfwidget.com/minecraft/mc-mods/better-animal-models">
+				</div>
+				<div class="element" id="derpcats" api="https://api.cfwidget.com/mc-mods/minecraft/262222-derpcats">
+				</div>
+				<div class="element" id="cloneland" api="https://api.cfwidget.com/mc-mods/minecraft/262861-cloneland">
+				</div>
+				<div class="element" id="quickhomes" api="https://api.cfwidget.com/projects/quickhomes">
+				</div>
+				<div class="element" id="quickteleports" api="https://api.cfwidget.com/minecraft/mc-mods/quickteleports">
+				</div>
+				<div class="element" id="mcmdevdate" api="https://api.cfwidget.com/projects/mcdevdate">
+				</div>
+				<div class="element" id="quickspawns" api="https://api.cfwidget.com/minecraft/mc-mods/quickspawns">
+				</div>
+				<div class="element" id="sbm-dead-mans-satchel" api="https://api.cfwidget.com/minecraft/mc-mods/sbm-dead-mans-satchel">
+				</div>
+				<div class="element" id="sbm-infinite-falling" api="https://api.cfwidget.com/minecraft/mc-mods/sbm-infinite-falling">
+				</div>
+				<div class="element" id="sbm-breadstone" api="https://api.cfwidget.com/minecraft/mc-mods/sbm-breadstone">
+				</div>
+				<div class="element" id="bewitchment" api="https://api.cfwidget.com/minecraft/mc-mods/bewitchment">
+				</div>
+				<div class="element" id="mcmusicplayer" api="https://api.cfwidget.com/mc-mods/minecraft/mcmusicplayer">
+				</div>
+				<div class="element" id="sounds-of-space" api="https://api.cfwidget.com/kerbal/ksp-mods/sounds-of-space">
+				</div>
+			</div>
+		</main>
+	<script src="cursefill.js"></script>
+	<script>
+	setInterval(reloadDownloads2, 5000);
+	reloadDownloads2();
+	
+	function reloadDownloads2() {
+		var iteration = 0;
+		var totalElements = cards.length;
+		getDownloads(function(card, obj) {
+			totalDownloads += obj.downloads.total;
+			iteration++;
+			if(iteration == totalElements) {
+				replaceTotalDownloads(card, obj);
+				iteration = 0;
+			}
+		});
+	}
+	</script>
+    </body>
+<footer>
+	<a style="float:left;max-width:10vw;" href="../index.html"><img style="width:100%;height:100%;" src="../modslogo.png"></a>
+	<div style="max-height:6vw;float:right;margin-right:50px;overflow:hidden;">
+	<a id="topfooter" class="footerlink" href="https://github.com/itsmeow/itsmeow.github.io" target="_blank">Source code</a>
+	<a class="footerlink" href="../index.html">Homepage</a>
+	</div>
+	<div class="footersection">
+	<p style="color:#777777;">by its_meow - © 2019 - All Rights Reserved - Thanks for visiting!</p>
+	</div>
+</footer>
+</html>
