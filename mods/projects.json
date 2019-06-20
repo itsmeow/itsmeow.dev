@@ -85,7 +85,7 @@
 			"info": "Reboot of Witchery for MC 1.12"
 		}
 	},
-	"misc" {
+	"misc": {
 		"mcmusicplayer": {
 			"api": "https://api.cfwidget.com/mc-mods/minecraft/mcmusicplayer",
 			"role": "Owner",

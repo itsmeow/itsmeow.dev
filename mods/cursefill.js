@@ -1,10 +1,9 @@
 var totalDownloads = 0;
-var cards = Array.from(document.getElementsByClassName("element"));
 
-function reloadDownloads() {
+function reloadDownloads(cards) {
 	var iteration = 0;
 	var totalElements = cards.length;
-	getDownloads(function(card, obj) {
+	getDownloads(cards, function(card, obj) {
 		replaceDownloads(card, obj);
 		iteration++;
 		if(iteration == totalElements) {
@@ -14,7 +13,7 @@ function reloadDownloads() {
 	});
 }
 
-function getDownloads(onComplete) {
+function getDownloads(cards, onComplete) {
 	totalDownloads = 0;
 	cards.forEach((c, i, a) => getDownloadsForElement(c, i, a, onComplete));
 }

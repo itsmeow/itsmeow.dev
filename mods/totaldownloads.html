@@ -40,76 +40,43 @@
 				<p align="center" id="total_download_counter" style="padding-bottom:50px;font-size:2em;">? Total Downloads</p>
 				<p align="center" id="update_timer" style="padding-bottom:40px;font-size:1.5em;font-style:italic;">Updating in 0 seconds</p>
 			</div>
-			<div class="list" style="display:none;">
-				<div class="element" id="betteranimalsplus" api="https://api.cfwidget.com/minecraft/mc-mods/betteranimalsplus">
-				</div>
-				<div class="element" id="sbm-fluid-gun" api="https://api.cfwidget.com/minecraft/mc-mods/sbm-fluid-gun">
-				</div>
-				<div class="element" id="better-animal-models" api="https://api.cfwidget.com/minecraft/mc-mods/better-animal-models">
-				</div>
-				<div class="element" id="derpcats" api="https://api.cfwidget.com/mc-mods/minecraft/262222-derpcats">
-				</div>
-				<div class="element" id="cloneland" api="https://api.cfwidget.com/mc-mods/minecraft/262861-cloneland">
-				</div>
-				<div class="element" id="quickhomes" api="https://api.cfwidget.com/projects/quickhomes">
-				</div>
-				<div class="element" id="quickteleports" api="https://api.cfwidget.com/minecraft/mc-mods/quickteleports">
-				</div>
-				<div class="element" id="mcdevdate" api="https://api.cfwidget.com/projects/mcdevdate">
-				</div>
-				<div class="element" id="quickspawns" api="https://api.cfwidget.com/minecraft/mc-mods/quickspawns">
-				</div>
-				<div class="element" id="sbm-dead-mans-satchel" api="https://api.cfwidget.com/minecraft/mc-mods/sbm-dead-mans-satchel">
-				</div>
-				<div class="element" id="sbm-infinite-falling" api="https://api.cfwidget.com/minecraft/mc-mods/sbm-infinite-falling">
-				</div>
-				<div class="element" id="sbm-breadstone" api="https://api.cfwidget.com/minecraft/mc-mods/sbm-breadstone">
-				</div>
-				<div class="element" id="bewitchment" api="https://api.cfwidget.com/minecraft/mc-mods/bewitchment">
-				</div>
-				<div class="element" id="mcmusicplayer" api="https://api.cfwidget.com/mc-mods/minecraft/mcmusicplayer">
-				</div>
-				<div class="element" id="sounds-of-space" api="https://api.cfwidget.com/kerbal/ksp-mods/sounds-of-space">
-				</div>
-				<div class="element" id="sbm-handheld-piston" api="https://api.cfwidget.com/minecraft/mc-mods/sbm-hand-held-piston">
-				</div>
-				<div class="element" id="claimit" api="https://api.cfwidget.com/minecraft/mc-mods/claimit">
-				</div>
-				<div class="element" id="claimit-api" api="https://api.cfwidget.com/minecraft/mc-mods/claimit-api">
-				</div>
-				<div class="element" id="sound-system-reloader" api="https://api.cfwidget.com/minecraft/mc-mods/sound-system-reloader">
-				</div>
+			<div id="all" class="list" style="display:none;">
 			</div>
 		</main>
-	<script src="cursefill.js"></script>
-	<script>
-	var updateSeconds = 15;
-	var secs = 0;
-	setInterval(reloadDownloads2, 1000);
+	<script type="text/javascript" src="projectparse.js"></script>
+	<script type="text/javascript" src="cursefill.js"></script>
+	<script type="text/javascript">
+	getData("projects.json", fillProjects, loadCards, false);
+	function loadCards() {
+		var cards = Array.from(document.getElementsByClassName("element"));
+		var updateSeconds = 15;
+		var secs = 0;
+		setInterval(reloadDownloads2, 1000);
 
-	reloadDownloads2();
-	
-	function reloadDownloads2() {
-		if(secs == 0) {
-			var iteration = 0;
-			var totalElements = cards.length;
-			getDownloads(function(card, obj) {
-				totalDownloads += obj.downloads.total;
-				iteration++;
-				if(iteration == totalElements) {
-					replaceTotalDownloads(card, obj);
-					iteration = 0;
-				}
-			});
+		reloadDownloads2();
+		
+		function reloadDownloads2() {
+			if(secs == 0) {
+				var iteration = 0;
+				var totalElements = cards.length;
+				getDownloads(cards, function(card, obj) {
+					totalDownloads += obj.downloads.total;
+					iteration++;
+					if(iteration == totalElements) {
+						replaceTotalDownloads(card, obj);
+						iteration = 0;
+					}
+				});
+			}
+			updateCountdownTimer();
 		}
-		updateCountdownTimer();
-	}
-	
-	function updateCountdownTimer() {
-		document.getElementById("update_timer").innerHTML = "Updating in " + secs + " second" + (secs == 1 ? "" : "s");
-		secs--;
-		if(secs < 0) {
-			secs = updateSeconds;
+		
+		function updateCountdownTimer() {
+			document.getElementById("update_timer").innerHTML = "Updating in " + secs + " second" + (secs == 1 ? "" : "s");
+			secs--;
+			if(secs < 0) {
+				secs = updateSeconds;
+			}
 		}
 	}
 	</script>
