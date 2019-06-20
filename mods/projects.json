@@ -1,0 +1,105 @@
+{
+	"mods": {
+		"betteranimalsplus": {
+			"api": "https://api.cfwidget.com/minecraft/mc-mods/betteranimalsplus",
+			"role": "Lead Programmer",
+			"info": "Adds a variety of animals"
+		},
+		"sbm-fluid-gun": {
+			"api": "https://api.cfwidget.com/minecraft/mc-mods/sbm-fluid-gun",
+			"role": "Owner",
+			"info": "Adds a gun to shoot fluids at distance"
+		},
+		"better-animal-models": {
+			"api": "https://api.cfwidget.com/minecraft/mc-mods/better-animal-models",
+			"role": "Lead Programmer",
+			"info": "Replaces vanilla entity models"
+		},
+		"claimit": {
+			"api": "https://api.cfwidget.com/minecraft/mc-mods/claimit",
+			"role": "Owner",
+			"info": "Land claiming mod for Forge with a focus on API and compatibility"
+		},
+		"quickhomes": {
+			"api": "https://api.cfwidget.com/projects/quickhomes",
+			"role": "Owner",
+			"info": "Adds /home and /sethome (singular homes)"
+		},
+		"derpcats": {
+			"api": "https://api.cfwidget.com/mc-mods/minecraft/262222-derpcats",
+			"role": "Owner",
+			"info": "Adds a variety of strange cats"
+		},
+		"cloneland": {
+			"api": "https://api.cfwidget.com/mc-mods/minecraft/262861-cloneland",
+			"role": "Owner",
+			"info": "Adds an indentical overworld and nether dimension to switch to"
+		},
+		"sound-system-reloader": {
+			"api": "https://api.cfwidget.com/minecraft/mc-mods/sound-system-reloader",
+			"role": "Owner",
+			"info": "Reloads the Sound System on F3+S"
+		},
+		"quickteleports": {
+			"api": "https://api.cfwidget.com/minecraft/mc-mods/quickteleports",
+			"role": "Owner",
+			"info": "Adds /tpa, /tpahere, and /tpaccept"
+		},
+		"quickspawns": {
+			"api": "https://api.cfwidget.com/minecraft/mc-mods/quickspawns",
+			"role": "Owner",
+			"info": "Adds /setspawn and /spawn"
+		},
+		"mcdevdate": {
+			"api": "https://api.cfwidget.com/projects/mcdevdate",
+			"role": "Owner",
+			"info": "Adds a text element with the amount of ingame days since Minecraft released"
+		}
+	},
+	"commissions": {
+		"sbm-dead-mans-satchel": {
+			"api": "https://api.cfwidget.com/minecraft/mc-mods/sbm-dead-mans-satchel",
+			"role": "Com. Programmer/Artist",
+			"info": "Adds satchels that hold things when you die, highly configurable"
+		},
+		"sbm-infinite-falling": {
+			"api": "https://api.cfwidget.com/minecraft/mc-mods/sbm-infinite-falling",
+			"role": "Com. Programmer",
+			"info": "Adds boots that teleport you to world height when you land"
+		},
+		"sbm-breadstone": {
+			"api": "https://api.cfwidget.com/minecraft/mc-mods/sbm-breadstone",
+			"role": "Com. Programmer/Artist",
+			"info": "Joke mod adding various bread items and blocks"
+		},
+		"sbm-handheld-piston": {
+			"api": "https://api.cfwidget.com/minecraft/mc-mods/sbm-hand-held-piston",
+			"role": "Com. Programmer/Artist",
+			"info": "Adds a handheld piston that can push blocks and tile entities"
+		}
+	},
+	"contributor": {
+		"bewitchment": {
+			"api": "https://api.cfwidget.com/minecraft/mc-mods/bewitchment",
+			"role": "Contributor (Programmer)",
+			"info": "Reboot of Witchery for MC 1.12"
+		}
+	},
+	"misc" {
+		"mcmusicplayer": {
+			"api": "https://api.cfwidget.com/mc-mods/minecraft/mcmusicplayer",
+			"role": "Owner",
+			"info": "Not maintained. Adds mp3 player GUI to game"
+		},
+		"sounds-of-space": {
+			"api": "https://api.cfwidget.com/kerbal/ksp-mods/sounds-of-space",
+			"role": "Owner",
+			"info": "A mod for Kerbal Space Program that adds electromagnetic sounds of planets in space"
+		},
+		"claimit-api": {
+			"api": "https://api.cfwidget.com/minecraft/mc-mods/claimit-api",
+			"role": "Owner",
+			"info": "API for ClaimIt"
+		}
+	}
+}
