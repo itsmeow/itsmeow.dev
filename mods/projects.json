@@ -25,6 +25,11 @@
 			"role": "Owner",
 			"info": "Adds /home and /sethome (singular homes)"
 		},
+		"openscreens": {
+		    "api": "https://api.cfwidget.com/minecraft/mc-mods/openscreens",
+			"role": "Owner",
+			"info": "Adds more displays to OpenComputers"
+		},
 		"derpcats": {
 			"api": "https://api.cfwidget.com/mc-mods/minecraft/262222-derpcats",
 			"role": "Owner",
