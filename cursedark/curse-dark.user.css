@@ -2,7 +2,7 @@
 @name           Curse Dark
 @namespace      https://itsmeow.dev/cursedark
 @updateURL   https://itsmeow.dev/cursedark/curse-dark.user.css
-@version        1.0.2
+@version        1.0.3
 @description    Adds a dark theme to curseforge
 @author         its_meow
 ==/UserStyle== */
@@ -10,6 +10,65 @@
     main {
         background: #202020 !important;
         color: #e0e0e0 !important;
+    }
+
+    .site:before {
+        position: absolute;
+        text-align: center;
+        margin-left: 20px;
+        color: #ffffff63;
+        font-size: 0.95rem;
+        font-family: Consolas, sans-serif;
+        content: "Curse Dark by its_meow";
+        z-index: 100;
+    }
+
+    a[href*="ist_meow"] {
+        background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+        text-align: center;
+        background-size: 800% 800%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: rainbow 8s ease infinite;
+    }
+
+    a[href*="ist_meow"] * {
+        background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+        text-align: center;
+        background-size: 800% 800%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: rainbow 8s ease infinite;
+    }
+
+    a[href*="itsmeow.dev"] {
+        background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+        text-align: center;
+        background-size: 800% 800%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: rainbow 8s ease infinite;
+    }
+
+    a[href*="itsmeow.dev"] * {
+        background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+        text-align: center;
+        background-size: 800% 800%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: rainbow 8s ease infinite;
+    }
+
+    @keyframes rainbow {
+        0% {
+            background-position: 0% 50%
+        }
+        50% {
+            background-position: 100% 25%
+        }
+        100% {
+            background-position: 0% 50%
+        }
     }
 
     main .container * {
@@ -23,11 +82,11 @@
     .user-menu__tail * {
         background-color: #202020 !important;
     }
-    
+
     .user-menu__tail span {
         color: #e0e0e0;
     }
-    
+
     .user-menu__tail div {
         color: #e0e0e0;
     }
@@ -47,7 +106,7 @@
     html .game-header.overflow-hidden.h-40.flex.flex-col.justify-between div.container.mx-auto.mt-auto.flex.justify-between div.flex * {
         background: none !important;
     }
-    
+
     html .game-header.overflow-hidden.h-40.flex.flex-col.justify-between div.container.mx-auto.mt-auto.flex.justify-between div.flex .button {
         background: #20202087 !important;
     }
@@ -57,15 +116,15 @@
         color: #e0e0e0 !important;
         background-color: #202020 !important;
     }
-    
+
     main .nav .border-b li {
         border-bottom: 1px solid #a49fad;
     }
-    
-    main .nav .border-b li.border-b-2  {
+
+    main .nav .border-b li.border-b-2 {
         border-bottom: 2px solid #7d5bbe !important;
     }
-    
+
     main .nav .border-b li.border-b-2 * {
         color: #af94e3 !important;
     }
@@ -109,7 +168,7 @@
     main a {
         color: #8e5cea;
     }
-    
+
     .dropdown {
         border: 0;
     }
@@ -164,31 +223,31 @@
     .text-gray-500 {
         color: #d8d8d8 !important;
     }
-    
+
     .bg-white .bg-accent {
         background-color: #303030 !important;
     }
-    
+
     .bg-white .bg-accent * {
         background-color: #303030 !important;
     }
-    
+
     .bg-accent * {
         background-color: #303030 !important;
     }
-    
+
     .bg-accent {
         background-color: #303030 !important;
     }
-    
+
     .bg-white * {
         background-color: #202020 !important;
     }
-    
+
     .bg-primary--100 {
         background-color: #404040 !important;
     }
-    
+
     .bg-primary--100 * {
         background-color: #404040 !important;
     }
@@ -197,29 +256,29 @@
         background-color: #111 !important;
         color: #fff !important;
     }
-    
+
     #tinymce * {
         background-color: #111 !important;
         color: #fff;
     }
-    
+
     html > * blockquote {
         background-color: #444 !important;
         color: #fff !important;
     }
-    
+
     html > * a {
         color: #8e5cea !important;
     }
-    
+
     nav a.button--overlay {
         color: #e0e0e0 !important;
     }
-    
+
     html > * code {
         background-color: #333 !important;
     }
-    
+
     main .container div .spoiler {
         background-color: #262626 !important;
     }
@@ -227,7 +286,7 @@
     main .container div .spoiler * {
         background-color: #262626 !important;
     }
-    
+
     .select:not(.is-select2-select),
     .select .select2-choice {
         color: white !important;
@@ -292,7 +351,7 @@
     div.bg-gray--200 {
         background-color: #1a1a1a !important;
     }
-    
+
     main div.container.mx-auto.flex.justify-between.items-center * {
         background: none !important;
     }
@@ -305,38 +364,40 @@
         background: none !important;
         background-color: transparent !important;
     }
-    
+
     main .form-gray-footer {
         background-color: #2b2b2b !important;
     }
-    
+
     main .form-gray-footer * {
         background-color: #2b2b2b !important;
     }
-    
+
     main .form-gray-footer button {
         background-color: #6441a4 !important;
     }
-    
-    main .container .u-dropDown .u-dropDownMenu *, ::before, ::after {
+
+    main .container .u-dropDown .u-dropDownMenu *,
+    ::before,
+    ::after {
         border-width: 0;
         border-style: solid;
         border-left-color: transparent !important;
         border-right-color: transparent !important;
     }
-    
+
     main .container .p-comment-wrapper a {
         color: #6f46b9;
     }
-    
+
     main .container .p-comment-wrapper a * {
         color: #8e5cea;
     }
-    
+
     main .container .button.button--hollow {
         background: none !important;
     }
-    
+
     main .container .button.button--hollow * {
         background: none !important;
     }
