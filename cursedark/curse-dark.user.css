@@ -17,7 +17,7 @@
     }
 
     .curseforge-header {
-        background-color: #555;
+        background-color: #5a3b94;
     }
 
     .user-menu__tail * {
@@ -43,14 +43,6 @@
 
     html .game-header.overflow-hidden.h-40.flex.flex-col.justify-between div.container.mx-auto.mt-auto.flex.justify-between div.flex * {
         background: none !important;
-    }
-
-    html.js.no-hiddenscroll.cssmask.windows.landscape body.site.site-curseforge.body-publicproject.body-publicproject-listing.hide-ads.user-authenticated.lang-en.site-lang-en.template-none.skin-light-on-dark.flex.flex-col.h-full div.flex.flex-col.min-h-full.min-h-screen main.flex-1.root-content.z-1.flex.flex-col.w-full.h-full div.z-0 div.container.mx-auto nav.flex.mt-6.mb-5.border-b.border-gray-200 div.mr-2.pb-1 * {
-        color: #e0e0e0;
-    }
-
-    html.js.no-hiddenscroll.cssmask.windows.landscape body.site.site-curseforge.body-publicproject.body-publicproject-listing.hide-ads.user-authenticated.lang-en.site-lang-en.template-none.skin-light-on-dark.flex.flex-col.h-full div.flex.flex-col.min-h-full.min-h-screen main.flex-1.root-content.z-1.flex.flex-col.w-full.h-full div.z-0 div.container.mx-auto nav.flex.mt-6.mb-5.border-b.border-gray-200 div.mr-2.pb-1.border-b.border-primary-500 * {
-        color: #a885e8;
     }
 
     main .nav * {
@@ -117,14 +109,6 @@
 
     .curseforge-header {
         color: #e0e0e0 !important;
-    }
-
-    .curseforge-header .dropdown {
-        color: black !important;
-    }
-
-    .curseforge-header .dropdown-tail {
-        color: black !important;
     }
 
     .game-header {
