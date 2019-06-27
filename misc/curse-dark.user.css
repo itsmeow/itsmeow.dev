@@ -1,0 +1,252 @@
+/* ==UserStyle==
+@name           Curse Dark
+@namespace      github.com/itsmeow
+@version        1.0.0
+@description    Adds a dark theme to curseforge
+@author         its_meow
+==/UserStyle== */
+@-moz-document domain("www.curseforge.com") {
+    main {
+        background: #202020 !important;
+        color: #e0e0e0 !important;
+    }
+
+    main .container * {
+        /*background: #202020 !important;*/
+        background-color: #202020 !important;
+    }
+
+    .curseforge-header {
+        background-color: #555;
+    }
+
+    .user-menu__tail * {
+        background-color: #444343 !important;
+        color: #dfdfdf !important;
+    }
+
+    .curseforge-header *,
+    ::before,
+    ::after {
+        border-color: #8a8a8a !important;
+    }
+
+    html .game-header.overflow-hidden div.container * {
+        background: none !important;
+    }
+
+    html .game-header.overflow-hidden div.container *,
+    ::before,
+    ::after {
+        border-color: #bbb !important;
+    }
+
+    html .game-header.overflow-hidden.h-40.flex.flex-col.justify-between div.container.mx-auto.mt-auto.flex.justify-between div.flex * {
+        background: none !important;
+    }
+
+    html.js.no-hiddenscroll.cssmask.windows.landscape body.site.site-curseforge.body-publicproject.body-publicproject-listing.hide-ads.user-authenticated.lang-en.site-lang-en.template-none.skin-light-on-dark.flex.flex-col.h-full div.flex.flex-col.min-h-full.min-h-screen main.flex-1.root-content.z-1.flex.flex-col.w-full.h-full div.z-0 div.container.mx-auto nav.flex.mt-6.mb-5.border-b.border-gray-200 div.mr-2.pb-1 * {
+        color: #e0e0e0;
+    }
+
+    html.js.no-hiddenscroll.cssmask.windows.landscape body.site.site-curseforge.body-publicproject.body-publicproject-listing.hide-ads.user-authenticated.lang-en.site-lang-en.template-none.skin-light-on-dark.flex.flex-col.h-full div.flex.flex-col.min-h-full.min-h-screen main.flex-1.root-content.z-1.flex.flex-col.w-full.h-full div.z-0 div.container.mx-auto nav.flex.mt-6.mb-5.border-b.border-gray-200 div.mr-2.pb-1.border-b.border-primary-500 * {
+        color: #a885e8;
+    }
+
+    main .nav * {
+        background: #202020 !important;
+        color: #e0e0e0 !important;
+        background-color: #202020 !important;
+    }
+
+    .text-sm {
+        color: #e0e0e0 !important;
+    }
+
+    .text-xl {
+        color: #e0e0e0 !important;
+    }
+
+    main .game-header .flex {
+        /*color: #131313 !important;*/
+        background: none !important;
+    }
+
+    main .game-header .text-gray-500 {
+        color: #d0d0d0 !important;
+    }
+
+    main:not(.game-header) {
+        color: #e0e0e0 !important;
+    }
+
+    div .user-content {
+        color: #e0e0e0 !important;
+    }
+
+    /*span:not(.dropdown):not(.dropdown-tail) {
+    color: #e0e0e0 !important;
+}*/
+    body {
+        color: #e0e0e0 !important;
+    }
+
+    main .text-primary-500 {
+        color: #8e5cea;
+    }
+
+    main a * {
+        color: #8e5cea;
+    }
+
+    main a {
+        color: #8e5cea;
+    }
+
+    .dropdown-tail:not(.icon) {
+        color: black !important;
+    }
+
+    .dropdown:not(.icon) {
+        color: black !important;
+    }
+
+    .top-nav__nav-link {
+        color: #e0e0e0 !important;
+    }
+
+    .curseforge-header {
+        color: #e0e0e0 !important;
+    }
+
+    .curseforge-header .dropdown {
+        color: black !important;
+    }
+
+    .curseforge-header .dropdown-tail {
+        color: black !important;
+    }
+
+    .game-header {
+        background: linear-gradient(180deg, rgba(250, 249, 250, 0.3) 0, rgba(66, 66, 66, .9) 74.03%, #202020 100%);
+    }
+
+    main .container .button {
+        background-color: #6441a4 !important;
+        color: #e1e1e1 !important;
+    }
+
+    main .container .button * {
+        background-color: #6441a4 !important;
+        color: #e1e1e1 !important;
+    }
+
+    *,
+    ::before,
+    ::after {
+        border-color: #59575b !important;
+    }
+
+    .text-charcoal {
+        color: #d7d5d5 !important;
+    }
+
+    html body main .project-detail__content code {
+        background-color: #2f2f2f !important;
+        color: #e3e3e3 !important;
+    }
+
+    span.mce-txt {
+        color: #f7f6f6;
+    }
+
+    .mce-container * {
+        color: #d9d9d9;
+        text-shadow: 1px 1px #000 !important;
+        background-color: #202020 !important;
+    }
+
+    .text-gray-500 {
+        color: #fff !important;
+    }
+
+    html > * {
+        background-color: #111 !important;
+        color: #fff !important;
+    }
+
+    .select:not(.is-select2-select),
+    .select .select2-choice {
+        color: white !important;
+    }
+
+    .select2-choices * {
+        box-shadow: none !important;
+        border: none !important;
+        color: #fff !important;
+        outline-color: black !important;
+    }
+
+    .select2-search-choice {
+        background: none !important;
+    }
+
+    div.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.modal {
+        background-color: #202020;
+        color: #e0e0e0;
+    }
+
+    div.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.modal div .form-footer {
+        background-color: #202020;
+        color: #e0e0e0;
+    }
+
+    div.jquery-modal.blocker.current div {
+        background-color: #202020;
+        color: #e0e0e0;
+    }
+
+    div.jquery-modal.blocker.current textarea {
+        background-color: #202020;
+        color: #e0e0e0;
+    }
+
+    div.jquery-modal.blocker.current select {
+        background-color: #202020;
+        color: #e0e0e0;
+    }
+
+    .listing th .asc::after,
+    .listing th .desc::after {
+        border-bottom: 4px solid #6441A5 !important;
+        border-bottom-color: rgb(100, 65, 165) !important;
+        border-left: 3px solid transparent !important;
+        border-left-color: transparent !important;
+        border-right: 3px solid transparent !important;
+        border-right-color: transparent !important;
+    }
+
+    .listing th .asc::before,
+    .listing th .desc::before {
+        border-top: 4px solid #6441A5 !important;
+        border-top-color: rgb(100, 65, 165) !important;
+        border-left: 3px solid transparent !important;
+        border-left-color: transparent !important;
+        border-right: 3px solid transparent !important;
+        border-right-color: transparent !important;
+    }
+
+    div.bg-gray--200 {
+        background-color: #1a1a1a !important;
+    }
+
+    main div.container.mx-auto.flex.justify-between.items-center div {
+        background: none !important;
+        background-color: rgba(0, 0, 0, 0) !important;
+    }
+
+    main .container .text-white {
+        background: none !important;
+        background-color: transparent !important;
+    }
+}
