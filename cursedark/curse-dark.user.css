@@ -360,9 +360,28 @@
         background: #202020 !important;
     }
 
-    main .container .text-white {
-        background: none !important;
-        background-color: transparent !important;
+    main .container .bg-green-500 {
+        background-color: #14b866 !important;
+    }
+
+    main .container .bg-green-500 * {
+        background-color: #14b866 !important;
+    }
+
+    main .container .bg-twitch-offset {
+        background-color: #7e798b !important;
+    }
+
+    main .container .bg-twitch-offset * {
+        background-color: #7e798b !important;
+    }
+
+    main .container .bg-prime-blue {
+        background-color: #0e9bd8 !important;
+    }
+
+    main .container .bg-prime-blue * {
+        background-color: #0e9bd8 !important;
     }
 
     main .form-gray-footer {
