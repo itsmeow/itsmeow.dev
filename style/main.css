@@ -31,7 +31,6 @@ footer {
 	margin: 0;
 	position:absolute;
 	left: 0;
-	//bottom: 0;
 	overflow:hidden;
 	margin-top:50px;
 	border-top:1px solid black;
@@ -57,6 +56,12 @@ footer a.footerlink {
 	float:left;
 	border-top:1px solid gray;
 	border-bottom: 1px dotted black;
+}
+
+.footer-image-box {
+	width: 200px;
+	height: 80px;
+	float: left;
 }
 
 #topfooter {
@@ -217,8 +222,16 @@ li.header a:hover {
 	z-index:1;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .headlogo {
 	display: none;
+  }
+
+  .footer-image-box {
+	  display: none;
+  }
+
+  li.header a {
+	  font-size: 0.8rem;
   }
 }
