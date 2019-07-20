@@ -178,6 +178,10 @@ a.nodecor {
   background-color: #202020;
 }
 
+.cfbadge {
+  max-width:90%;
+}
+
 ul.header {
     position: fixed;
     top: 0;

@@ -42,7 +42,7 @@ function updateInformation(onComplete, card, response) {
 
 function replaceAll(card, obj) {
 	replaceInformation(card, obj);
-	replaceTotalDownloads(card, obj);
+	//replaceTotalDownloads(card, obj);
 }
 
 function replaceInformation(card, obj) {
@@ -57,7 +57,7 @@ function replaceInformation(card, obj) {
 
 function replaceDownloads(card, obj) {
 	var downloads = document.querySelectorAll("div#" + card.id + " .element_downloads");
-	downloads[0].innerHTML = numberWithCommas(obj.downloads.total) + " Downloads";
+	downloads[0].innerHTML = "<img class=\"cfbadge\" src=\"https://cf.way2muchnoise.eu/full_" + obj.id + "_downloads.svg\">"//numberWithCommas(obj.downloads.total) + " Downloads";
 	totalDownloads += obj.downloads.total;
 }
 
