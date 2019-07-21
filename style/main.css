@@ -226,6 +226,22 @@ li.header a:hover {
 	z-index:1;
 }
 
+.sitebutton {
+	display:block;
+	width:8rem;
+	padding-top:0.5rem;
+	padding-bottom:0.5rem;
+	margin:auto;
+	border-radius:2px;
+	border:2px solid #323232;
+	font-size:1rem;
+	margin-top:2px;
+}
+
+.sitebutton:hover {
+	background-color: #292929;
+}
+
 @media screen and (max-width: 800px) {
   .headlogo {
 	display: none;
