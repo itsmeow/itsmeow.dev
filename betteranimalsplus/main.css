@@ -227,3 +227,16 @@ a.nodecor {
   text-decoration: none;
   color: #e2e2e2;
 }
+
+@media (max-width:450px) {
+	.list {
+		grid-template-columns: repeat(var(--repeat, auto-fit), 10rem);
+	}
+	.element img {
+		width: 8.65rem;
+	}
+	.element p {
+		width: 8.65rem;
+		font-size:0.7rem;
+	}
+}

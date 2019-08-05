@@ -37,8 +37,41 @@
 			</ul>
 		</nav>
 	</header>
+	<style>
+	.left-content {
+		width:80%;
+	}
+	.show-small {
+		display:none;
+	}
+	@media (max-width: 1109px) {
+		.rightbar {
+			display:none;
+			width:0;
+			margin:0;
+			float:none;
+		}
+		.left-content {
+			width:100%;
+		}
+		.show-small {
+			display:contents;
+		}
+	}
+	</style>
+	<div class="rightbar" style="margin:10px;margin-left:0;width:20%;float:right;">
+		<img style="margin-bottom:0px;"class="centerimg" src="icon.png">
+		<p style="margin:0;margin-bottom:20px;font-size:0.6rem;" align="center">its_meow avatar</p>
+		<h3 align="center">Twitter</h3>
+		<a class="twitter-timeline" data-width="100%" data-height="300" data-dnt="true" data-theme="dark" data-link-color="#E81C4F" href="https://twitter.com/it_is_meow?ref_src=twsrc%5Etfw">Tweets by it_is_meow</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+		<iframe style="margin-top:10px;" src="https://discordapp.com/widget?id=504369356260769792&theme=dark" width="100%" height="300" allowtransparency="true" frameborder="0"></iframe>
+	</div>
     <main>
-        <img class="centerimg" src="icon.png">
+	 <div class="left-content">
+		<div class="show-small">
+			<img style="margin-bottom:0px;width:30%;"class="centerimg" src="icon.png">
+			<p style="margin:0;margin-bottom:20px;font-size:0.6rem;" align="center">its_meow avatar</p>
+		</div>
         <section>
         <h2 id="about_me">Who is its_meow?</h1>
         <p>
@@ -96,6 +129,7 @@
       </a>
       </div>
       </div>
+	 </div>
     </main>
 	<footer>
 		<div class="footer-image-box">
