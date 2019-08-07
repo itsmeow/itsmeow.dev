@@ -1,110 +1,138 @@
 {
 	"mods": {
 		"betteranimalsplus": {
-			"api": "https://api.cfwidget.com/minecraft/mc-mods/betteranimalsplus",
+		    "title": "Better Animals Plus",
 			"role": "Lead Programmer",
-			"info": "Adds a variety of animals<a class=\"sitebutton\" href=\"https://itsmeow.dev/betteranimalsplus\"/>Website</a>"
+			"info": "Adds a variety of animals<a class=\"sitebutton\" href=\"https://itsmeow.dev/betteranimalsplus\"/>Website</a>",
+			"thumbnail": "https://media.forgecdn.net/avatars/172/24/636733556615558282.png"
 		},
 		"sbm-fluid-gun": {
-			"api": "https://api.cfwidget.com/minecraft/mc-mods/sbm-fluid-gun",
+		    "title": "[SBM] Fluid Gun",
 			"role": "Owner",
-			"info": "Adds a gun to shoot fluids at distance"
+			"info": "Adds a gun to shoot fluids at distance",
+			"thumbnail": "https://media.forgecdn.net/avatars/196/886/636888543301399103.png"
 		},
 		"better-animal-models": {
-			"api": "https://api.cfwidget.com/minecraft/mc-mods/better-animal-models",
+		    "title": "Better Animal Models",
 			"role": "Lead Programmer",
-			"info": "Replaces vanilla entity models"
+			"info": "Replaces vanilla entity models",
+			"thumbnail": "https://media.forgecdn.net/avatars/172/553/636737566894981598.png"
 		},
 		"claimit": {
-			"api": "https://api.cfwidget.com/minecraft/mc-mods/claimit",
+			"title": "ClaimIt",
 			"role": "Owner",
-			"info": "Land claiming mod for Forge with a focus on API and compatibility"
+			"info": "Land claiming mod for Forge with a focus on API and compatibility",
+			"thumbnail": "https://media.forgecdn.net/avatars/207/69/636963311039618129.png"
 		},
 		"quickhomes": {
-			"api": "https://api.cfwidget.com/projects/quickhomes",
+			"title": "QuickHomes",
 			"role": "Owner",
-			"info": "Adds /home and /sethome (singular homes)"
+			"info": "Adds /home and /sethome (singular homes)",
+			"thumbnail": "https://media.forgecdn.net/avatars/119/708/636405832983959874.png"
 		},
 		"openscreens": {
-		    "api": "https://api.cfwidget.com/minecraft/mc-mods/openscreens",
+		    "title": "OpenScreens",
 			"role": "Owner",
-			"info": "Adds more displays to OpenComputers"
+			"info": "Adds more displays to OpenComputers",
+			"thumbnail": "https://media.forgecdn.net/avatars/208/0/636971205912405161.png"
 		},
 		"derpcats": {
-			"api": "https://api.cfwidget.com/mc-mods/minecraft/262222-derpcats",
+			"title": "DerpCats",
 			"role": "Owner",
-			"info": "Adds a variety of strange cats"
+			"info": "Adds a variety of strange cats",
+			"thumbnail": "https://media.forgecdn.net/avatars/122/198/636411079960525560.png"
 		},
 		"cloneland": {
-			"api": "https://api.cfwidget.com/mc-mods/minecraft/262861-cloneland",
+			"title": "CloneLand",
 			"role": "Owner",
-			"info": "Adds an indentical overworld and nether dimension to switch to"
+			"info": "Adds an indentical overworld and nether dimension to switch to",
+			"thumbnail": "https://media.forgecdn.net/avatars/103/114/636335688206280572.png"
+		},
+		"bettertridentreturn": {
+		    "title": "Better Trident Return",
+			"role": "Owner",
+			"info": "Makes tridents with loyalty go back to the slot they were thrown from",
+			"thumbnail": "https://media.forgecdn.net/avatars/217/516/637007414907599915.png"
 		},
 		"sound-system-reloader": {
-			"api": "https://api.cfwidget.com/minecraft/mc-mods/sound-system-reloader",
+			"title": "Sound System Reloader",
 			"role": "Owner",
-			"info": "Reloads the Sound System on F3+S"
+			"info": "Reloads the Sound System on F3+S",
+			"thumbnail": "https://media.forgecdn.net/avatars/207/108/636963737968256082.png"
 		},
 		"quickteleports": {
-			"api": "https://api.cfwidget.com/minecraft/mc-mods/quickteleports",
+			"title": "QuickTeleports",
 			"role": "Owner",
-			"info": "Adds /tpa, /tpahere, and /tpaccept"
+			"info": "Adds /tpa, /tpahere, and /tpaccept",
+			"thumbnail": "https://media.forgecdn.net/avatars/191/962/636862298406388999.png"
 		},
 		"quickspawns": {
-			"api": "https://api.cfwidget.com/minecraft/mc-mods/quickspawns",
+			"title": "QuickSpawns",
 			"role": "Owner",
-			"info": "Adds /setspawn and /spawn"
+			"info": "Adds /setspawn and /spawn",
+			"thumbnail": "https://media.forgecdn.net/avatars/191/919/636862090088968993.png"
 		},
 		"mcdevdate": {
-			"api": "https://api.cfwidget.com/projects/mcdevdate",
+			"title": "MCDevDate",
 			"role": "Owner",
-			"info": "Adds a text element with the amount of ingame days since Minecraft released"
+			"info": "Adds a text element with the amount of ingame days since Minecraft released",
+			"thumbnail": "https://media.forgecdn.net/avatars/136/51/636504900264935257.png"
 		}
 	},
 	"commissions": {
 		"sbm-dead-mans-satchel": {
-			"api": "https://api.cfwidget.com/minecraft/mc-mods/sbm-dead-mans-satchel",
+			"title": "[SBM] Dead Man's Satchel",
 			"role": "Com. Programmer/Artist",
-			"info": "Adds satchels that hold things when you die, highly configurable"
+			"info": "Adds satchels that hold things when you die, highly configurable",
+			"thumbnail": "https://media.forgecdn.net/avatars/193/488/636868284453937209.png"
 		},
 		"sbm-infinite-falling": {
-			"api": "https://api.cfwidget.com/minecraft/mc-mods/sbm-infinite-falling",
+			"title": "[SBM] Infinite Falling",
 			"role": "Com. Programmer",
-			"info": "Adds boots that teleport you to world height when you land"
+			"info": "Adds boots that teleport you to world height when you land",
+			"thumbnail": "https://media.forgecdn.net/avatars/192/871/636865714372250847.png"
 		},
 		"sbm-breadstone": {
-			"api": "https://api.cfwidget.com/minecraft/mc-mods/sbm-breadstone",
+			"title": "[SBM] Breadstone",
 			"role": "Com. Programmer/Artist",
-			"info": "Joke mod adding various bread items and blocks"
+			"info": "Joke mod adding various bread items and blocks",
+			"thumbnail": "https://media.forgecdn.net/avatars/188/880/636847292804568792.png"
 		},
-		"sbm-handheld-piston": {
-			"api": "https://api.cfwidget.com/minecraft/mc-mods/sbm-hand-held-piston",
+		"sbm-hand-held-piston": {
+			"title": "[SBM] Hand-Held Piston",
 			"role": "Com. Programmer/Artist",
-			"info": "Adds a handheld piston that can push blocks and tile entities"
+			"info": "Adds a handheld piston that can push blocks and tile entities",
+			"thumbnail": "https://media.forgecdn.net/avatars/207/46/636963150950587032.png"
 		}
 	},
 	"contributor": {
 		"bewitchment": {
-			"api": "https://api.cfwidget.com/minecraft/mc-mods/bewitchment",
+			"title": "Bewitchment",
 			"role": "Contributor (Programmer)",
-			"info": "Reboot of Witchery for MC 1.12"
+			"info": "Reboot of Witchery for MC 1.12",
+			"thumbnail": "https://media.forgecdn.net/avatars/191/570/636860382144960012.png"
 		}
 	},
 	"misc": {
 		"mcmusicplayer": {
-			"api": "https://api.cfwidget.com/mc-mods/minecraft/mcmusicplayer",
+			"title": "MCMusic Player",
 			"role": "Owner",
-			"info": "Not maintained. Adds mp3 player GUI to game"
+			"info": "Not maintained. Adds mp3 player GUI to game",
+			"thumbnail": "https://media.forgecdn.net/avatars/123/478/636415252077444035.png"
 		},
 		"sounds-of-space": {
-			"api": "https://api.cfwidget.com/kerbal/ksp-mods/sounds-of-space",
+			"title": "Sounds Of Space",
 			"role": "Owner",
-			"info": "A mod for Kerbal Space Program that adds electromagnetic sounds of planets in space"
+			"info": "A mod for Kerbal Space Program that adds electromagnetic sounds of planets in space",
+			"url": "https://www.curseforge.com/kerbal/ksp-mods/sounds-of-space",
+			"customid": "305337",
+			"thumbnail": "https://media.forgecdn.net/avatars/175/418/636757457325251918.png"
 		},
 		"claimit-api": {
-			"api": "https://api.cfwidget.com/minecraft/mc-mods/claimit-api",
+			"title": "ClaimIt API",
 			"role": "Owner",
-			"info": "API for ClaimIt"
+			"info": "API for ClaimIt",
+			"thumbnail": "https://media.forgecdn.net/avatars/207/67/636963301846931076.png"
 		}
 	}
 }

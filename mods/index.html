@@ -55,13 +55,8 @@
 			</div>
 		</main>
 	<script type="text/javascript" src="projectparse.js"></script>
-	<script type="text/javascript" src="cursefill.js"></script>
 	<script type="text/javascript">
-		getData("projects.json", fillProjects, loadCards, true);
-		function loadCards() {
-			var cards = Array.from(document.getElementsByClassName("element"));
-			getDownloads(cards, replaceAll);
-		}
+		getData("projects.json", fillProjects, true);
 	</script>
 	<footer>
 		<div class="footer-image-box">
