@@ -24,6 +24,7 @@
 		gtag('js', new Date());
 		gtag('config', 'UA-141623735-1');
 		</script>
+        <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/clngdbkpkpeebahjckkjfobafhncgmne">
     </head>
 	<body>
 		<header>
@@ -36,25 +37,19 @@
 				</ul>
 			</nav>
 		</header>
-		<main style="margin-top:50px;margin-bottom:15rem;">
-			<h1 align="center">Curse Dark Theme</h1>
-			<a class="centerimg" style="text-decoration:none;margin-left:auto;margin-right:auto;text-align:center;display:block;" align="center" href="curse-dark.user.css">
-				<img alt="Logo/Click to install Curse Dark Theme" style="max-width:200px;" src="../logos/curse.png"></img>
-			</a>
-			<section>
-				<h2 align="center">Firefox</h2>
-				<p align="center">
-				Install <a style="text-decoration:none;color:green;" href="https://addons.mozilla.org/en-US/firefox/addon/styl-us/">Stylus</a>, and then click the logo.
-				</p>
-			</section>
-			<br>
-			<section>
-				<h2 align="center">Chrome</h2>
-				<p align="center">
-				Install <a style="text-decoration:none;color:green;" href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne">Stylus</a>, and then click the logo.
-				</p>
-			</section>
-		</main>
+        <div id="installer-div"></div>
+		<h1 id="darktitle" style="position:absolute;top:30%;left:0;right:0;" align="center">Curse Dark Theme</h1>
+		<!--<a href="curse-dark.user.css">-->
+        <p id="notification-dark-theme"></p>
+		<button id="installbutton" class="stylebutton" onclick="onClick()">Detect Browser</button>
+		<style>
+		footer {
+		  position:absolute;
+		  left: 0;
+		  top: 88%;
+		}
+		</style>
+        <script type="text/javascript" src="installdark.js"></script>
 		<footer>
 			<div class="footer-image-box">
                 <a href="../index.html"><img style="width:100%;height:100%;" src="../modslogo.png"></a>

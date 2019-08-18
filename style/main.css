@@ -78,6 +78,55 @@ footer a.footerlink {
   border: 2px solid #404040;
 }
 
+.stylebutton {
+  text-decoration: none;
+  background-color: #303030;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 12px;
+  border:none;
+  box-shadow: 0 6px #252525;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  width: 10rem;
+  height: 10%;
+  font-size: 1.5rem;
+}
+
+#installbutton {
+  position:absolute;
+  top:45%;
+  left:calc(50% - 5rem);
+  right:0;
+}
+
+.stylebutton:hover {
+  background-color: #353535;
+}
+
+.stylebutton:active {
+  transform: translateY(4px);
+  box-shadow: 0 4px #252525;
+}
+
+.bottom-text-nice {
+    width:20%;
+    text-align:center;
+    margin-left:40%;
+    margin-right:40%;
+    padding:10px;
+    display:block;
+    border-radius:4px;
+    background-color:#202020;
+    color:#707070;
+    text-decoration:none;
+    position:absolute;
+    top:70%;
+    left:0;
+    right:0;
+}
+
 .list {
   --repeat: auto-fit;
 }
