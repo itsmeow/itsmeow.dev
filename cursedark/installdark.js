@@ -27,12 +27,9 @@ function showBrowserButton() {
             if(isFirefox) {
                 window.location='https://addons.mozilla.org/firefox/downloads/file/3374955/stylus-1.5.5-fx.xpi?src=dp-btn-primary';
             } else if(isChrome) {
-                //window.open('https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne', '_blank');
+                window.open('https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne', '_blank');
             }
         };
-        if(isChrome) {
-            instb.setAttribute("onclick", "javascript:chrome.webstore.install()");
-        }
     }
 }
 
