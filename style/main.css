@@ -128,18 +128,9 @@ footer a.footerlink {
 }
 
 .list {
-  --repeat: auto-fit;
-}
-@media (min-width: calc(250 * 3px)) {
-  .list {
-    --repeat: 3;
-  }
-}
-
-.list {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(var(--repeat, auto-fit), 12.65rem);
+  grid-template-columns: repeat(auto-fit, 12.65rem);
 }
 
 .element {
@@ -209,7 +200,7 @@ footer a.footerlink {
 
 @media (max-width:450px) {
 	.list {
-		grid-template-columns: repeat(var(--repeat, auto-fit), 10rem);
+		grid-template-columns: repeat(auto-fit, 10rem);
 	}
 	.element img {
 		width: 8.65rem;

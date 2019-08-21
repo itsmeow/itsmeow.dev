@@ -47,11 +47,18 @@
 			</div>
 			
 			<h2 align="center" style="margin-top:50px;">Contributor For</h2>
-			<div id="contributor" class="list" style="grid-template-columns: 12.65rem;"> <!-- Override to one column instead of three -->
+			<div id="contributor" class="list">
 			</div>
-			
-			<h2 align="center" style="margin-top:50px;">Dead/Misc/Library Mods</h2>
-			<div id="misc" class="list">
+            <style>
+            #contributor {
+                grid-template-columns: 12.65rem; 
+            }
+            @media (max-width:450px) {
+                #contributor {
+                    grid-template-columns: repeat(auto-fit, 10rem);
+                }
+            }
+            </style>
 			</div>
 		</main>
 	<script type="text/javascript" src="projectparse.js"></script>

@@ -77,6 +77,26 @@
 			"role": "Owner",
 			"info": "Adds a text element with the amount of ingame days since Minecraft released",
 			"thumbnail": "https://media.forgecdn.net/avatars/136/51/636504900264935257.png"
+		},
+        "mcmusicplayer": {
+			"title": "MCMusic Player",
+			"role": "Owner",
+			"info": "Not maintained. Adds mp3 player GUI to game",
+			"thumbnail": "https://media.forgecdn.net/avatars/123/478/636415252077444035.png"
+		},
+		"sounds-of-space": {
+			"title": "Sounds Of Space",
+			"role": "Owner",
+			"info": "A mod for Kerbal Space Program that adds electromagnetic sounds of planets in space",
+			"url": "https://www.curseforge.com/kerbal/ksp-mods/sounds-of-space",
+			"customid": "305337",
+			"thumbnail": "https://media.forgecdn.net/avatars/175/418/636757457325251918.png"
+		},
+		"claimit-api": {
+			"title": "ClaimIt API",
+			"role": "Owner",
+			"info": "API for ClaimIt",
+			"thumbnail": "https://media.forgecdn.net/avatars/207/67/636963301846931076.png"
 		}
 	},
 	"commissions": {
@@ -111,28 +131,6 @@
 			"role": "Contributor (Programmer)",
 			"info": "Reboot of Witchery for MC 1.12",
 			"thumbnail": "https://media.forgecdn.net/avatars/191/570/636860382144960012.png"
-		}
-	},
-	"misc": {
-		"mcmusicplayer": {
-			"title": "MCMusic Player",
-			"role": "Owner",
-			"info": "Not maintained. Adds mp3 player GUI to game",
-			"thumbnail": "https://media.forgecdn.net/avatars/123/478/636415252077444035.png"
-		},
-		"sounds-of-space": {
-			"title": "Sounds Of Space",
-			"role": "Owner",
-			"info": "A mod for Kerbal Space Program that adds electromagnetic sounds of planets in space",
-			"url": "https://www.curseforge.com/kerbal/ksp-mods/sounds-of-space",
-			"customid": "305337",
-			"thumbnail": "https://media.forgecdn.net/avatars/175/418/636757457325251918.png"
-		},
-		"claimit-api": {
-			"title": "ClaimIt API",
-			"role": "Owner",
-			"info": "API for ClaimIt",
-			"thumbnail": "https://media.forgecdn.net/avatars/207/67/636963301846931076.png"
 		}
 	}
 }
