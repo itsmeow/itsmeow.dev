@@ -2,7 +2,7 @@
 @name           Curse Dark
 @namespace      https://itsmeow.dev/cursedark
 @updateURL      https://itsmeow.dev/cursedark/curse-dark.user.css
-@version        1.1.0
+@version        1.1.1
 @description    Adds a dark theme to curseforge
 @author         its_meow
 ==/UserStyle== */
@@ -70,6 +70,20 @@
 			background-position: 0% 50%
 		}
 	}
+    
+    div.field.flex .input.form-field-text-field * {
+        background-color: #131313 !important;
+        color:#e0e0e0 !important;
+    }
+    
+    div.field.flex .textarea.form-field-text-area-field * {
+        background-color: #131313 !important;
+        color:#e0e0e0 !important;
+    }
+    
+    .form-gray-footer, .body-privatemessage-create .form-submit * {
+        background-color: #181818;
+    }
 
 	main .container * {
 		background-color: #202020 !important;
@@ -156,6 +170,33 @@
 	body {
 		color: #e0e0e0 !important;
 	}
+    
+    .mce-caret {
+        border-top: 4px solid #cfcfcf !important;
+        border-right: 4px solid transparent !important;
+        border-left: 4px solid transparent !important; 
+    }
+    
+    .mce-stack-layout .mce-menu-item .mce-text {
+        color: #e0e0e0 !important;
+    }
+    
+    div.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front {
+        background-color: #202020;
+        color: #e0e0e0;
+    }
+    
+    div.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front div :nth-child(2) {
+        background-color: #202020;
+    }
+    
+    div.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front .image-border-footer button {
+        border: 1px solid black;
+        border-radius: 2px;
+        background-color: #131313;
+        margin-left:2px;
+        padding:2px;
+    }
 
 	main .text-primary-500 {
 		color: #8e5cea;
@@ -214,11 +255,41 @@
 		color: #f7f6f6;
 	}
 
-	.mce-container * {
+	.mce-container .mce-panel .mce-flow-layout-item * {
 		color: #d9d9d9;
 		text-shadow: 1px 1px #000 !important;
 		background-color: #202020 !important;
 	}
+    
+    .mce-container .mce-container-body * {
+        color: #d9d9d9;
+		text-shadow: 1px 1px #000 !important;
+		background-color: #202020 !important;
+    }
+    
+    .mce-window-head {
+        color: #d9d9d9 !important;
+        background-color: #202020 !important;
+    }
+    
+    .mce-title {
+        color: #d9d9d9;
+    }
+    
+    .mce-container-body.mce-abs-layout {
+        color: #d9d9d9 !important;
+        background-color: #202020 !important;
+    }
+    
+    .mce-container-body.mce-abs-layout .mce-btn button {
+        background-color: #131313 !important;
+        border-radius:2px;
+        border:1px solid;
+    }
+    
+    .mce-container-body.mce-abs-layout .mce-btn button * {
+        background-color: #131313 !important;
+    }
 
 	.text-gray-500 {
 		color: #d8d8d8 !important;
@@ -396,14 +467,14 @@
 		background-color: #6441a4 !important;
 	}
 
-	main .container .u-dropDown .u-dropDownMenu *,
+	/*main .container .u-dropDown .u-dropDownMenu *,
 	::before,
 	::after {
 		border-width: 0;
 		border-style: solid;
 		border-left-color: transparent !important;
 		border-right-color: transparent !important;
-	}
+	}*/
 
 	main .container .p-comment-wrapper a {
 		color: #6f46b9;
