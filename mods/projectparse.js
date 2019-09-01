@@ -23,9 +23,9 @@ function putData(includeInfo, listHTML, list) {
 				<div class="element" id="` + modIndex + "\">" + (includeInfo ? `
 					<a class="element_link" href="` + (mod.hasOwnProperty('url') ? mod.url : ("https://curseforge.com/minecraft/mc-mods/" + modIndex)) + `">
 					<img class="element_img" src="` + mod.thumbnail + `" alt="Unable to get thumbnail">
-					<h5 class="element_text">` + mod.title + `</h5>` +
-					//`<div class="element_downloads">` + "<img class=\"cfbadge\" src=\"https://cf.way2muchnoise.eu/full_" + (mod.hasOwnProperty('customid') ? mod.customid : modIndex) + "_downloads.svg\">"+ `</div>`
-					`<div class="element_subtext_role">` + mod.role + `</div>
+					<h5 class="element_text">` + mod.title + `</h5>
+					<div class="element_downloads">` + "<img class=\"cfbadge\" src=\"https://cf.way2muchnoise.eu/full_" + (mod.hasOwnProperty('customid') ? mod.customid : modIndex) + "_downloads.svg\">" + `</div>
+					<div class="element_subtext_role">` + mod.role + `</div>
 					<div class="element_subtext_info">` + mod.info + `</div>
 					</a>`
 				: "") + "</div>";
