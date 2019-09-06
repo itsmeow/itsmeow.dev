@@ -52,6 +52,7 @@
 		    "title": "Better Trident Return",
 			"role": "Owner",
 			"info": "Makes tridents with loyalty go back to the slot they were thrown from",
+            "customid": "334204",
 			"thumbnail": "https://media.forgecdn.net/avatars/217/516/637007414907599915.png"
 		},
 		"sound-system-reloader": {
