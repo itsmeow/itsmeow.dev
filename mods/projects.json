@@ -36,6 +36,12 @@
 			"info": "Adds more displays to OpenComputers",
 			"thumbnail": "https://media.forgecdn.net/avatars/208/0/636971205912405161.png"
 		},
+        "whisperwoods": {
+            "title": "Whisperwoods",
+            "role": "Lead Programmer",
+            "info": "Adds a few spooky forest creatures. MMD SpookyJam 2019 submission",
+            "thumbnail": "https://media.forgecdn.net/avatars/234/374/637078348519310971.png"
+        },
 		"derpcats": {
 			"title": "DerpCats",
 			"role": "Owner",
