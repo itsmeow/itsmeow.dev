@@ -9,7 +9,6 @@
     <script>
         if (document.cookie == "dark=true") {
             document.querySelector("link[href='light.css']").href = "dark.css";
-            document.getElementById("themebox").checked = true;
         }
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -61,7 +60,7 @@
         <div class="header-container">
             <img class="headlogo" src="bap128.png">
             <label class="theme-switch">
-				<input type="checkbox" id="themebox" onclick="onCheckThemeBox()">
+                <input type="checkbox" id="themebox" onclick="onCheckThemeBox()">
 				<span class="slider round"></span>
 			</label>
             <p class="theme-switch-label">Dark Theme</p>
@@ -205,5 +204,10 @@
         </div>
     </footer>
 </body>
+<script>
+    if (document.cookie == "dark=true") {
+        document.getElementById("themebox").checked = true;
+    }
+</script>
 
 </html>
