@@ -29,6 +29,7 @@
         gtag('js', new Date());
         gtag('config', 'UA-141623735-1');
     </script>
+
 </head>
 
 <body>
@@ -38,8 +39,16 @@
             <ul class="header">
                 <li class="header"><a class="active">Home</a></li>
                 <li class="header"><a href="mods/index.html">Mods</a></li>
-                <li class="header"><a href="cursedark/index.html">Curse Dark Theme</a></li>
-            </ul>
+                <script src="dropdown.js"></script>
+                <div class="header-dropdown" onclick="dropdown()">
+                    <button id="dropbutton" class="header-dropdown-button">Misc
+                        <i class="caret-down"></i>
+                    </button>
+                </div>
+                <div class="header-dropdown-content" id="main-dropdown">
+                    <li class="dropdown-entry"><a href="cursedark/index.html">Curse Dark Theme</a></li>
+                    <li class="dropdown-entry"><a href="curseestimate/index.html">Curse Point Estimator</a></li>
+                </div>
         </nav>
     </header>
     <style>
