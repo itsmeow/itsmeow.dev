@@ -7,7 +7,7 @@
     <link href="main.css" rel="stylesheet" type="text/css">
     <link href="light.css" rel="stylesheet" type="text/css">
     <script>
-        if (document.cookie == "dark=true") {
+        if (getCookie("dark") == true) {
             document.querySelector("link[href='light.css']").href = "dark.css";
         }
     </script>
@@ -46,10 +46,10 @@
         function onCheckThemeBox() {
             if (document.getElementById("themebox").checked) {
                 document.querySelector("link[href='light.css']").href = "dark.css";
-                document.cookie = "dark=true;";
+                setCookie("dark", "true", 2147483647);
             } else {
                 document.querySelector("link[href='dark.css']").href = "light.css";
-                document.cookie = "dark=false;";
+                setCookie("dark", "false", 2147483647);
             }
         }
     </script>
@@ -205,8 +205,19 @@
     </footer>
 </body>
 <script>
-    if (document.cookie == "dark=true") {
+    if (getCookie("dark") == true) {
         document.getElementById("themebox").checked = true;
+    }
+
+    function getCookie(name) {
+        var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+        return v ? v[2] : null;
+    }
+
+    function setCookie(name, value, time) {
+        var d = new Date;
+        d.setTime(d.getTime() + 10 * time);
+        document.cookie = name + "=" + value + ";path=/;expires=" + d.toGMTString();
     }
 </script>
 
