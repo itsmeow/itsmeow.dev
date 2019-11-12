@@ -7,7 +7,17 @@
     <link href="main.css" rel="stylesheet" type="text/css">
     <link href="light.css" rel="stylesheet" type="text/css">
     <script>
-        if (getCookie("dark") == true) {
+        function getCookie(name) {
+            var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+            return v ? v[2] : null;
+        }
+
+        function setCookie(name, value, time) {
+            var d = new Date;
+            d.setTime(d.getTime() + 10 * time);
+            document.cookie = name + "=" + value + ";path=/;expires=" + d.toGMTString();
+        }
+        if (getCookie("dark") == "true") {
             document.querySelector("link[href='light.css']").href = "dark.css";
         }
     </script>
@@ -34,13 +44,6 @@
         }
         gtag('js', new Date());
         gtag('config', 'UA-141623735-1');
-    </script>
-    <script type="text/javascript" src="js/jssor.slider.min.js"></script>
-    <script>
-        var options = {
-            $AutoPlay: 1
-        };
-        var jssor_1_slider = new $JssorSlider$("jssor_1", options);
     </script>
     <script>
         function onCheckThemeBox() {
@@ -205,19 +208,8 @@
     </footer>
 </body>
 <script>
-    if (getCookie("dark") == true) {
+    if (getCookie("dark") == "true") {
         document.getElementById("themebox").checked = true;
-    }
-
-    function getCookie(name) {
-        var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
-        return v ? v[2] : null;
-    }
-
-    function setCookie(name, value, time) {
-        var d = new Date;
-        d.setTime(d.getTime() + 10 * time);
-        document.cookie = name + "=" + value + ";path=/;expires=" + d.toGMTString();
     }
 </script>
 
