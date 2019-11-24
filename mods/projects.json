@@ -85,6 +85,12 @@
 			"info": "Adds /setspawn and /spawn",
 			"thumbnail": "https://media.forgecdn.net/avatars/191/919/636862090088968993.png"
 		},
+        "critter-fights": {
+            "title": "Critter Fights",
+			"role": "Owner",
+			"info": "Allows use of a command to force any two creatures to fight (to the best of their abilities!)",
+			"thumbnail": "https://media.forgecdn.net/avatars/236/899/637095931058231002.png"
+        },
 		"mcdevdate": {
 			"title": "MCDevDate",
 			"role": "Owner",
