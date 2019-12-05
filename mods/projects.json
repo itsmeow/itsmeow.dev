@@ -116,7 +116,13 @@
 			"role": "Owner",
 			"info": "API for ClaimIt",
 			"thumbnail": "https://media.forgecdn.net/avatars/207/67/636963301846931076.png"
-		}
+		},
+        "claimit-dynmap": {
+            "title": "ClaimIt-Dynmap",
+            "role": "Owner",
+            "info": "Adds Dynmap markers for ClaimIt claims",
+            "thumbnail": "https://media.forgecdn.net/avatars/238/995/637110751694753684.png"
+        }
 	},
 	"commissions": {
 		"sbm-dead-mans-satchel": {
