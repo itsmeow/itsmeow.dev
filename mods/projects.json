@@ -156,6 +156,12 @@
 			"role": "Contributor (Programmer)",
 			"info": "Reboot of Witchery for MC 1.12",
 			"thumbnail": "https://media.forgecdn.net/avatars/191/570/636860382144960012.png"
+		},
+        "experienceore": {
+			"title": "ExperienceOre",
+			"role": "Contributor (1.15.1 port)",
+			"info": "Adds an ore that gives experience",
+			"thumbnail": "https://media.forgecdn.net/avatars/65/283/636161301155518452.png"
 		}
 	}
 }
