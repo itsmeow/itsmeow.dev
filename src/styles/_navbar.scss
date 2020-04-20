@@ -1,0 +1,60 @@
+#site-navbar {
+  background-color: $header-background;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.nav-fill .nav-item {
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+
+.nav-fill .nav-item:hover {
+  background-color: $hover-box;
+}
+
+.nav-fill .nav-item .active {
+  font-weight: bold;
+  background-color: $header-background;
+}
+
+.dropdown-menu {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.dropdown-item .nav-link {
+  padding: 0.5rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.dropdown-item {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-fill .dropdown-item {
+  background-color: $header-background;
+}
+
+.nav-fill .dropdown-item a .nav-link:hover:not(.active) {
+  background-color: #202020;
+}
+
+h1.title {
+  font-size: 1.75rem;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: "Courier New", monospace;
+  color: #e85050;
+}

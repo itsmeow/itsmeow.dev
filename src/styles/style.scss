@@ -1,0 +1,36 @@
+@import "variables";
+$body-bg: $primary-background;
+$body-color: $text-color;
+$navbar-dark-color: $text-prehover-color;
+$navbar-dark-hover-color: $text-color;
+$navbar-dark-disabled-color: $text-disabled-color;
+$navbar-dark-active-color: $text-color;
+$dropdown-color: $text-color;
+$dropdown-bg: $header-background;
+$dropdown-border-radius: 0;
+$dropdown-link-color: $text-prehover-color;
+$dropdown-link-hover-color: $text-color;
+$dropdown-link-disabled-color: $text-disabled-color;
+$dropdown-link-hover-bg: $hover-box;
+$dropdown-link-disabled-bg: $header-background;
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@media (max-width: map-get($grid-breakpoints, sm)) {
+  .row:not(.no-gutters) {
+    margin-right: -$grid-gutter-width / 4;
+    margin-left: -$grid-gutter-width / 4;
+  }
+  .row:not(.no-gutters) > .col,
+  .row:not(.no-gutters) > [class*="col-"] {
+    padding-right: $grid-gutter-width / 4;
+    padding-left: $grid-gutter-width / 4;
+  }
+}
+
+@import "navbar";
+@import "footer";
+@import "card";
+@import "layout";
+@import "index";
+@import "cursedark";
+@import "curseestimate";
+@import "../../node_modules/react-toastify/dist/ReactToastify.css";

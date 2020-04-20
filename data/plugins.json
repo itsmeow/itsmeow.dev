@@ -1,0 +1,18 @@
+{
+  "data": [
+    {
+      "name": "plugins",
+      "title": "Plugins",
+      "list": [
+        {
+          "name": "donationgoals",
+          "title": "Donation Goals (Sidebar)",
+          "role": "Owner",
+          "info": "Puts a donation goal with progress on the sidebar",
+          "thumbnail_local": "donationgoalicon.png",
+          "spigoturl": "donation-goals-sidebar.76402"
+        }
+      ]
+    }
+  ]
+}
