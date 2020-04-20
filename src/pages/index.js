@@ -39,14 +39,7 @@ const IndexPage = () => {
               allowtransparency="true"
               frameborder="0"
             />
-            <TwitterWidget
-              width="100%"
-              height="300"
-              dnt="true"
-              theme="dark"
-              link_color="#E81C4F"
-              username="it_is_meow"
-            />
+            <TwitterWidget />
           </section>
         </div>
         <div className="left-content">
@@ -112,14 +105,7 @@ const IndexPage = () => {
                 />
               </div>
               <div className="flex-list-item scale-prop">
-                <TwitterWidget
-                  width="100%"
-                  height="300"
-                  dnt="true"
-                  theme="dark"
-                  link_color="#E81C4F"
-                  username="it_is_meow"
-                />
+                <TwitterWidget />
               </div>
             </div>
           </section>

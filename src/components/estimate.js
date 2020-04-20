@@ -26,7 +26,7 @@ const Estimate = props => {
     )
   }
 
-  const { status, points, id, margin, slug } = data
+  const { points, margin, slug } = data
   const usd = points * 0.05
 
   const toCurrency = usd * rates[currency]

@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from "react"
-import { toast } from "react-toastify"
+import { useState, useEffect } from "react"
 
 export default function useEstimate(slug, onError = () => {}) {
   const [estimate, setEstimate] = useState()
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false)
   const [note, setNote] = useState()
-
   useEffect(() => {
     const fetchEstimate = async () => {
       setLoading(true)
@@ -37,7 +35,7 @@ export default function useEstimate(slug, onError = () => {}) {
     if (slug) {
       fetchEstimate()
     }
-  }, [slug])
+  }, [slug]) // eslint-disable-line react-hooks/exhaustive-deps
 
   return { loading, error, note, estimate }
 }

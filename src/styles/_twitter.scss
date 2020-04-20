@@ -1,0 +1,125 @@
+.twitter {
+  width: 100%;
+  height: 300px;
+  background-color: black;
+}
+
+.twitter .twitter-header {
+  padding: 10px;
+  height: 100px;
+}
+
+.twitter .twitter-header * {
+  float: left;
+}
+
+.twitter .twitter-header .twitter-title {
+  padding-bottom: 5px;
+}
+
+.twitter .twitter-header .fa-sm {
+  font-size: 1.25em;
+}
+
+.twitter .twitter-header h2 {
+  font-size: 0.9375em;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+.twitter .tweets {
+  width: 100%;
+  height: 200px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.twitter .profile-image {
+  width: 48px;
+  height: 48px;
+}
+
+.twitter .profile-text {
+  margin-left: 10px;
+  font-size: 1em;
+}
+
+.twitter .twitter-followers {
+  margin-top: 5px;
+  clear: left;
+}
+
+.twitter .twitter-followers .fa-sm {
+  font-size: 0.8em;
+}
+
+.twitter .twitter-followers span {
+  font-size: 0.7em;
+  transform: translateY(-20%);
+}
+
+.twitter .tweets .tweet {
+  clear: left;
+}
+
+.twitter .tweets {
+  background-color: #070707;
+}
+
+.twitter .tweets .tweet {
+  background-color: #070707;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #202020;
+  color: $text-color;
+}
+
+.twitter .tweets .tweet .tweet-content {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 1vw;
+  text-overflow: ellipsis;
+}
+
+.twitter .tweets .tweet .tweet-image {
+  max-width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  max-height: 80px;
+}
+
+.twitter .tweets .tweet .tweet-link {
+  max-width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.twitter .tweets .tweet .tweet-footer {
+  height: 24px;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.twitter .tweets .tweet .tweet-footer .meta-item {
+  float: left;
+  margin-right: 10px;
+}
+
+.twitter .tweets .tweet .tweet-footer .meta-item span {
+  font-size: 0.75em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+}
+
+.fa-swap-opacity {
+  --fa-secondary-opacity: 0.4;
+  --fa-primay-opacity: 1;
+}
