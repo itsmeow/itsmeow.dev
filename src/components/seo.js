@@ -35,13 +35,6 @@ function SEO({ description, lang, meta, keywords, title, image }) {
       }}
       title={title}
       titleTemplate={`${site.siteMetadata.title}/%s`}
-      link={[
-        {
-          rel: "icon",
-          type: "image/x-icon",
-          href: icon,
-        },
-      ]}
       meta={[
         {
           name: `description`,
