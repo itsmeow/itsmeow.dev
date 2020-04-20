@@ -12,7 +12,7 @@ const Footer = () => {
         </Link>
         <div className="github">
           <a
-            href="https://github.com/itsmeow/itsmeow.github.io"
+            href="https://github.com/itsmeow/itsmeow.dev"
             className="link-no-style"
             target="_blank"
             rel="noopener noreferrer"
