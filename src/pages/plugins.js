@@ -6,29 +6,27 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 const Plugins = () => {
-  const json = useStaticQuery(
+  const { allDataJson } = useStaticQuery(
     graphql`
       query {
         allDataJson {
           edges {
             node {
-              data {
-                name
-                title
-                list {
-                  thumbnail
-                  spigoturl
-                  role
+              plugins {
+                data {
                   name
-                  info
-                  customid
-                  sitelink
                   title
-                  url
-                  thumbnail_local {
-                    childImageSharp {
-                      fluid {
-                        src
+                  list {
+                    spigoturl
+                    role
+                    name
+                    info
+                    title
+                    thumbnail_local {
+                      childImageSharp {
+                        fluid {
+                          src
+                        }
                       }
                     }
                   }
@@ -41,43 +39,48 @@ const Plugins = () => {
     `
   )
   const items = []
-  json.allDataJson.edges[1].node.data.forEach(data => {
-    const items2 = []
-    data.list.forEach(card => {
-      const cardUrl =
-        card.url || "https://www.spigotmc.org/resources/" + card.spigoturl
-      items2.push(
-        <div key={card.name} className="element" id={card.name}>
-          <a
-            className="element_link"
-            rel="noopener noreferrer"
-            target="_blank"
-            href={cardUrl}
-          >
-            <img
-              className="element_img"
-              src={
-                card.thumbnail || card.thumbnail_local.childImageSharp.fluid.src
-              }
-              alt="Unable to get thumbnail"
-            />
-            <h5 className="element_text">{card.title}</h5>
-            <div className="element_subtext_role">{card.role}</div>
-            <div className="element_subtext_info">{card.info}</div>
-          </a>
-        </div>
-      )
-    })
-    items.push(
-      <section key={"section" + data.name}>
-        <h2 key={"header" + data.name} align="center">
-          {data.title}
-        </h2>
-        <CardList key={data.name} id={data.name}>
-          {items2}
-        </CardList>
-      </section>
-    )
+  allDataJson.edges.forEach(edge => {
+    if (edge.node.plugins) {
+      edge.node.plugins.data.forEach(data => {
+        const items2 = []
+        data.list.forEach(card => {
+          const cardUrl =
+            card.url || "https://www.spigotmc.org/resources/" + card.spigoturl
+          items2.push(
+            <div key={card.name} className="element" id={card.name}>
+              <a
+                className="element_link"
+                rel="noopener noreferrer"
+                target="_blank"
+                href={cardUrl}
+              >
+                <img
+                  className="element_img"
+                  src={
+                    card.thumbnail ||
+                    card.thumbnail_local.childImageSharp.fluid.src
+                  }
+                  alt="Unable to get thumbnail"
+                />
+                <h5 className="element_text">{card.title}</h5>
+                <div className="element_subtext_role">{card.role}</div>
+                <div className="element_subtext_info">{card.info}</div>
+              </a>
+            </div>
+          )
+        })
+        items.push(
+          <section key={"section" + data.name}>
+            <h2 key={"header" + data.name} align="center">
+              {data.title}
+            </h2>
+            <CardList key={data.name} id={data.name}>
+              {items2}
+            </CardList>
+          </section>
+        )
+      })
+    }
   })
 
   return (

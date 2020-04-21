@@ -90,7 +90,7 @@ const TwitterWidget = () => {
           <a
             href={
               "https://twitter.com/" +
-              node.screen_name +
+              twitterProfile.screen_name +
               "/status/" +
               node.id_str
             }

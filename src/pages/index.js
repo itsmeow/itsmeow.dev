@@ -15,6 +15,7 @@ import { FaGithub, FaTwitter, FaTwitch, FaDiscord } from "react-icons/fa"
 import { GoFlame } from "react-icons/go"
 import YouTube from "../data/YouTube.svg"
 import { Container, Row, Col } from "react-bootstrap"
+import ClientOnly from "../components/clientonly"
 
 const IndexPage = () => {
   return (
@@ -39,7 +40,9 @@ const IndexPage = () => {
               allowtransparency="true"
               frameborder="0"
             />
-            <TwitterWidget />
+            <ClientOnly>
+              <TwitterWidget />
+            </ClientOnly>
           </section>
         </div>
         <div className="left-content">
@@ -105,7 +108,9 @@ const IndexPage = () => {
                 />
               </div>
               <div className="flex-list-item scale-prop">
-                <TwitterWidget />
+                <ClientOnly>
+                  <TwitterWidget />
+                </ClientOnly>
               </div>
             </div>
           </section>
@@ -113,7 +118,7 @@ const IndexPage = () => {
             <h2 align="center" style={{ margintop: "20px" }} id="links">
               Links
             </h2>
-            <div className="center-text">
+            <div className="center-item-x">
               <PatreonButton userid="28256207" />
             </div>
             <CardList>
