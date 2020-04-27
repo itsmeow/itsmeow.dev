@@ -1,7 +1,10 @@
 import React from "react"
+//import { useState } from "react"
 import SEO from "../components/seo"
+import useTrollCount from "../hooks/useTrollCount"
 
 const Secret = () => {
+  const result = useTrollCount()
   return (
     <>
       <SEO
@@ -38,9 +41,9 @@ const Secret = () => {
             width="560"
             height="315"
             src="https://www.youtube.com/embed/mW1N9koG7vM"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullSCreen
           ></iframe>
         </div>
         <br />
@@ -50,6 +53,17 @@ const Secret = () => {
           Also check out my real website <a href="https://itsmeow.dev/">here</a>
           . thanks
         </p>
+        <h3 align="center">
+          Plebs trolled by this page (updates every hour!):{" "}
+          {result !== undefined && result !== null
+            ? result.result !== undefined && result.result !== null
+              ? result.result.totalsForAllResults !== undefined &&
+                result.result.totalsForAllResults !== null
+                ? result.result.totalsForAllResults["ga:uniquePageviews"]
+                : "Loading..."
+              : "Loading..."
+            : "Loading..."}
+        </h3>
       </body>
     </>
   )
