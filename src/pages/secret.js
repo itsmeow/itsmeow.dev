@@ -1,18 +1,14 @@
 import React from "react"
+import SEO from "../components/seo"
 
-const ModdingLicensePage = () => {
+const Secret = () => {
   return (
-    <html id="secret" lang="en">
-      <head>
-        <title>Skeppy Secret</title>
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Skeppy Secret" />
-        <meta name="twitter:description" content=";) my top secret project" />
-        <meta
-          name="twitter:image"
-          content="https://i.redd.it/wj5ctxba4tf31.jpg"
-        />
-      </head>
+    <>
+      <SEO
+        title="Skeppy Secret"
+        description=";) my top secret project"
+        image="https://i.redd.it/wj5ctxba4tf31.jpg"
+      />
       <body>
         <h1 align="center">Skeppy's Secret</h1>
         <p align="center">
@@ -55,8 +51,8 @@ const ModdingLicensePage = () => {
           . thanks
         </p>
       </body>
-    </html>
+    </>
   )
 }
 
-export default ModdingLicensePage
+export default Secret
