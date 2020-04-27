@@ -1,5 +1,5 @@
 import React from "react"
-import useScript from "../hooks/useScript"
+//import useScript from "../hooks/useScript"
 
 const DiscordWidget = props => {
   return (
