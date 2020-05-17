@@ -2,26 +2,11 @@ import React, { useState, useEffect } from "react"
 import { Container } from "react-bootstrap"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { useStaticQuery, graphql } from "gatsby"
 
 let isFirefox = false
 let isChrome = false
 
 const CurseDark = () => {
-  const data = useStaticQuery(graphql`
-    {
-      allFile(
-        filter: { name: { eq: "curse-dark.user" }, extension: { eq: "css" } }
-      ) {
-        edges {
-          node {
-            publicURL
-            name
-          }
-        }
-      }
-    }
-  `)
   const [buttonText, setButtonText] = useState("Detect Browser")
   const [notifText, setNotifText] = useState("")
   const [link, setLink] = useState("")
@@ -122,7 +107,7 @@ const CurseDark = () => {
                   }, 1000)
                 } else if (installPhase === "usercss") {
                   if (typeof window !== undefined) {
-                    window.open(data.allFile.edges[0].node.publicURL, "_blank")
+                    window.open("curse-dark.user.css", "_blank")
                   }
                   setButtonText("Done")
                   setInstallPhase("reset")
