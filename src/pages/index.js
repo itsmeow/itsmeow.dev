@@ -15,6 +15,7 @@ import { GoFlame } from "react-icons/go"
 import YouTube from "../data/YouTube.svg"
 import { Container, Row, Col } from "react-bootstrap"
 import ClientOnly from "../components/clientonly"
+import ShowMore from "../components/showMore"
 
 const IndexPage = () => {
   return (
@@ -38,7 +39,7 @@ const IndexPage = () => {
         <div className="left-content">
           <Container className="show-small">
             <Row noGutters>
-              <Col noGutters>
+              <Col>
                 <img
                   alt="its_meow avatar"
                   style={{ width: "30%" }}
@@ -65,50 +66,53 @@ const IndexPage = () => {
               computing, science, math, engineering, random trivia, chemistry,
               and probably more.
             </p>
-            <h4>Minecraft</h4>
-            <p>
-              I have more than five years of experience creating mods/addons for
-              Minecraft, using a variety of tools including Forge, Bukkit, and
-              Fabric. Through this I have gained experience in supporting a
-              large userbase and dealing with issue tickets. My mods combined
-              have amassed over 3.5 million downloads and continue to grow.
-            </p>
-            <h4>Java</h4>
-            <p>
-              I am skilled with Java, as my most practiced and first programming
-              language. I've used it to create countless projects and tools over
-              many years.
-            </p>
-            <h4>Web</h4>
-            <p>
-              I am also experienced in a variety of web development tools and
-              languages. I've used modern JavaScript tools such as NodeJS and
-              React. I have light experience with SQL database design and
-              querying. As an example, this website was written using Gatsby.js,
-              React, and Bootstrap.
-            </p>
-            <h4>C#</h4>
-            <p>
-              I am familiar with Visual C# design using Visual Studio and have
-              used it to create desktop applications, utilizing DLLs to perform
-              tasks using graphical input. I have also used C# in Unity to drive
-              engine activity and player control.
-            </p>
-            <h4>Others</h4>
-            <p>
-              I am familiar with various scripting languages, including Python,{" "}
-              Lua, Batch, and Bash.
-            </p>
-            <h4>In conclusion</h4>
-            <p>
-              Regardless of all the technologies and languages I may or may not
-              have used, I am dedicated to learning and improving in all
-              categories, and have proven to be a fast learner. I learned Bukkit
-              in a week and used it to write a full localization system for an
-              existing plugin. I taught myself how to code using the Internet
-              when I was just 10 years old. I learned React.js in a week so I
-              could stop copy-pasting HTML on this website.
-            </p>
+            <ShowMore duration="0.2s">
+              <h4>Minecraft</h4>
+              <p>
+                I have more than five years of experience creating mods/addons
+                for Minecraft, using a variety of tools including Forge, Bukkit,
+                and Fabric. Through this I have gained experience in supporting
+                a large userbase and dealing with issue tickets. My mods
+                combined have amassed over 3.5 million downloads and continue to
+                grow.
+              </p>
+              <h4>Java</h4>
+              <p>
+                I am skilled with Java, as my most practiced and first
+                programming language. I've used it to create countless projects
+                and tools over many years.
+              </p>
+              <h4>Web</h4>
+              <p>
+                I am also experienced in a variety of web development tools and
+                languages. I've used modern JavaScript tools such as NodeJS and
+                React. I have light experience with SQL database design and
+                querying. As an example, this website was written using
+                Gatsby.js, React, and Bootstrap.
+              </p>
+              <h4>C#</h4>
+              <p>
+                I am familiar with Visual C# design using Visual Studio and have
+                used it to create desktop applications, utilizing DLLs to
+                perform tasks using graphical input. I have also used C# in
+                Unity to drive engine activity and player control.
+              </p>
+              <h4>Others</h4>
+              <p>
+                I am familiar with various scripting languages, including
+                Python, Lua, Batch, and Bash.
+              </p>
+              <h4>In conclusion</h4>
+              <p>
+                Regardless of all the technologies and languages I may or may
+                not have used, I am dedicated to learning and improving in all
+                categories, and have proven to be a fast learner. I learned
+                Bukkit in a week and used it to write a full localization system
+                for an existing plugin. I taught myself how to code using the
+                Internet when I was just 10 years old. I learned React.js in a
+                week so I could stop copy-pasting HTML on this website.
+              </p>
+            </ShowMore>
             <hr />
           </section>
           <section className="highlightsection limit-width-pad">

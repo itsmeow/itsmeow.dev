@@ -3,21 +3,21 @@ import React from "react"
 const PatreonButton = props => {
   return (
     <>
-      <div class="_2KV-widgets-shared--patreonWidgetWrapper">
-        <div class="fpvra8-0 Ubsnp">
+      <div className="_2KV-widgets-shared--patreonWidgetWrapper">
+        <div className="fpvra8-0 Ubsnp">
           <a
-            class="sc-AxmLO bVyoVa"
+            className="sc-AxmLO bVyoVa"
             color="primary"
-            tabindex="0"
+            tabIndex="0"
             type="button"
             href="https://www.patreon.com/bePatron?u=28256207&redirect_uri=https%3A%2F%2Fitsmeow.dev%2F&utm_medium=widget"
             role="button"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div class="sc-AxgMl fMtbEW">
-              <div class="sc-AxirZ dQIjTw">
-                <span class="sc-AxjAm iKePQk">
+            <div className="sc-AxgMl fMtbEW">
+              <div className="sc-AxirZ dQIjTw">
+                <span className="sc-AxjAm iKePQk">
                   <svg viewBox="0 0 569 546" xmlns="http://www.w3.org/2000/svg">
                     <g>
                       <circle
@@ -39,7 +39,7 @@ const PatreonButton = props => {
                   </svg>
                 </span>
               </div>
-              <div class="sc-Axmtr kBWvho"></div>Become a patron
+              <div className="sc-Axmtr kBWvho"></div>Become a patron
             </div>
           </a>
         </div>

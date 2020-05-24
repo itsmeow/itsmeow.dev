@@ -106,3 +106,17 @@ main .rightbar {
   text-align: center;
   justify-content: center;
 }
+
+.showMoreBlock {
+  transform: scaleY(0);
+  transform-origin: top;
+  -webkit-transition: transform linear;
+  transition: transform linear;
+  height: 0;
+  overflow: hidden;
+}
+
+.showMoreBlock.shown {
+  height: auto;
+  transform: scaleY(1);
+}
