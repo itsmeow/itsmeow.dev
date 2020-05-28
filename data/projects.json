@@ -14,13 +14,6 @@
             "sitelink": "https://betteranimalsplus.com/"
           },
           {
-            "name": "sbm-fluid-gun",
-            "title": "[SBM] Fluid Gun",
-            "role": "Owner",
-            "info": "Adds a gun to shoot fluids at distance",
-            "thumbnail": "https://media.forgecdn.net/avatars/196/886/636888543301399103.png"
-          },
-          {
             "name": "better-animal-models",
             "title": "Better Animal Models",
             "role": "Lead Programmer",
@@ -56,18 +49,18 @@
             "thumbnail": "https://media.forgecdn.net/avatars/234/374/637078348519310971.png"
           },
           {
-            "name": "skeppy-mod",
-            "title": "Skeppy Mod",
-            "role": "Owner",
-            "info": "Adds stuff related to Skeppy's videos and community.",
-            "thumbnail": "https://media.forgecdn.net/avatars/235/522/637086079296909151.png"
+            "name": "grimoire-of-gaia-redux",
+            "title": "Grimoire of Gaia: Redux",
+            "role": "Lead Programmer",
+            "info": "Changes some of the Grimoire of Gaia models for a more fantasy-inspired aesthetic",
+            "thumbnail": "https://media.forgecdn.net/avatars/272/850/637252719395277470.png"
           },
           {
-            "name": "derpcats",
-            "title": "DerpCats",
+            "name": "sbm-fluid-gun",
+            "title": "[SBM] Fluid Gun",
             "role": "Owner",
-            "info": "Adds a variety of strange cats",
-            "thumbnail": "https://media.forgecdn.net/avatars/122/198/636411079960525560.png"
+            "info": "Adds a gun to shoot fluids at distance",
+            "thumbnail": "https://media.forgecdn.net/avatars/196/886/636888543301399103.png"
           },
           {
             "name": "cloneland",
@@ -111,6 +104,20 @@
             "role": "Owner",
             "info": "Allows use of a command to force any two creatures to fight (to the best of their abilities!)",
             "thumbnail": "https://media.forgecdn.net/avatars/236/899/637095931058231002.png"
+          },
+          {
+            "name": "skeppy-mod",
+            "title": "Skeppy Mod",
+            "role": "Owner",
+            "info": "Adds stuff related to Skeppy's videos and community.",
+            "thumbnail": "https://media.forgecdn.net/avatars/235/522/637086079296909151.png"
+          },
+          {
+            "name": "derpcats",
+            "title": "DerpCats",
+            "role": "Owner",
+            "info": "Adds a variety of strange cats",
+            "thumbnail": "https://media.forgecdn.net/avatars/122/198/636411079960525560.png"
           },
           {
             "name": "mcdevdate",
