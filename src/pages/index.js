@@ -26,7 +26,12 @@ const IndexPage = () => {
           <img alt="its_meow avatar" className="centerimg" src={icon} />
           <p
             align="center"
-            style={{ margin: "0", marginbottom: "20px", fontsize: "0.6rem" }}
+            style={{
+              margin: "0",
+              marginTop: "20px",
+              marginBottom: "20px",
+              fontsize: "0.6rem",
+            }}
           >
             its_meow avatar
           </p>
@@ -64,7 +69,7 @@ const IndexPage = () => {
               I'm a hobbyist developer, I love learning new technologies and
               improving my skills in all sorts of things. I love learning about
               computing, science, math, engineering, random trivia, chemistry,
-              and probably more.
+              and more.
             </p>
             <ShowMore duration="0.2s">
               <h4>Minecraft</h4>
