@@ -1,0 +1,111 @@
+.banner {
+  display: block;
+  position: relative;
+  max-height: 800px;
+  text-align: center;
+  z-index: -1;
+  margin-bottom: -8%;
+}
+
+.banner-container {
+  background: linear-gradient(
+    to top,
+    $primary-background,
+    $primary-background,
+    rgba($primary-background, 0.125),
+    transparent,
+    transparent,
+    transparent
+  );
+}
+
+.banner .image-wrapper {
+  max-height: 800px;
+  position: relative;
+  overflow: hidden;
+  background-color: black;
+}
+
+.banner .image-wrapper div {
+  max-height: 800px;
+  max-width: 1600px;
+  overflow: hidden;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-front {
+  position: absolute;
+  bottom: 40%;
+  z-index: 5;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.title-front .title {
+  color: #e85050;
+  background-color: rgba(20, 20, 20, 0.7);
+  border: 1px solid black;
+  padding: 3px;
+  margin-top: 5px;
+  width: 200px;
+  margin-left: 50%;
+  margin-right: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+}
+
+.avatar-container {
+  height: 200px;
+  width: 200px;
+  margin-left: 50%;
+  margin-right: 50%;
+  transform: translateX(-50%);
+  border: 5px solid rgba(230, 230, 230, 0.7);
+  border-radius: 200px;
+  overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  .title-front {
+    transform: scale(90%);
+    bottom: 35%;
+  }
+}
+
+@media (max-width: 900px) {
+  .title-front {
+    transform: scale(80%);
+    bottom: 30%;
+  }
+}
+
+@media (max-width: 800px) {
+  .title-front {
+    transform: scale(75%);
+    bottom: 25%;
+  }
+}
+
+@media (max-width: 700px) {
+  .title-front {
+    transform: scale(60%);
+    bottom: 20%;
+  }
+}
+
+@media (max-width: 600px) {
+  .title-front {
+    transform: scale(50%);
+    bottom: 10%;
+  }
+}
+
+@media (max-width: 500px) {
+  .title-front {
+    transform: scale(45%);
+    bottom: 5%;
+  }
+}

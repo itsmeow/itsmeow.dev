@@ -30,6 +30,13 @@ a.link-no-style {
   text-align: center;
 }
 
+.center-item-2 {
+  width: 100%;
+  margin-left: 50%;
+  margin-right: 50%;
+  transform: translateX(-50%);
+}
+
 hr {
   border: 0;
   height: 1px;

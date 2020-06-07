@@ -2,7 +2,7 @@ import React from "react"
 import { Container } from "react-bootstrap"
 import { CardList } from "../components/card"
 import { useStaticQuery, graphql } from "gatsby"
-
+import PebbleHost from "../components/pebblehost"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 const Mods = () => {
@@ -110,6 +110,16 @@ const Mods = () => {
           <noscript align="center">
             This page will not load properly without Javascript enabled.
           </noscript>
+          <PebbleHost
+            style={{
+              width: "100%",
+              maxWidth: "600px",
+              marginTop: "20px",
+              marginBottom: "20px",
+            }}
+            className="center-item-2 pebblebox"
+          />
+
           {items}
         </main>
       </Container>

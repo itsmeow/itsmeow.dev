@@ -11,16 +11,6 @@
   box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.01);
 }
 
-.rightbar {
-  width: 20%;
-  float: right;
-}
-
-.left-content {
-  margin: 0;
-  width: 80%;
-}
-
 .limit-width {
   width: 90%;
   margin-left: 5%;
@@ -33,12 +23,12 @@
   padding-right: 5%;
 }
 
-.left-content section.limit-width-pad hr {
+section.limit-width-pad hr {
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-.left-content section.limit-width-pad {
+section.limit-width-pad {
   padding-top: 15px;
   padding-bottom: 15px;
 }
@@ -50,33 +40,6 @@ main .rightbar {
 
 .show-small {
   display: none;
-}
-
-@media (max-width: 1109px) {
-  .rightbar {
-    display: none;
-    width: 0;
-    margin: 0;
-    float: none;
-  }
-  .left-content {
-    width: 100%;
-  }
-  .show-small {
-    display: contents;
-  }
-}
-
-@media (min-width: 575px) {
-  .flex-list-item.scale-prop {
-    width: 45%;
-  }
-}
-
-@media (max-width: 575px) {
-  .flex-list-item.scale-prop {
-    width: 90%;
-  }
 }
 
 .centerimg {
@@ -119,4 +82,43 @@ main .rightbar {
 .showMoreBlock.shown {
   height: auto;
   transform: scaleY(1);
+}
+
+.pebblebox {
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  background-color: #121212;
+  border: 1px solid #323232;
+  &:hover {
+    background-color: #161616;
+    transform: scale(1.05);
+  }
+}
+
+.pebblebox.center-item-2:hover {
+  transform: translateX(-50%) scale(1.05);
+}
+
+.basecolor {
+  color: $text-color;
+  &:hover {
+    color: $text-color;
+  }
+}
+
+.flex-list-item.scale-big {
+  margin-top: 20px;
+}
+
+@media (min-width: 1000px) {
+  .flex-list-item.scale-big {
+    width: 50%;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 1109px) {
+  .show-small {
+    display: contents;
+  }
 }

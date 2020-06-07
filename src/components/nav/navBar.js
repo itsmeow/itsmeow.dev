@@ -6,7 +6,7 @@ import NavDropdown from "./navDropdown.js"
 
 const CustomNavbar = ({ pageInfo }) => {
   return (
-    <Navbar sticky="top" variant="dark" expand="md" id="site-navbar">
+    <Navbar sticky="top" variant="dark" expand="lg" id="site-navbar">
       <h1 className="title">itsmeow.dev</h1>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -17,6 +17,9 @@ const CustomNavbar = ({ pageInfo }) => {
         >
           <NavItem to="/" eventKey="index">
             Home
+          </NavItem>
+          <NavItem to="/about" evenyKey="about">
+            About
           </NavItem>
           <NavItem to="/mods" eventKey="mods">
             Mods
