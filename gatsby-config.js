@@ -28,7 +28,7 @@ module.exports = {
           Tweets: {
             endpoint: `statuses/user_timeline`,
             params: {
-              screen_name: `it_is_meow`,
+              screen_name: `itsmeowdev`,
               include_rts: false,
               exclude_replies: true,
               tweet_mode: `extended`,

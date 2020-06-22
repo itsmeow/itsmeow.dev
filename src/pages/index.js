@@ -35,8 +35,8 @@ const IndexPage = () => {
               <FaGithub />
             </Card>
             <Card
-              link="https://twitter.com/it_is_meow"
-              text="Twitter - @it_is_meow"
+              link="https://twitter.com/itsmeowdev"
+              text="Twitter - @itsmeowdev"
             >
               <IconContext.Provider value={{ color: "#1DA1F2" }}>
                 <FaTwitter />
