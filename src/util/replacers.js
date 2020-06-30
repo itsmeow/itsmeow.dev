@@ -93,7 +93,7 @@ const floatToDouble = text => {
 const Methods = () => {
   return {
     "1.15 Render Updater": renderUpdater,
-    "1.16 Attribute Updater": attribUpdater,
+    "1.16 Attribute Updater (SRG)": attribUpdater,
     "Double -> Float Constant Replacer": doubleToFloat,
     "Float -> Double Constant Replacer": floatToDouble,
   }

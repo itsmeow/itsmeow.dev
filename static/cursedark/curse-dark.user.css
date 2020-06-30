@@ -2,7 +2,7 @@
 @name           Curse Dark
 @namespace      https://itsmeow.dev/cursedark
 @updateURL      https://itsmeow.dev/cursedark/curse-dark.user.css
-@version        1.1.6
+@version        1.1.7
 @description    Adds a dark theme to curseforge
 @author         its_meow
 ==/UserStyle== */
@@ -497,6 +497,9 @@
   }
   hr {
     border: 1px solid;
+  }
+  #field-description_ifr {
+    height: 60vh !important;
   }
 }
 
