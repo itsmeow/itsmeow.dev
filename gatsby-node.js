@@ -21,3 +21,22 @@ exports.onCreateNode = ({ graphql, actions }) => {
     isPermanent: true,
   })
 }
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+  type twitterStatusesUserTimelineTweetsEntities {
+    urls: [twitterStatusesUserTimelineTweetsEntitiesUrls]
+    media: [twitterStatusesUserTimelineTweetsEntitiesMedia]
+  }
+  type twitterStatusesUserTimelineTweetsEntitiesUrls {
+    display_url: String!
+    expanded_url: String!
+  }
+  type twitterStatusesUserTimelineTweetsEntitiesMedia {
+    display_url: String!
+    expanded_url: String!
+    media_url_https: String!
+  }
+  `
+  createTypes(typeDefs)
+}
