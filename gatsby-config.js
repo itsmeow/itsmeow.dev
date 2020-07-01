@@ -61,11 +61,12 @@ module.exports = {
         background_color: `#121212`,
         theme_color: `#121212`,
         display: `minimal-ui`,
-        icon: `src/data/icon.png`,
+        icon: `src/data/icon.webp`,
+        icon_options: {
+          purpose: `maskable`,
+        },
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
   ],
 }

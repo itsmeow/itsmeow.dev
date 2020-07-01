@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 import { IconContext } from "react-icons"
 import {
   FaTwitter,
@@ -10,7 +11,7 @@ import {
 } from "react-icons/fa"
 
 const TwitterWidget = () => {
-  let { tweets, twitterProfile } = useStaticQuery(
+  let { tweets, twitterProfile, iconImage } = useStaticQuery(
     graphql`
       query {
         tweets: allTwitterStatusesUserTimelineTweets {
@@ -51,6 +52,13 @@ const TwitterWidget = () => {
             followers_count
           }
         }
+        iconImage: file(relativePath: { eq: "icon.webp" }) {
+          childImageSharp {
+            fixed(width: 48, quality: 100, webpQuality: 100) {
+              ...GatsbyImageSharpFixed_withWebp
+            }
+          }
+        }
       }
     `
   )
@@ -64,12 +72,10 @@ const TwitterWidget = () => {
           <h2>Tweets</h2>
         </div>
         <div className="profile-details">
-          <img
+          <Img
             className="profile-image"
             alt="Twitter Profile Icon"
-            src={
-              "icons/icon-48x48.png" || twitterProfile.profile_image_url_https
-            } // because god that is so low res
+            fluid={iconImage.childImageSharp.fixed}
           />
           <div className="profile-text">
             <a

@@ -5,24 +5,24 @@ import Img from "gatsby-image"
 const Banner = ({ src }) => {
   const sources = useStaticQuery(graphql`
     query {
-      bannerImage: file(relativePath: { eq: "banner.png" }) {
+      bannerImage: file(relativePath: { eq: "banner.webp" }) {
         childImageSharp {
           fluid(maxHeight: 800, quality: 100) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
-      bannerImage2: file(relativePath: { eq: "banner2.png" }) {
+      bannerImage2: file(relativePath: { eq: "banner2.webp" }) {
         childImageSharp {
           fluid(maxHeight: 800, quality: 100) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
-      iconImage: file(relativePath: { eq: "icon.png" }) {
+      iconImage: file(relativePath: { eq: "icon.webp" }) {
         childImageSharp {
           fluid(maxHeight: 200, quality: 100) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }

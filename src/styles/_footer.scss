@@ -32,8 +32,7 @@ footer .bottomfooter {
   padding-bottom: 4px;
 }
 
-.topfooter img {
-  height: $footer-top-height - 20px;
+.topfooter div.gatsby-image-wrapper {
   margin: 10px;
 }
 
@@ -46,7 +45,7 @@ footer .bottomfooter {
 .topfooter .github * {
   transition-duration: 0.25s;
   -webkit-transition-duration: 0.25s;
-  color: #777777;
+  color: $footer-text-color;
 }
 
 .topfooter .github:hover * {

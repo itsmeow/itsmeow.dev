@@ -1,8 +1,19 @@
 import React from "react"
-
-import PebbleHostLogo from "../data/pebblehost.png"
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 
 const PebbleHost = ({ ...remainder }) => {
+  const sources = useStaticQuery(graphql`
+    query {
+      pebbleImage: file(relativePath: { eq: "pebblehost.png" }) {
+        childImageSharp {
+          fluid(maxHeight: 267) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
   return (
     <div className="pebblebox" {...remainder}>
       <a
@@ -14,18 +25,20 @@ const PebbleHost = ({ ...remainder }) => {
         <div align="center" style={{ fontWeight: "bold", fontSize: "20px" }}>
           Sponsored By
         </div>
-        <img
+        <div
           style={{
-            maxWidth: "100%",
             paddingLeft: "10%",
             paddingRight: "10%",
             paddingTop: "5%",
             paddingBottom: "5%",
-            maxHeight: "267.5px",
           }}
-          src={PebbleHostLogo}
-          alt="PebbleHost sponsor logo"
-        />
+        >
+          <Img
+            fluid={sources.pebbleImage.childImageSharp.fluid}
+            alt="PebbleHost sponsor logo"
+          />
+        </div>
+
         <div
           align="center"
           style={{
