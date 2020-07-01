@@ -46,9 +46,19 @@
   background-color: #202020;
   color: #707070;
   text-decoration: none;
-  position: absolute;
-  top: 70%;
-  left: calc(50% - 5rem);
   visibility: hidden;
   opacity: 0;
+  margin-left: 50%;
+  margin-right: 50%;
+  transform: translateX(-50%);
+  margin-top: 50px;
+}
+
+#darkmain {
+  width: 100%;
+}
+
+#center-screen {
+  margin-top: calc(50vh - 80px);
+  transform: translateY(-50%);
 }

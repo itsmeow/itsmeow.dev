@@ -29,7 +29,11 @@ const ReplaceTool = () => {
   }
   let selectOptions = []
   for (const key of Object.keys(Methods())) {
-    selectOptions.push(<option value={key}>{key}</option>)
+    selectOptions.push(
+      <option key={key} value={key}>
+        {key}
+      </option>
+    )
   }
   return (
     <Layout pageInfo={{ pageName: "replacetool" }}>

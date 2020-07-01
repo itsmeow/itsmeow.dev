@@ -75,7 +75,7 @@ const TwitterWidget = () => {
           <Img
             className="profile-image"
             alt="Twitter Profile Icon"
-            fluid={iconImage.childImageSharp.fixed}
+            fixed={iconImage.childImageSharp.fixed}
           />
           <div className="profile-text">
             <a
