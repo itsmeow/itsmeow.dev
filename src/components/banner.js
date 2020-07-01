@@ -7,14 +7,14 @@ const Banner = ({ src }) => {
     query {
       bannerImage: file(relativePath: { eq: "banner.webp" }) {
         childImageSharp {
-          fluid(maxHeight: 800, quality: 100) {
+          fluid(maxHeight: 800, quality: 75) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
       bannerImage2: file(relativePath: { eq: "banner2.webp" }) {
         childImageSharp {
-          fluid(maxHeight: 800, quality: 100) {
+          fluid(maxHeight: 800, quality: 75) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
