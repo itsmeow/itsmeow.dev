@@ -119,6 +119,38 @@
   }
 }
 
+@media (max-width: 350px) {
+  .card-list {
+    grid-template-columns: repeat(auto-fit, 9.5rem);
+  }
+  .element svg {
+    width: 8.05rem;
+  }
+  .element img {
+    width: 8.05rem;
+  }
+  .element p {
+    width: 8.05rem;
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .card-list {
+    grid-template-columns: repeat(auto-fit, 12.65rem);
+  }
+  .element svg {
+    width: 11.25rem;
+  }
+  .element img {
+    width: 11.25rem;
+  }
+  .element p {
+    width: 11.25rem;
+    font-size: 0.8rem;
+  }
+}
+
 .element a {
   text-decoration: none;
   color: #e2e2e2;

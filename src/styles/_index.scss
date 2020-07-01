@@ -59,7 +59,6 @@ main .rightbar {
 }
 
 .flex-list .flex-list-item {
-  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,10 +109,32 @@ main .rightbar {
   margin-top: 20px;
 }
 
-@media (min-width: 1000px) {
+.flex-list-item.scale-big .pebblebox {
+  width: 100vw;
+  max-width: 600px;
+  height: 320px;
+}
+
+@media (min-width: 900px) {
   .flex-list-item.scale-big {
     width: 50%;
     margin-top: 0;
+  }
+}
+
+@media (max-width: 899px) {
+  .flex-list-item.scale-big {
+    max-width: 100vw;
+    .pebblebox {
+      margin-left: 10px;
+      margin-right: 10px;
+      a {
+        display: block;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
   }
 }
 

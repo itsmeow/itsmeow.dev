@@ -163,6 +163,13 @@
         "title": "Completed & Public Commissions",
         "list": [
           {
+            "name": "toad-terror",
+            "title": "Toad Terror",
+            "role": "Com. Programmer",
+            "info": "Adds a toad boss and summon",
+            "thumbnail": "https://media.forgecdn.net/avatars/282/426/637289086612244997.png"
+          },
+          {
             "name": "sbm-dead-mans-satchel",
             "title": "[SBM] Dead Man's Satchel",
             "role": "Com. Programmer/Artist",

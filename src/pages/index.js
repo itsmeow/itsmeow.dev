@@ -92,13 +92,7 @@ const IndexPage = () => {
               className="flex-list-item scale-big"
               style={{ height: "320px" }}
             >
-              <PebbleHost
-                style={{
-                  width: "100%",
-                  maxWidth: "600px",
-                  height: "320px",
-                }}
-              />
+              <PebbleHost />
             </div>
           </div>
         </section>

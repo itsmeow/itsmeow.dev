@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import Avatar from "./avatar"
 
 const Banner = ({ src }) => {
   const sources = useStaticQuery(graphql`
@@ -19,41 +20,32 @@ const Banner = ({ src }) => {
           }
         }
       }
-      iconImage: file(relativePath: { eq: "icon.webp" }) {
-        childImageSharp {
-          fluid(maxHeight: 200, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
     }
   `)
   return (
-    <div className="banner-pane">
-      <div className="banner-container">
-        <div className="banner">
-          <div className="title-front">
-            <div className="avatar-container">
+    <>
+      <div className="banner-pane">
+        <div className="banner-container">
+          <div className="banner">
+            <div className="title-front">
+              <Avatar />
+              <div className="title">itsmeow.dev</div>
+            </div>
+            <div className="image-wrapper">
               <Img
-                fluid={sources.iconImage.childImageSharp.fluid}
+                fluid={
+                  src === "1"
+                    ? sources.bannerImage.childImageSharp.fluid
+                    : sources.bannerImage2.childImageSharp.fluid
+                }
                 align="center"
               />
             </div>
-            <div className="title">itsmeow.dev</div>
-          </div>
-          <div className="image-wrapper">
-            <Img
-              fluid={
-                src === "1"
-                  ? sources.bannerImage.childImageSharp.fluid
-                  : sources.bannerImage2.childImageSharp.fluid
-              }
-              align="center"
-            />
           </div>
         </div>
       </div>
-    </div>
+      <Avatar className="avatar-small" />
+    </>
   )
 }
 
