@@ -27,9 +27,6 @@ const CustomNavbar = ({ pageInfo }) => {
           <NavItem to="/plugins" eventKey="plugins">
             Plugins
           </NavItem>
-          <NavItem external to="https://play.itsmeow.dev/">
-            Server
-          </NavItem>
           <NavDropdown text="Misc Projects">
             <NavDropdownItem to="/cursedark" eventKey="cursedark">
               Curse Dark Theme
