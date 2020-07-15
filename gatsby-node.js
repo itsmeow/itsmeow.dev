@@ -24,6 +24,9 @@ exports.onCreateNode = ({ graphql, actions }) => {
 exports.createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions
   const typeDefs = `
+  type twitterStatusesUserTimelineTweets implements Node {
+    entities: twitterStatusesUserTimelineTweetsEntities
+  }
   type twitterStatusesUserTimelineTweetsEntities {
     urls: [twitterStatusesUserTimelineTweetsEntitiesUrls]
     media: [twitterStatusesUserTimelineTweetsEntitiesMedia]
