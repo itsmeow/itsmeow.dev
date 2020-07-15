@@ -9,6 +9,7 @@ import {
   FaHeart,
   FaCalendar,
 } from "react-icons/fa"
+import he from "he"
 
 const TwitterWidget = () => {
   let { tweets, twitterProfile, iconImage } = useStaticQuery(
@@ -107,7 +108,7 @@ const TwitterWidget = () => {
             style={{ display: "block" }}
           >
             <p className="tweet-content">
-              {node.full_text.split(`#`)[0].split(`https`)[0]}
+              {he.decode(node.full_text.split(`#`)[0].split(`https`)[0])}
             </p>
             {node.entities.urls.length > 0
               ? node.entities.urls.map(({ display_url, expanded_url }) => (
