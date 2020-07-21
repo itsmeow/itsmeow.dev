@@ -170,6 +170,13 @@
             "thumbnail": "https://media.forgecdn.net/avatars/282/426/637289086612244997.png"
           },
           {
+            "name": "snail-mail",
+            "title": "Snail Mail",
+            "role": "Com. Programmer",
+            "info": "Lets you deliver mail by snail!",
+            "thumbnail": "https://media.forgecdn.net/avatars/287/318/637307850445362029.png"
+          },
+          {
             "name": "sbm-dead-mans-satchel",
             "title": "[SBM] Dead Man's Satchel",
             "role": "Com. Programmer/Artist",
