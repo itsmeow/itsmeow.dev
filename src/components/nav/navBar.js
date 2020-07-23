@@ -3,11 +3,26 @@ import { Navbar, Nav } from "react-bootstrap"
 import NavItem from "./navItem.js"
 import NavDropdownItem from "./navDropdownItem.js"
 import NavDropdown from "./navDropdown.js"
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 
 const CustomNavbar = ({ pageInfo }) => {
+  const sources = useStaticQuery(graphql`
+    query {
+      textImage: file(relativePath: { eq: "text.png" }) {
+        childImageSharp {
+          fixed(height: 40) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `)
   return (
     <Navbar sticky="top" variant="dark" expand="lg" id="site-navbar">
-      <h1 className="title">itsmeow.dev</h1>
+      <div className="title">
+        <Img fixed={sources.textImage.childImageSharp.fixed} align="center" />
+      </div>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav
