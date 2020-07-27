@@ -29,7 +29,6 @@ const Banner = ({ src }) => {
           <div className="banner">
             <div className="title-front">
               <Avatar />
-              <div className="title">itsmeow.dev</div>
             </div>
             <div className="image-wrapper">
               <Img
