@@ -1,14 +1,14 @@
-main#replace-page {
+main.replace-page {
   background-color: #121212;
   color: white;
   font-family: Verdana;
   overflow: hidden;
   height: 100vh;
 }
-label#replace-select-label {
+label.replace-select-label {
   margin-right: 10px;
 }
-select#replace-select {
+select.replace-select {
   margin: 0;
   padding: 0;
   background-color: #303030;
@@ -17,8 +17,8 @@ select#replace-select {
   margin-top: 1.25%;
   margin-bottom: 1.25%;
 }
-textarea#input-area,
-textarea#output-area {
+textarea.input-area,
+textarea.output-area {
   display: block;
   width: 100%;
   background-color: black;
@@ -30,24 +30,43 @@ textarea#output-area {
   caret-color: #00ff00;
   color: #00ff00;
 }
-textarea#input-area {
+textarea.input-area-half {
+  display: block;
+  width: 50%;
+  height: 70%;
+  background-color: black;
+  color: white;
+  border: 1px solid #202020;
+  border-radius: 10px;
+  resize: none;
+  padding: 10px;
+  caret-color: #00ff00;
+  color: #00ff00;
+  float: left;
+}
+textarea.input-area {
   height: 61.25%;
   margin-bottom: 2.5%;
 }
-div#output-container {
+div.output-container {
   height: 25.25%;
-  textarea#output-area {
+  textarea.output-area {
     height: 100%;
   }
 }
-div#copy-button-container {
+div.update-button-container {
+  width: 20%;
+  height: 0;
+  clear: left;
+}
+div.copy-button-container {
   width: 20%;
   height: 0;
   position: relative;
   top: calc(-4rem - 5px);
   right: calc(-80% + 5px);
 }
-button#copy-button {
+button.copy-button {
   width: 100%;
   height: 4rem;
   font-size: 1rem;

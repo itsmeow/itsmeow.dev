@@ -90,13 +90,28 @@ const floatToDouble = text => {
   }
   return text
 }
+const modelRotateAngles = text => {
+  const matches = text.match(/^[\s]*this.setRotateAngle.*;/gm)
+  if (!matches) {
+    return ""
+  }
+  return matches.join("\n")
+}
+
 const Methods = () => {
   return {
     "1.15 Render Updater": renderUpdater,
     "1.16 Attribute Updater (SRG)": attribUpdater,
     "Double -> Float Constant Replacer": doubleToFloat,
     "Float -> Double Constant Replacer": floatToDouble,
+    "Model Rotate Angles": modelRotateAngles,
   }
 }
 export default Methods
-export { renderUpdater, attribUpdater }
+export {
+  renderUpdater,
+  attribUpdater,
+  doubleToFloat,
+  floatToDouble,
+  modelRotateAngles,
+}

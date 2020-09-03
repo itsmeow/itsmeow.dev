@@ -42,12 +42,12 @@ const ReplaceTool = () => {
         description="A thing to mess around with Regex"
       />
       <Container>
-        <main id="replace-page">
-          <label htmlFor="replace-select" id="replace-select-label">
+        <main className="replace-page">
+          <label htmlFor="replace-select" className="replace-select-label">
             Replacement:
           </label>
           <select
-            id="replace-select"
+            className="replace-select"
             value={getReplacer}
             onChange={updateReplacer}
             onBlur={null}
@@ -55,19 +55,19 @@ const ReplaceTool = () => {
             {selectOptions}
           </select>
           <textarea
-            id="input-area"
+            className="input-area"
             value={inText}
             onChange={event => updateIn(event.target.value)}
           ></textarea>
-          <div id="output-container">
+          <div className="output-container">
             <textarea
-              id="output-area"
+              className="output-area"
               value={outText}
               ref={textAreaRef}
               readOnly
             ></textarea>
-            <div id="copy-button-container">
-              <button onClick={copyToClipboard} id="copy-button">
+            <div className="copy-button-container">
+              <button onClick={copyToClipboard} className="copy-button">
                 Copy To Clipboard
               </button>
             </div>
