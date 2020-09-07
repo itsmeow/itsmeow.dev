@@ -58,7 +58,7 @@ const CurseDark = () => {
       }, 1000)
     } else if (installPhase === "usercss") {
       if (typeof window !== undefined) {
-        window.open("cursedark/curse-dark.user.css", "_blank")
+        window.open("curse-dark.user.css", "_blank")
       }
       setButtonText("Done")
       setInstallPhase("reset")
