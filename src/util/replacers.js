@@ -66,6 +66,21 @@ const attribUpdater = text => {
   text = text.replace(/(?<=\));/gm, "")
   return text
 }
+const attribUpdaterToMCP = text => {
+  return text
+    .replace(/func_233815_a_/gm, "createMutableAttribute")
+    .replace(/func_233814_a_/gm, "createMutableAttribute")
+    .replace(/field_233818_a_/gm, "MAX_HEALTH")
+    .replace(/field_233819_b_/gm, "FOLLOW_RANGE")
+    .replace(/field_233821_d_/gm, "MOVEMENT_SPEED")
+    .replace(/field_233823_f_/gm, "ATTACK_DAMAGE")
+    .replace(/field_233825_h_/gm, "ATTACK_SPEED")
+    .replace(/field_233822_e_/gm, "FLYING_SPEED")
+    .replace(/field_233820_c_/gm, "KNOCKBACK_RESISTANCE")
+}
+const attribUpdaterMCP = text => {
+  return attribUpdaterToMCP(attribUpdater(text))
+}
 const doubleToFloat = text => {
   const matches = text.match(/\d+(\.\d+)?[dD](?!(\.\d+)?[fF])/gm)
   if (matches != null && matches.length > 0) {
@@ -102,6 +117,7 @@ const Methods = () => {
   return {
     "1.15 Render Updater": renderUpdater,
     "1.16 Attribute Updater (SRG)": attribUpdater,
+    "1.16 Attribute Updater (MCP)": attribUpdaterMCP,
     "Double -> Float Constant Replacer": doubleToFloat,
     "Float -> Double Constant Replacer": floatToDouble,
     "Model Rotate Angles": modelRotateAngles,
