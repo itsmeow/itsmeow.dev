@@ -65,8 +65,8 @@ const IndexPage = () => {
               </IconContext.Provider>
             </Card>
             <Card
-              link="https://www.twitch.tv/ist_meow"
-              text="Twitch - ist_meow"
+              link="https://www.twitch.tv/itsmeowdev"
+              text="Twitch - itsmeowdev"
             >
               <IconContext.Provider value={{ color: "#9146FF" }}>
                 <FaTwitch />

@@ -2,12 +2,12 @@ exports.onCreateNode = ({ graphql, actions }) => {
   const { createRedirect } = actions
   createRedirect({
     fromPath: "/twitch",
-    toPath: "https://www.twitch.tv/ist_meow",
+    toPath: "https://twitch.itsmeow.dev/",
     isPermanent: true,
   })
   createRedirect({
     fromPath: "/patreon",
-    toPath: "https://www.patreon.com/its_meow",
+    toPath: "https://patreon.itsmeow.dev/",
     isPermanent: true,
   })
   createRedirect({
