@@ -43,8 +43,8 @@ const IndexPage = () => {
               </IconContext.Provider>
             </Card>
             <Card
-              link="https://www.curseforge.com/members/ist_meow/projects"
-              text="CurseForge - ist_meow"
+              link="https://www.curseforge.com/members/itsmeowdev/projects"
+              text="CurseForge - itsmeowdev"
             >
               <IconContext.Provider value={{ color: "#DE6A3B" }}>
                 <GoFlame />
