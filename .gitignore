@@ -68,5 +68,7 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
+# WebStorm
+.idea
 
 tutorial.md

@@ -61,7 +61,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#121212`,
         theme_color: `#121212`,
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `src/data/icon.webp`,
         icon_options: {
           purpose: `maskable`,
@@ -69,16 +69,16 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-offline`,	
+      resolve: `gatsby-plugin-offline`,
       options: {
         importWorkboxFrom: `local`,
-        globDirectory: 'public',
-        globPatterns: ['*/**'],
+        globDirectory: "public",
+        globPatterns: ["*/**"],
         cacheId: `gatsby-plugin-offline`,
         skipWaiting: true,
         clientsClaim: true,
-        directoryIndex: 'index.html',
-      }
-    }
+        directoryIndex: "index.html",
+      },
+    },
   ],
 }
