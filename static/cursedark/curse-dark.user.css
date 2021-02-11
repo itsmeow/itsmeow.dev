@@ -2,7 +2,7 @@
 @name           Curse Dark
 @namespace      https://itsmeow.dev/cursedark
 @updateURL      https://itsmeow.dev/cursedark/curse-dark.user.css
-@version        1.2.0
+@version        1.2.1
 @description    Adds a dark theme to curseforge
 @author         its_meow
 ==/UserStyle== */
@@ -19,10 +19,10 @@
     color: #ffffffaa;
     font-size: 0.95rem;
     font-family: Consolas, sans-serif;
-    content: "Curse Dark by its_meow";
+    content: "Curse Dark by itsmeowdev";
     z-index: 100;
   }
-  a[href*="ist_meow"] {
+  a[href*="itsmeowdev"] {
     background-image: repeating-linear-gradient(
       45deg,
       violet,
@@ -41,7 +41,7 @@
     background-clip: text;
     animation: rainbow 8s ease infinite;
   }
-  a[href*="ist_meow"] * {
+  a[href*="itsmeowdev"] * {
     background-image: repeating-linear-gradient(
       45deg,
       violet,
