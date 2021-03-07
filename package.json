@@ -23,6 +23,7 @@
     "gatsby-transformer-json": "^3.0.0",
     "gatsby-transformer-sharp": "^3.0.0",
     "he": "^1.2.0",
+    "netlify-plugin-gatsby-cache": "^0.3.2",
     "node-sass": "^5.0.0",
     "prop-types": "^15.7.2",
     "radium": "^0.26.0",
@@ -47,7 +48,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby build --log-pages",
     "develop": "gatsby develop -H 0.0.0.0 -p 8000",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
