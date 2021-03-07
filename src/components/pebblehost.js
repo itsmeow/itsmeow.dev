@@ -1,19 +1,7 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import { StaticImage } from "gatsby-plugin-image"
 
 const PebbleHost = ({ ...remainder }) => {
-  const sources = useStaticQuery(graphql`
-    query {
-      pebbleImage: file(relativePath: { eq: "pebblehost.png" }) {
-        childImageSharp {
-          fluid(maxHeight: 267) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
   return (
     <div className="pebblebox" {...remainder}>
       <a
@@ -33,8 +21,10 @@ const PebbleHost = ({ ...remainder }) => {
             paddingBottom: "5%",
           }}
         >
-          <Img
-            fluid={sources.pebbleImage.childImageSharp.fluid}
+          <StaticImage
+            src="../data/logos/pebblehost.png"
+            height={267}
+            layout="constrained"
             alt="PebbleHost sponsor logo"
           />
         </div>

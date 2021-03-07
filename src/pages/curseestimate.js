@@ -42,7 +42,10 @@ const CurseEstimate = () => {
           <hr />
           {loading ? (
             <div>
-              <GridLoader css={"margin: 0 auto"} color="white" />
+              <GridLoader
+                css={"margin: 0 auto; display: block;"}
+                color="white"
+              />
               <h2>Computing with codes and algorithms...</h2>
             </div>
           ) : error ? (

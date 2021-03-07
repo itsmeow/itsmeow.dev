@@ -11,18 +11,38 @@ import { IconContext } from "react-icons"
 import { FaGithub, FaTwitter, FaTwitch, FaDiscord } from "react-icons/fa"
 
 import { GoFlame } from "react-icons/go"
-import YouTube from "../data/YouTube.svg"
-import Instagram from "../data/Instagram.svg"
+import YouTube from "../data/logos/svg/YouTube.svg"
+import Instagram from "../data/logos/svg/Instagram.svg"
 import PebbleHost from "../components/pebblehost"
 import Banner from "../components/banner"
 import ClientOnly from "../components/clientonly"
+import { useStaticQuery, graphql } from "gatsby"
 
 const IndexPage = () => {
+  let { image } = useStaticQuery(graphql`
+    {
+      image: file(relativePath: { eq: "banner.png" }) {
+        childImageSharp {
+          gatsbyImageData(quality: 75, layout: FULL_WIDTH, placeholder: BLURRED)
+        }
+      }
+    }
+  `)
   return (
     <Layout pageInfo={{ pageName: "index" }}>
-      <SEO title="Home" keywords={[`its_meow`, `itsmeow`]} />
+      <SEO
+        title="Home"
+        keywords={[
+          `its_meow`,
+          `itsmeow`,
+          `itsmeowdev`,
+          `minecraft`,
+          `mod developer`,
+          `developer`,
+        ]}
+      />
       <main>
-        <Banner src="1" />
+        <Banner image={image.childImageSharp.gatsbyImageData} />
         <section className="pad highlightsection">
           <h2 align="center" style={{ margintop: "20px" }} id="links">
             Links

@@ -3,25 +3,19 @@ import { Navbar, Nav } from "react-bootstrap"
 import NavItem from "./navItem.js"
 import NavDropdownItem from "./navDropdownItem.js"
 import NavDropdown from "./navDropdown.js"
-import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import { StaticImage } from "gatsby-plugin-image"
 
 const CustomNavbar = ({ pageInfo }) => {
-  const sources = useStaticQuery(graphql`
-    query {
-      textImage: file(relativePath: { eq: "text.png" }) {
-        childImageSharp {
-          fixed(height: 40) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-    }
-  `)
   return (
     <Navbar sticky="top" variant="dark" expand="lg" id="site-navbar">
       <div className="title">
-        <Img fixed={sources.textImage.childImageSharp.fixed} align="center" />
+        <StaticImage
+          src={"./../../data/logos/text.png"}
+          layout="fixed"
+          height={40}
+          align="center"
+          alt="itsmeow"
+        />
       </div>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -39,10 +33,10 @@ const CustomNavbar = ({ pageInfo }) => {
           <NavItem to="/mods" eventKey="mods">
             Mods
           </NavItem>
-          <NavItem to="/plugins" eventKey="plugins">
-            Plugins
+          <NavItem to="/projects" eventKey="projects">
+            Projects
           </NavItem>
-          <NavDropdown text="Misc Projects">
+          <NavDropdown text="Other Tools">
             <NavDropdownItem to="/cursedark" eventKey="cursedark">
               Curse Dark Theme
             </NavDropdownItem>

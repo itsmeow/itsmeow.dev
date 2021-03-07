@@ -9,11 +9,23 @@ module.exports = {
     description: `its_meow's Website`,
     author: `itsmeow`,
   },
+  flags: {
+    DEV_SSR: true,
+    FAST_DEV: true,
+  },
   plugins: [
+    {
+      resolve: "gatsby-plugin-eslint",
+      options: {
+        stages: ["develop"],
+        extensions: ["js", "jsx"],
+        exclude: ["node_modules", ".cache", "public"],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `./data/`,
+        path: `./src/data/`,
       },
     },
     {
@@ -52,7 +64,8 @@ module.exports = {
         anonymize: false,
       },
     },
-    `gatsby-image`,
+    `gatsby-plugin-image`,
+    `babel-preset-gatsby`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -62,7 +75,7 @@ module.exports = {
         background_color: `#121212`,
         theme_color: `#121212`,
         display: `standalone`,
-        icon: `src/data/icon.webp`,
+        icon: `src/data/icon_maskable.png`,
         icon_options: {
           purpose: `maskable`,
         },
@@ -70,15 +83,6 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-offline`,
-      options: {
-        importWorkboxFrom: `local`,
-        globDirectory: "public",
-        globPatterns: ["*/**"],
-        cacheId: `gatsby-plugin-offline`,
-        skipWaiting: true,
-        clientsClaim: true,
-        directoryIndex: "index.html",
-      },
     },
   ],
 }
