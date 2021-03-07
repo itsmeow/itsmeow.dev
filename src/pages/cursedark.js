@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import { useState, useEffect } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -58,7 +58,10 @@ const CurseDark = () => {
       }, 1000)
     } else if (installPhase === "usercss") {
       if (typeof window !== undefined) {
-        window.open("https://itsmeow.dev/cursedark/curse-dark.user.css", "_blank")
+        window.open(
+          "https://itsmeow.dev/cursedark/curse-dark.user.css",
+          "_blank"
+        )
       }
       setButtonText("Done")
       setInstallPhase("reset")

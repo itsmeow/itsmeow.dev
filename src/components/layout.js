@@ -5,7 +5,6 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
 import { Container, Row, Col } from "react-bootstrap"

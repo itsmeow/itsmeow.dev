@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import { useState } from "react"
 import Radium from "radium"
 import PropTypes from "prop-types"
 

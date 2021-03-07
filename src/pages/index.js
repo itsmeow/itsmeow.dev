@@ -1,4 +1,3 @@
-import React from "react"
 import { Card, CardList } from "../components/card"
 import PatreonButton from "../components/patreon"
 import TwitterWidget from "../components/twitter"

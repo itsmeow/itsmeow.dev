@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import { useState } from "react"
 import PropTypes from "prop-types"
 import GridLoader from "react-spinners/GridLoader"
 import useExchangeRates from "../hooks/useExchangeRate"

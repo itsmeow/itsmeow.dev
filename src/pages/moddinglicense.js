@@ -1,4 +1,3 @@
-import React from "react"
 import ModdingLicense from "../data/modding_license.png"
 import { Container } from "react-bootstrap"
 import Layout from "../components/layout"

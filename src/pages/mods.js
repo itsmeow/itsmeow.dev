@@ -1,4 +1,3 @@
-import React from "react"
 import { Container } from "react-bootstrap"
 import { CardList } from "../components/card"
 import { useStaticQuery, graphql } from "gatsby"

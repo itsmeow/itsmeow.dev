@@ -1,4 +1,3 @@
-import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { getImage, StaticImage, GatsbyImage } from "gatsby-plugin-image"
 import { IconContext } from "react-icons"

@@ -1,4 +1,3 @@
-import React from "react"
 import { Nav, Dropdown } from "react-bootstrap"
 import PropTypes from "prop-types"
 

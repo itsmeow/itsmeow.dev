@@ -1,4 +1,3 @@
-import React from "react"
 import { Navbar, Nav } from "react-bootstrap"
 import NavItem from "./navItem.js"
 import NavDropdownItem from "./navDropdownItem.js"
