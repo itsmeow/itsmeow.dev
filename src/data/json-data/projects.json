@@ -1,250 +1,74 @@
 {
-  "categories": [
+  "list": [
     {
-      "name": "mods",
-      "title": "Mods",
-      "list": [
-        {
-          "name": "betteranimalsplus",
-          "title": "Better Animals Plus",
-          "role": "Lead Programmer",
-          "info": "Adds a variety of animals",
-          "thumbnail": "https://media.forgecdn.net/avatars/311/893/637404046829447694.png",
-          "sitelink": "https://betteranimalsplus.com/"
-        },
-        {
-          "name": "better-animal-models",
-          "title": "Better Animal Models",
-          "role": "Lead Programmer",
-          "info": "Replaces vanilla entity models",
-          "thumbnail": "https://media.forgecdn.net/avatars/172/553/636737566894981598.png"
-        },
-        {
-          "name": "claimit",
-          "title": "ClaimIt",
-          "role": "Owner",
-          "info": "Land claiming mod for Forge with a focus on API and compatibility",
-          "thumbnail": "https://media.forgecdn.net/avatars/207/69/636963311039618129.png"
-        },
-        {
-          "name": "quickhomes",
-          "title": "QuickHomes",
-          "role": "Owner",
-          "info": "Adds /home and /sethome (singular homes)",
-          "thumbnail": "https://media.forgecdn.net/avatars/119/708/636405832983959874.png"
-        },
-        {
-          "name": "openscreens",
-          "title": "OpenScreens",
-          "role": "Owner",
-          "info": "Adds more displays to OpenComputers",
-          "thumbnail": "https://media.forgecdn.net/avatars/208/0/636971205912405161.png"
-        },
-        {
-          "name": "whisperwoods",
-          "title": "Whisperwoods",
-          "role": "Lead Programmer",
-          "info": "Adds a few spooky forest creatures. MMD SpookyJam 2019 submission",
-          "thumbnail": "https://media.forgecdn.net/avatars/234/374/637078348519310971.png"
-        },
-        {
-          "name": "grimoire-of-gaia-redux",
-          "title": "Grimoire of Gaia: Redux",
-          "role": "Lead Programmer",
-          "info": "Changes some of the Grimoire of Gaia models for a more fantasy-inspired aesthetic",
-          "thumbnail": "https://media.forgecdn.net/avatars/272/850/637252719395277470.png"
-        },
-        {
-          "name": "sbm-fluid-gun",
-          "title": "[SBM] Fluid Gun",
-          "role": "Owner",
-          "info": "Adds a gun to shoot fluids at distance",
-          "thumbnail": "https://media.forgecdn.net/avatars/196/886/636888543301399103.png"
-        },
-        {
-          "name": "multisting",
-          "title": "MultiSting",
-          "role": "Owner",
-          "info": "Configurable bee sting amounts",
-          "thumbnail": "https://media.forgecdn.net/avatars/307/952/637390131798213307.png"
-        },
-        {
-          "name": "cloneland",
-          "title": "CloneLand",
-          "role": "Owner",
-          "info": "Adds an indentical overworld and nether dimension to switch to",
-          "thumbnail": "https://media.forgecdn.net/avatars/103/114/636335688206280572.png"
-        },
-        {
-          "name": "bettertridentreturn",
-          "title": "Better Trident Return",
-          "role": "Owner",
-          "info": "Makes tridents with loyalty go back to the slot they were thrown from",
-          "customid": "334204",
-          "thumbnail": "https://media.forgecdn.net/avatars/217/516/637007414907599915.png"
-        },
-        {
-          "name": "sound-system-reloader",
-          "title": "Sound System Reloader",
-          "role": "Owner",
-          "info": "Reloads the Sound System on F3+S",
-          "thumbnail": "https://media.forgecdn.net/avatars/207/108/636963737968256082.png"
-        },
-        {
-          "name": "quickteleports",
-          "title": "QuickTeleports",
-          "role": "Owner",
-          "info": "Adds /tpa, /tpahere, and /tpaccept",
-          "thumbnail": "https://media.forgecdn.net/avatars/191/962/636862298406388999.png"
-        },
-        {
-          "name": "quickspawns",
-          "title": "QuickSpawns",
-          "role": "Owner",
-          "info": "Adds /setspawn and /spawn",
-          "thumbnail": "https://media.forgecdn.net/avatars/191/919/636862090088968993.png"
-        },
-        {
-          "name": "critter-fights",
-          "title": "Critter Fights",
-          "role": "Owner",
-          "info": "Allows use of a command to force any two creatures to fight (to the best of their abilities!)",
-          "thumbnail": "https://media.forgecdn.net/avatars/236/899/637095931058231002.png"
-        },
-        {
-          "name": "skeppy-mod",
-          "title": "Skeppy Mod",
-          "role": "Owner",
-          "info": "Adds stuff related to Skeppy's videos and community.",
-          "thumbnail": "https://media.forgecdn.net/avatars/235/522/637086079296909151.png"
-        },
-        {
-          "name": "derpcats",
-          "title": "DerpCats",
-          "role": "Owner",
-          "info": "Adds a variety of strange cats",
-          "thumbnail": "https://media.forgecdn.net/avatars/122/198/636411079960525560.png"
-        },
-        {
-          "name": "mcdevdate",
-          "title": "MCDevDate",
-          "role": "Owner",
-          "info": "Adds a text element with the amount of ingame days since Minecraft released",
-          "thumbnail": "https://media.forgecdn.net/avatars/136/51/636504900264935257.png"
-        },
-        {
-          "name": "mcmusicplayer",
-          "title": "MCMusic Player",
-          "role": "Owner",
-          "info": "Not maintained. Adds mp3 player GUI to game",
-          "thumbnail": "https://media.forgecdn.net/avatars/123/478/636415252077444035.png"
-        },
-        {
-          "name": "sounds-of-space",
-          "title": "Sounds Of Space",
-          "role": "Owner",
-          "info": "A mod for Kerbal Space Program that adds electromagnetic sounds of planets in space",
-          "url": "https://www.curseforge.com/kerbal/ksp-mods/sounds-of-space",
-          "customid": "305337",
-          "thumbnail": "https://media.forgecdn.net/avatars/175/418/636757457325251918.png"
-        },
-        {
-          "name": "claimit-api",
-          "title": "ClaimIt API",
-          "role": "Owner",
-          "info": "API for ClaimIt",
-          "thumbnail": "https://media.forgecdn.net/avatars/207/67/636963301846931076.png"
-        },
-        {
-          "name": "claimit-dynmap",
-          "title": "ClaimIt-Dynmap",
-          "role": "Owner",
-          "info": "Adds Dynmap markers for ClaimIt claims",
-          "thumbnail": "https://media.forgecdn.net/avatars/238/995/637110751694753684.png"
-        }
-      ]
+      "name": "HP OMEN Mindframe Control",
+      "github": "itsmeow/HPOmenMindframeControl",
+      "download_type": "github-release",
+      "description": "A self-made control software for the HP Omen Mindframe headset. Designed to be more lightweight than OMEN Command Center.",
+      "uses": "C#, Windows Forms, Costura.Fody, .NET",
+      "image": "HPOmen.png"
     },
     {
-      "name": "commissions",
-      "title": "Completed & Public Commissions",
-      "list": [
-        {
-          "name": "toad-terror",
-          "title": "Toad Terror",
-          "role": "Com. Programmer",
-          "info": "Adds a toad boss and summon",
-          "thumbnail": "https://media.forgecdn.net/avatars/282/426/637289086612244997.png"
-        },
-        {
-          "name": "snail-mail",
-          "title": "Snail Mail",
-          "role": "Com. Programmer",
-          "info": "Lets you deliver mail by snail!",
-          "thumbnail": "https://media.forgecdn.net/avatars/287/318/637307850445362029.png"
-        },
-        {
-          "name": "sbm-dead-mans-satchel",
-          "title": "[SBM] Dead Man's Satchel",
-          "role": "Com. Programmer/Artist",
-          "info": "Adds satchels that hold things when you die, highly configurable",
-          "thumbnail": "https://media.forgecdn.net/avatars/193/488/636868284453937209.png"
-        },
-        {
-          "name": "sbm-infinite-falling",
-          "title": "[SBM] Infinite Falling",
-          "role": "Com. Programmer",
-          "info": "Adds boots that teleport you to world height when you land",
-          "thumbnail": "https://media.forgecdn.net/avatars/192/871/636865714372250847.png"
-        },
-        {
-          "name": "sbm-breadstone",
-          "title": "[SBM] Breadstone",
-          "role": "Com. Programmer/Artist",
-          "info": "Joke mod adding various bread items and blocks",
-          "thumbnail": "https://media.forgecdn.net/avatars/188/880/636847292804568792.png"
-        },
-        {
-          "name": "sbm-hand-held-piston",
-          "title": "[SBM] Hand-Held Piston",
-          "role": "Com. Programmer/Artist",
-          "info": "Adds a handheld piston that can push blocks and tile entities",
-          "thumbnail": "https://media.forgecdn.net/avatars/207/46/636963150950587032.png"
-        }
-      ]
+      "name": "Spicetify Canvas",
+      "github": "itsmeow/Spicetify-Canvas",
+      "download_type": "github-source",
+      "description": "Implements Spotify Canvas (a mobile app exclusive feature that adds short, looping video to the background of a track) on the desktop client using Spicetify.",
+      "uses": "spicetify-cli, Spotify, JavaScript, Protobuf, Chromium Embedded Framework, CSS",
+      "image_gif": "SpicetifyCanvas.gif"
     },
     {
-      "name": "plugins",
-      "title": "Plugins",
-      "list": [
-        {
-          "name": "donationgoals",
-          "title": "Donation Goals (Sidebar)",
-          "role": "Owner",
-          "info": "Puts a donation goal with progress on the sidebar",
-          "thumbnail_local": "donationgoalicon.png",
-          "spigoturl": "donation-goals-sidebar.76402"
-        }
-      ]
+      "name": "Upload to CurseForge (GitHub Action)",
+      "github": "itsmeow/curseforge-upload",
+      "download_type": "link",
+      "download_link": "https://github.com/marketplace/actions/upload-to-curseforge",
+      "description": "A GitHub Action that allows workflows to upload files to CurseForge using the CurseForge file upload API",
+      "uses": "JavaScript, GitHub Actions, CurseForge, NodeJS"
     },
     {
-      "name": "contributor",
-      "title": "Contributor For",
-      "list": [
-        {
-          "name": "bewitchment-legacy",
-          "title": "Bewitchment (Legacy)",
-          "role": "Contributor (Programmer)",
-          "info": "Reboot of Witchery for MC 1.12 (Superseded)",
-          "thumbnail": "https://media.forgecdn.net/avatars/191/570/636860382144960012.png"
-        },
-        {
-          "name": "experienceore",
-          "title": "ExperienceOre",
-          "role": "Contributor (1.15.1 port)",
-          "info": "Adds an ore that gives experience",
-          "thumbnail": "https://media.forgecdn.net/avatars/65/283/636161301155518452.png"
-        }
-      ]
+      "name": "IMDLib",
+      "github": "itsmeow/IMDLib",
+      "download_type": "link",
+      "download_link": "https://maven.itsmeow.dev/dev/itsmeow/imdlib/imdlib/",
+      "description": "A shaded library for Minecraft mods implementing highly customizable and extensible entity builders, automatic configuration building, lambda-based entity render builders, and other utilities.",
+      "uses": "Java, Minecraft, Minecraft Forge, Gradle"
+    },
+    {
+      "name": "Temperature Viewer",
+      "github": "itsmeow/TemperatureView",
+      "download_type": "github-source",
+      "description": "Frontend and backend for a web page that stores temperature and humidity and displays live updating graphs over time.",
+      "uses": "JavaScript, NodeJS, React, Gatsby, SCSS, HTML, Express, MariaDB, SQL"
+    },
+    {
+      "name": "Temperature Reader",
+      "github": "itsmeow/TemperatureReader",
+      "download_type": "github-source",
+      "description": "NodeJS program that inserts temperature information read from GPIO into a database. Includes LED-based error indication.",
+      "uses": "JavaScript, NodeJS, GPIO, MariaDB, SQL, pigpio"
+    },
+    {
+      "name": "Pack Bot",
+      "github": "itsmeow/pack-bot",
+      "download_type": "github-source",
+      "youtube_link": "0UZRxrZybiA",
+      "description": "A Discord bot that allows creation of a collaborative Minecraft texture pack. Members are able to be randomly assigned a set of textures, pick which one they want to complete, and then automatically submit these textures for review, all taking place in Discord. Used to create Minecraft YouTuber a6d's \"Minecraft, but 100 kids made the pack\" video.",
+      "uses": "JavaScript, NodeJS, discord.js, Discord API"
+    },
+    {
+      "name": "twenty one pilots Level of Concern ARG Tester",
+      "github": "itsmeow/TOP-LoC-ARG-Tester",
+      "download_type": "github-source",
+      "description": "A Discord bot that allows testing of codes and keywords used in the twenty one pilots \"Level of Concern\" USB alternate reality game. It was used in the process of solving the ARG in a Discord server for puzzle-solvers.",
+      "uses": "JavaScript, NodeJS, discord.js, Discord API",
+      "image": "loc.png"
+    },
+    {
+      "name": "OpenTDB Viewer",
+      "github": "itsmeow/OpenTDBViewer",
+      "download_type": "github-source",
+      "external_link": "https://itsmeow.github.io/OpenTDBViewer/",
+      "description": "A web application allowing Trivia to be played using data from Open Trivia Database",
+      "uses": "JavaScript, Gatsby, HTML, SCSS, React, OpenTDB, Bootstrap"
     }
   ]
 }

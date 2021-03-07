@@ -1,6 +1,21 @@
 const { createRemoteFileNode } = require("gatsby-source-filesystem")
 const path = require("path")
+const mods = require("./src/data/json-data/mods.json")
 const projects = require("./src/data/json-data/projects.json")
+
+const evalImageId = (getNodesByType, image, folder) => {
+  const localAbsolutePath = path.resolve(__dirname, "src/data/" + folder, image)
+  let res = getNodesByType("File").find(
+    node =>
+      node.absolutePath.replace(/\\/g, "/") ===
+      localAbsolutePath.replace(/\\/g, "/")
+  )
+  if (res) {
+    return res.id
+  } else {
+    throw Error("COULD NOT FIND FILE MATCHING " + localAbsolutePath)
+  }
+}
 
 exports.sourceNodes = async ({
   actions: { createRedirect, createNode, createParentChildLink },
@@ -36,7 +51,24 @@ exports.sourceNodes = async ({
     isPermanent: true,
   })
 
-  for (category of projects.categories) {
+  for (project of projects.list) {
+    let node = project
+    node.id = createNodeId(`project-${project.name}`)
+    node.internal = {
+      type: "Project",
+      contentDigest: createContentDigest(project),
+    }
+    if (project.image) {
+      node.image___NODE = evalImageId(
+        getNodesByType,
+        project.image,
+        "project_image"
+      )
+    }
+    createNode(node)
+  }
+
+  for (category of mods.categories) {
     const { list } = category
     let parentNode
     {
@@ -97,21 +129,11 @@ exports.sourceNodes = async ({
           throw Error("COULD NOT CREATE REMOTE NODE FOR " + card.thumbnail)
         }
       } else if (card.thumbnail_local) {
-        const localAbsolutePath = path.resolve(
-          __dirname,
-          "src/data/thumbnail_local",
-          card.thumbnail_local
+        node.thumbnail_local___NODE = evalImageId(
+          getNodesByType,
+          card.thumbnail_local,
+          "thumbnail_local"
         )
-        let res = getNodesByType("File").find(
-          node =>
-            node.absolutePath.replace(/\\/g, "/") ===
-            localAbsolutePath.replace(/\\/g, "/")
-        )
-        if (res) {
-          node.thumbnail_local___NODE = res.id
-        } else {
-          throw Error("COULD NOT FIND FILE MATCHING " + localAbsolutePath)
-        }
       }
     }
   }
@@ -195,6 +217,18 @@ exports.createSchemaCustomization = ({ actions: { createTypes } }) => {
     customid: String
     url: String
     spigoturl: String
+  }
+  type Project implements Node {
+    name: String!
+    description: String!
+    uses: String!
+    github: String
+    download_type: String
+    download_link: String
+    youtube_link: String
+    external_link: String
+    image: File @link(from: "image___NODE")
+    image_gif: String
   }
   `)
 }
