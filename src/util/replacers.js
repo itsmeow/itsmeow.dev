@@ -1,4 +1,4 @@
-const renderUpdater = text => {
+const renderUpdater = (text) => {
   const rule = /((?<=addRender\().+?(?=,))/gm
   text = text.replace(/(?<=addRender\(.+)\.class(?=,)/gm, "")
   text = text.replace(
@@ -18,13 +18,13 @@ const renderUpdater = text => {
       let rule2 = new RegExp(`((?<=addRender\\()${m}(?=,))`, "gm")
       text = text.replace(
         rule2,
-        "ModEntities." + newM.toUpperCase() + ".entityType"
+        "ModEntities." + newM.toUpperCase() + ".getEntityType()"
       )
     }
   }
   return text
 }
-const attribUpdater = text => {
+const attribUpdater = (text) => {
   text = text.replace(/^\s+/gm, "")
   text = text.replace(
     /this\.getAttribute\((?=SharedMonsterAttributes\.[A-Z_]+\)\.setBaseValue\(\d+(\.\d+)?[dD]?\);)/gm,
@@ -66,7 +66,7 @@ const attribUpdater = text => {
   text = text.replace(/(?<=\));/gm, "")
   return text
 }
-const attribUpdaterToMCP = text => {
+const attribUpdaterToMCP = (text) => {
   return text
     .replace(/func_233815_a_/gm, "createMutableAttribute")
     .replace(/func_233814_a_/gm, "createMutableAttribute")
@@ -78,10 +78,10 @@ const attribUpdaterToMCP = text => {
     .replace(/field_233822_e_/gm, "FLYING_SPEED")
     .replace(/field_233820_c_/gm, "KNOCKBACK_RESISTANCE")
 }
-const attribUpdaterMCP = text => {
+const attribUpdaterMCP = (text) => {
   return attribUpdaterToMCP(attribUpdater(text))
 }
-const doubleToFloat = text => {
+const doubleToFloat = (text) => {
   const matches = text.match(/\d+(\.\d+)?[dD](?!(\.\d+)?[fF])/gm)
   if (matches != null && matches.length > 0) {
     for (const match of matches) {
@@ -93,7 +93,7 @@ const doubleToFloat = text => {
   }
   return text
 }
-const floatToDouble = text => {
+const floatToDouble = (text) => {
   const matches = text.match(/\d+(\.\d+)?[fF](?!(\.\d+)?[dD])/gm)
   if (matches != null && matches.length > 0) {
     for (const match of matches) {
@@ -105,12 +105,28 @@ const floatToDouble = text => {
   }
   return text
 }
-const modelRotateAngles = text => {
+const modelRotateAngles = (text) => {
   const matches = text.match(/^[\s]*this.setRotateAngle.*;/gm)
   if (!matches) {
     return ""
   }
   return matches.join("\n")
+}
+const entityConstructorUpdater = (text) => {
+  let type = text.match(/(?<=public\ )Entity\w+(?=\(World)/gm)
+  if (!type || type.length < 1) {
+    return ""
+  }
+  type = type[0]
+  text = text.replace(
+    /super\(ModEntities\.\w+\.entityType, world(In)?\);/gm,
+    "super(entityType, worldIn);"
+  )
+  text = text.replace(
+    /(?<=public\ Entity\w+\()World\ world(In)?(?=\)\ \{)/gm,
+    "EntityType<? extends " + type + "> entityType, World worldIn"
+  )
+  return text
 }
 
 const Methods = () => {
@@ -121,6 +137,7 @@ const Methods = () => {
     "Double -> Float Constant Replacer": doubleToFloat,
     "Float -> Double Constant Replacer": floatToDouble,
     "Model Rotate Angles": modelRotateAngles,
+    "Entity Constructor Updater": entityConstructorUpdater,
   }
 }
 export default Methods
@@ -130,4 +147,5 @@ export {
   doubleToFloat,
   floatToDouble,
   modelRotateAngles,
+  entityConstructorUpdater,
 }

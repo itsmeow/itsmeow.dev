@@ -6,7 +6,7 @@ const PebbleHost = ({ ...remainder }) => {
       <a
         rel="noopener noreferrer"
         target="_blank"
-        href="https://pebblehost.com/aff?id=1129"
+        href="https://pebblehost.itsmeow.dev/"
         className="link-no-style basecolor"
       >
         <div align="center" style={{ fontWeight: "bold", fontSize: "20px" }}>
