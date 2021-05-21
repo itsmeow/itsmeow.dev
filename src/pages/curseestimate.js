@@ -11,10 +11,15 @@ toast.configure({ position: "top-left" })
 
 const CurseEstimate = () => {
   const [slug, setSlug] = useState()
+  const [daysMissed, setDaysMissed] = useState(0)
 
-  const { loading, error, note, estimate } = useEstimate(slug, () => {
-    toast.error("Error getting points for mod")
-  })
+  const { loading, error, note, estimate } = useEstimate(
+    slug,
+    daysMissed,
+    () => {
+      toast.error("Error getting points for mod")
+    }
+  )
 
   return (
     <Layout pageInfo={{ pageName: "curseestimate" }}>
@@ -34,8 +39,9 @@ const CurseEstimate = () => {
             </p>
 
             <ModForm
-              onSubmit={value => {
-                setSlug(value)
+              onSubmit={(value) => {
+                setSlug(value.slug)
+                setDaysMissed(value.daysMissed)
               }}
             />
           </>

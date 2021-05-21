@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 
-export default function useEstimate(slug, onError = () => {}) {
+export default function useEstimate(slug, daysMissed, onError = () => {}) {
   const [estimate, setEstimate] = useState()
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false)
@@ -12,7 +12,9 @@ export default function useEstimate(slug, onError = () => {}) {
 
       let res
       try {
-        res = await fetch(`https://curseestimator.itsmeow.dev/estimate/${slug}`)
+        res = await fetch(
+          `https://curseestimator.itsmeow.dev/estimate/${slug}?days_missed=${daysMissed}`
+        )
       } catch (error) {
         setError(error.message)
       }
@@ -35,7 +37,7 @@ export default function useEstimate(slug, onError = () => {}) {
     if (slug) {
       fetchEstimate()
     }
-  }, [slug]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [slug, daysMissed]) // eslint-disable-line react-hooks/exhaustive-deps
 
   return { loading, error, note, estimate }
 }
