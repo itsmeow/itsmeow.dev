@@ -71,7 +71,7 @@ const IndexPage = () => {
             </Card>
             <Card
               link="https://www.youtube.com/user/hiotewdew"
-              text="YouTube - its_meow"
+              text="YouTube - itsmeowdev"
             >
               <img className="pad" src={YouTube} alt="YouTube Logo" />
             </Card>
