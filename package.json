@@ -24,7 +24,7 @@
     "gatsby-transformer-sharp": "^3.0.0",
     "he": "^1.2.0",
     "netlify-plugin-gatsby-cache": "^0.3.2",
-    "node-sass": "^5.0.0",
+    "node-sass": "^7.0.0",
     "prop-types": "^15.7.2",
     "radium": "^0.26.0",
     "react": "^17.0.1",
