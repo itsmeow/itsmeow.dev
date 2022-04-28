@@ -1,6 +1,6 @@
-const Card = props => {
+const Card = (props) => {
   return (
-    <div className="element">
+    <div className="card-basic">
       <a rel="noopener noreferrer" target="_blank" href={props.link}>
         {props.children}
         <p>{props.text}</p>
@@ -9,7 +9,7 @@ const Card = props => {
   )
 }
 
-const CardList = props => {
+const CardList = (props) => {
   return <div className="card-list">{props.children}</div>
 }
 

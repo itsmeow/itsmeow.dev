@@ -8,9 +8,9 @@ const PoseGen = () => {
   const [inText, setInText] = useState("")
   const [inText2, setInText2] = useState("")
   const [outText, setOutText] = useState("")
-  const updateOut = e => {
+  const updateOut = () => {
     const getAngles = /this\.setRotateAngle.*;/gm
-    const getName = t => {
+    const getName = (t) => {
       const matches = t.match(/(?<=this\.setRotateAngle\()\S*(?=,)/g)
       if (matches) {
         return matches[0]
@@ -30,20 +30,20 @@ const PoseGen = () => {
       )
       let pose1 = "public void pose1() {\n"
       let pose2 = "public void pose2() {\n"
-      d.forEach(part => {
+      d.forEach((part) => {
         if (part.added || part.removed) {
           let angles = part.value.match(getAngles)
           if (angles) {
-            angles.forEach(val => {
+            angles.forEach((val) => {
               let name = getName(val)
               if (part.added) {
                 pose2 += "    " + val + "\n"
-                if (leftMatches.find(s => s.includes(name)) === undefined) {
+                if (leftMatches.find((s) => s.includes(name)) === undefined) {
                   pose1 += `    this.setRotateAngle(${name}, 0.0F, 0.0F, 0.0F);\n`
                 }
               } else if (part.removed) {
                 pose1 += "    " + val + "\n"
-                if (rightMatches.find(s => s.includes(name)) === undefined) {
+                if (rightMatches.find((s) => s.includes(name)) === undefined) {
                   pose2 += `    this.setRotateAngle(${name}, 0.0F, 0.0F, 0.0F);\n`
                 }
               }
@@ -69,12 +69,12 @@ const PoseGen = () => {
           <textarea
             className="input-area-half"
             value={inText}
-            onChange={event => setInText(event.target.value)}
+            onChange={(event) => setInText(event.target.value)}
           ></textarea>
           <textarea
             className="input-area-half"
             value={inText2}
-            onChange={event => setInText2(event.target.value)}
+            onChange={(event) => setInText2(event.target.value)}
           ></textarea>
           <div className="output-container">
             <textarea

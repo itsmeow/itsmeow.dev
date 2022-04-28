@@ -3,7 +3,7 @@ import StyledButton from "./styledButton"
 
 const LinkButton = ({ className, href, children, blank, ...rest }) => {
   return (
-    <a
+    <a // eslint-disable-line react/jsx-no-target-blank
       href={href}
       target={blank === true ? "_blank" : null}
       rel={blank === true ? "noopener noreferrer" : null}

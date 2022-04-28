@@ -33,7 +33,7 @@ const ProjectPage = () => {
       }
     }
   `)
-  projects = projects.nodes.map(project => (
+  projects = projects.nodes.map((project) => (
     <ProjectCard
       style={{ marginBottom: "20px" }}
       className={project.image || project.image_gif ? null : "no-image"}
@@ -49,8 +49,14 @@ const ProjectPage = () => {
         description="A list of public software projects by itsmeowdev"
       />
       <main>
-        <h1 align="center">Projects</h1>
+        <h1 align="center" style={{ marginTop: "10px" }}>
+          Projects
+        </h1>
         <p align="center">A list of public software projects I've created</p>
+        <div className="center-item-2" style={{ maxWidth: "1500px" }}>
+          <hr />
+        </div>
+
         <section className="limit-width">
           <div className="center-sections">{projects}</div>
         </section>

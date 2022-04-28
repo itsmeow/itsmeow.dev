@@ -8,6 +8,7 @@ div.full-height {
 }
 
 a.link-no-style {
+  text-decoration: none;
   &:hover {
     text-decoration: none;
   }
@@ -45,8 +46,10 @@ a.link-no-style {
 hr {
   border: 0;
   height: 1px;
-  background-color: rgba(130, 130, 130, 0.75);
+  background-color: $hr-color;
   width: 100%;
+  box-shadow: 0 0 5px $hr-color;
+  opacity: 1;
 }
 
 h1,
@@ -55,4 +58,8 @@ h3,
 h4,
 h5 {
   font-weight: bold;
+}
+
+.no-gutters {
+  --bs-gutter-x: 0;
 }

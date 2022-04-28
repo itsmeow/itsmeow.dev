@@ -16,14 +16,14 @@ const AboutPage = () => {
   `)
   return (
     <Layout pageInfo={{ pageName: "about" }}>
-      <SEO title="About" description="About its_meow" />
+      <SEO title="About" description="About itsmeow" />
       <main>
         <Banner image={image.childImageSharp.gatsbyImageData} />
         <section
           style={{ marginTop: "0" }}
           className="highlightsection limit-width-pad"
         >
-          <h2 id="about_me">About its_meow</h2>
+          <h2 id="about_me">About itsmeow</h2>
           <p>
             I'm a hobbyist developer, I love learning new technologies and
             improving my skills in all sorts of things. I love learning about
@@ -36,7 +36,7 @@ const AboutPage = () => {
             Minecraft, using a variety of tools including Forge, Bukkit, and
             Fabric. Through this I have gained experience in supporting a large
             userbase and dealing with issue tickets. My mods combined have
-            amassed over 3.5 million downloads and continue to grow.
+            amassed over 20 million downloads and continue to grow.
           </p>
           <h4>Java</h4>
           <p>
@@ -74,8 +74,8 @@ const AboutPage = () => {
             I was just 10 years old. I learned React.js in a week so I could
             stop copy-pasting HTML on this website.
           </p>
-          <hr />
         </section>
+        <hr className="limit-width" />
         <section className="highlightsection limit-width-pad">
           <h2 id="comissions">Commissions</h2>
           <p>
@@ -83,8 +83,8 @@ const AboutPage = () => {
             related you want made, and some money, shoot me a message on my{" "}
             <a href="https://discord.itsmeow.dev/">Discord</a>.
           </p>
-          <hr />
         </section>
+        <hr className="limit-width" />
         <section className="highlightsection limit-width-pad">
           <h2 id="projects">Projects</h2>
           <p>
@@ -92,7 +92,6 @@ const AboutPage = () => {
             these listed on the mods and plugins pages. Almost all of my
             projects' source can be found on GitHub.
           </p>
-          <hr />
         </section>
       </main>
     </Layout>

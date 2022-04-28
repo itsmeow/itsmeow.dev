@@ -52,6 +52,8 @@
   margin-right: 50%;
   transform: translateX(-50%);
   margin-top: 50px;
+  transition-property: color;
+  transition-duration: 0.2s;
 }
 
 #darkmain {

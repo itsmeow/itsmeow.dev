@@ -37,7 +37,7 @@ export default function useEstimate(slug, daysMissed, onError = () => {}) {
     if (slug) {
       fetchEstimate()
     }
-  }, [slug, daysMissed]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [slug, daysMissed])
 
   return { loading, error, note, estimate }
 }

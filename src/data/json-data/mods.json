@@ -10,7 +10,7 @@
           "role": "Lead Programmer",
           "info": "Adds a variety of animals",
           "customid": "303557",
-          "thumbnail": "https://media.forgecdn.net/avatars/311/893/637404046829447694.png",
+          "thumbnail_url": "https://media.forgecdn.net/avatars/311/893/637404046829447694.png",
           "sitelink": "https://betteranimalsplus.com/"
         },
         {
@@ -19,7 +19,7 @@
           "role": "Lead Programmer",
           "info": "Replaces vanilla entity models",
           "customid": "287443",
-          "thumbnail": "https://media.forgecdn.net/avatars/172/553/636737566894981598.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/172/553/636737566894981598.png"
         },
         {
           "name": "claimit",
@@ -27,7 +27,7 @@
           "role": "Owner",
           "info": "Land claiming mod for Forge with a focus on API and compatibility",
           "customid": "324532",
-          "thumbnail": "https://media.forgecdn.net/avatars/207/69/636963311039618129.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/207/69/636963311039618129.png"
         },
         {
           "name": "quickhomes",
@@ -35,7 +35,7 @@
           "role": "Owner",
           "info": "Adds /home and /sethome (singular homes)",
           "customid": "277625",
-          "thumbnail": "https://media.forgecdn.net/avatars/119/708/636405832983959874.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/119/708/636405832983959874.png"
         },
         {
           "name": "openscreens",
@@ -43,7 +43,7 @@
           "role": "Owner",
           "info": "Adds more displays to OpenComputers",
           "customid": "325357",
-          "thumbnail": "https://media.forgecdn.net/avatars/208/0/636971205912405161.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/208/0/636971205912405161.png"
         },
         {
           "name": "whisperwoods",
@@ -51,7 +51,7 @@
           "role": "Lead Programmer",
           "info": "Adds a few spooky forest creatures. MMD SpookyJam 2019 submission",
           "customid": "349597",
-          "thumbnail": "https://media.forgecdn.net/avatars/234/374/637078348519310971.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/234/374/637078348519310971.png"
         },
         {
           "name": "grimoire-of-gaia-redux",
@@ -59,7 +59,7 @@
           "role": "Lead Programmer",
           "info": "Changes some of the Grimoire of Gaia models for a more fantasy-inspired aesthetic",
           "customid": "383918",
-          "thumbnail": "https://media.forgecdn.net/avatars/272/850/637252719395277470.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/272/850/637252719395277470.png"
         },
         {
           "name": "sbm-fluid-gun",
@@ -67,7 +67,7 @@
           "role": "Owner",
           "info": "Adds a gun to shoot fluids at distance",
           "customid": "317904",
-          "thumbnail": "https://media.forgecdn.net/avatars/391/664/637584841515276355.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/391/664/637584841515276355.png"
         },
         {
           "name": "multisting",
@@ -75,7 +75,7 @@
           "role": "Owner",
           "info": "Configurable bee sting amounts",
           "customid": "414846",
-          "thumbnail": "https://media.forgecdn.net/avatars/307/952/637390131798213307.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/307/952/637390131798213307.png"
         },
         {
           "name": "cloneland",
@@ -83,7 +83,7 @@
           "role": "Owner",
           "info": "Adds an indentical overworld and nether dimension to switch to",
           "customid": "262861",
-          "thumbnail": "https://media.forgecdn.net/avatars/103/114/636335688206280572.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/103/114/636335688206280572.png"
         },
         {
           "name": "bettertridentreturn",
@@ -91,7 +91,7 @@
           "role": "Owner",
           "info": "Makes tridents with loyalty go back to the slot they were thrown from",
           "customid": "334204",
-          "thumbnail": "https://media.forgecdn.net/avatars/217/516/637007414907599915.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/217/516/637007414907599915.png"
         },
         {
           "name": "sound-system-reloader",
@@ -99,7 +99,7 @@
           "role": "Owner",
           "info": "Reloads the Sound System on F3+S",
           "customid": "324565",
-          "thumbnail": "https://media.forgecdn.net/avatars/207/108/636963737968256082.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/207/108/636963737968256082.png"
         },
         {
           "name": "quickteleports",
@@ -107,7 +107,7 @@
           "role": "Owner",
           "info": "Adds /tpa, /tpahere, and /tpaccept",
           "customid": "315037",
-          "thumbnail": "https://media.forgecdn.net/avatars/191/962/636862298406388999.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/191/962/636862298406388999.png"
         },
         {
           "name": "quickspawns",
@@ -115,7 +115,7 @@
           "role": "Owner",
           "info": "Adds /setspawn and /spawn",
           "customid": "315007",
-          "thumbnail": "https://media.forgecdn.net/avatars/191/919/636862090088968993.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/191/919/636862090088968993.png"
         },
         {
           "name": "critter-fights",
@@ -123,7 +123,7 @@
           "role": "Owner",
           "info": "Allows use of a command to force any two creatures to fight (to the best of their abilities!)",
           "customid": "351798",
-          "thumbnail": "https://media.forgecdn.net/avatars/236/899/637095931058231002.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/236/899/637095931058231002.png"
         },
         {
           "name": "skeppy-mod",
@@ -131,7 +131,7 @@
           "role": "Owner",
           "info": "Adds stuff related to Skeppy's videos and community.",
           "customid": "350594",
-          "thumbnail": "https://media.forgecdn.net/avatars/235/522/637086079296909151.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/235/522/637086079296909151.png"
         },
         {
           "name": "derpcats",
@@ -139,7 +139,7 @@
           "role": "Owner",
           "info": "Adds a variety of strange cats",
           "customid": "262222",
-          "thumbnail": "https://media.forgecdn.net/avatars/122/198/636411079960525560.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/122/198/636411079960525560.png"
         },
         {
           "name": "mcdevdate",
@@ -147,7 +147,7 @@
           "role": "Owner",
           "info": "Adds a text element with the amount of ingame days since Minecraft released",
           "customid": "284609",
-          "thumbnail": "https://media.forgecdn.net/avatars/136/51/636504900264935257.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/136/51/636504900264935257.png"
         },
         {
           "name": "mcmusicplayer",
@@ -155,7 +155,7 @@
           "role": "Owner",
           "info": "Not maintained. Adds mp3 player GUI to game",
           "customid": "278444",
-          "thumbnail": "https://media.forgecdn.net/avatars/123/478/636415252077444035.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/123/478/636415252077444035.png"
         },
         {
           "name": "sounds-of-space",
@@ -164,7 +164,7 @@
           "info": "A mod for Kerbal Space Program that adds electromagnetic sounds of planets in space",
           "url": "https://www.curseforge.com/kerbal/ksp-mods/sounds-of-space",
           "customid": "305337",
-          "thumbnail": "https://media.forgecdn.net/avatars/175/418/636757457325251918.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/175/418/636757457325251918.png"
         },
         {
           "name": "claimit-api",
@@ -172,7 +172,7 @@
           "role": "Owner",
           "info": "API for ClaimIt",
           "customid": "324531",
-          "thumbnail": "https://media.forgecdn.net/avatars/207/67/636963301846931076.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/207/67/636963301846931076.png"
         },
         {
           "name": "claimit-dynmap",
@@ -180,7 +180,7 @@
           "role": "Owner",
           "info": "Adds Dynmap markers for ClaimIt claims",
           "customid": "353668",
-          "thumbnail": "https://media.forgecdn.net/avatars/238/995/637110751694753684.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/238/995/637110751694753684.png"
         }
       ]
     },
@@ -194,7 +194,7 @@
           "role": "Com. Programmer",
           "info": "Adds a toad boss and summon",
           "customid": "392392",
-          "thumbnail": "https://media.forgecdn.net/avatars/282/426/637289086612244997.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/282/426/637289086612244997.png"
         },
         {
           "name": "snail-mail",
@@ -202,7 +202,7 @@
           "role": "Com. Programmer",
           "info": "Lets you deliver mail by snail!",
           "customid": "396710",
-          "thumbnail": "https://media.forgecdn.net/avatars/287/318/637307850445362029.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/287/318/637307850445362029.png"
         },
         {
           "name": "sbm-dead-mans-satchel",
@@ -210,7 +210,7 @@
           "role": "Com. Programmer/Artist",
           "info": "Adds satchels that hold things when you die, highly configurable",
           "customid": "315998",
-          "thumbnail": "https://media.forgecdn.net/avatars/193/488/636868284453937209.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/193/488/636868284453937209.png"
         },
         {
           "name": "sbm-infinite-falling",
@@ -218,7 +218,7 @@
           "role": "Com. Programmer",
           "info": "Adds boots that teleport you to world height when you land",
           "customid": "315678",
-          "thumbnail": "https://media.forgecdn.net/avatars/192/871/636865714372250847.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/192/871/636865714372250847.png"
         },
         {
           "name": "sbm-breadstone",
@@ -226,7 +226,7 @@
           "role": "Com. Programmer/Artist",
           "info": "Joke mod adding various bread items and blocks",
           "customid": "313119",
-          "thumbnail": "https://media.forgecdn.net/avatars/188/880/636847292804568792.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/188/880/636847292804568792.png"
         },
         {
           "name": "sbm-hand-held-piston",
@@ -234,7 +234,7 @@
           "role": "Com. Programmer/Artist",
           "info": "Adds a handheld piston that can push blocks and tile entities",
           "customid": "324514",
-          "thumbnail": "https://media.forgecdn.net/avatars/207/46/636963150950587032.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/207/46/636963150950587032.png"
         }
       ]
     },
@@ -247,7 +247,7 @@
           "title": "Donation Goals (Sidebar)",
           "role": "Owner",
           "info": "Puts a donation goal with progress on the sidebar",
-          "thumbnail_local": "donationgoalicon.png",
+          "thumbnail_url_local": "donationgoalicon.png",
           "spigoturl": "donation-goals-sidebar.76402"
         }
       ]
@@ -262,7 +262,7 @@
           "role": "Contributor (Programmer)",
           "info": "Reboot of Witchery for MC 1.12 (Superseded)",
           "customid": "285439",
-          "thumbnail": "https://media.forgecdn.net/avatars/191/570/636860382144960012.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/191/570/636860382144960012.png"
         },
         {
           "name": "experienceore",
@@ -270,7 +270,7 @@
           "role": "Contributor (1.15.1 port)",
           "info": "Adds an ore that gives experience",
           "customid": "254417",
-          "thumbnail": "https://media.forgecdn.net/avatars/65/283/636161301155518452.png"
+          "thumbnail_url": "https://media.forgecdn.net/avatars/65/283/636161301155518452.png"
         }
       ]
     }

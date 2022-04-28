@@ -23,16 +23,16 @@ const Layout = ({ children, pageInfo }) => (
         }
       }
     `}
-    render={data => (
+    render={() => (
       <>
         <Container fluid className="px-0 main">
           <Navbar pageInfo={pageInfo} />
-          <Row noGutters>
+          <Row className="no-gutters">
             <Col>{children}</Col>
           </Row>
         </Container>
         <Container fluid className="px-0">
-          <Row noGutters>
+          <Row className="no-gutters">
             <Col>
               <Footer />
             </Col>

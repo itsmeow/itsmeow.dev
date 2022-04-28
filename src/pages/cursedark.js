@@ -40,7 +40,7 @@ const CurseDark = () => {
         }
       }, 20)
     } else if (installPhase === "install") {
-      if (typeof window !== undefined) {
+      if (window) {
         if (isFirefox) {
           window.location =
             "https://addons.mozilla.org/firefox/downloads/file/3374955/stylus-1.5.5-fx.xpi?src=dp-btn-primary"
@@ -57,7 +57,7 @@ const CurseDark = () => {
         setInstallPhase("usercss")
       }, 1000)
     } else if (installPhase === "usercss") {
-      if (typeof window !== undefined) {
+      if (window) {
         window.open(
           "https://itsmeow.dev/cursedark/curse-dark.user.css",
           "_blank"

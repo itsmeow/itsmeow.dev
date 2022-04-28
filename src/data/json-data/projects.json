@@ -6,7 +6,7 @@
       "download_type": "github-release",
       "description": "A self-made control software for the HP Omen Mindframe headset. Designed to be more lightweight than OMEN Command Center.",
       "uses": "C#, Windows Forms, Costura.Fody, .NET",
-      "image": "HPOmen.png"
+      "image_url": "HPOmen.png"
     },
     {
       "name": "Spicetify Canvas",
@@ -60,7 +60,7 @@
       "download_type": "github-source",
       "description": "A Discord bot that allows testing of codes and keywords used in the twenty one pilots \"Level of Concern\" USB alternate reality game. It was used in the process of solving the ARG in a Discord server for puzzle-solvers.",
       "uses": "JavaScript, NodeJS, discord.js, Discord API",
-      "image": "loc.png"
+      "image_url": "loc.png"
     },
     {
       "name": "OpenTDB Viewer",

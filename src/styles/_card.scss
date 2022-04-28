@@ -1,100 +1,179 @@
-.element {
+.card-basic {
   margin: 10px;
   border-radius: 5px;
-  border: 1px #323232 solid;
+  border: 1px $card-border-color solid;
+  background-color: $card-basic-background;
+  transition-property: background-color, transform, border-color, box-shadow;
+  transition-duration: 0.2s;
+  overflow: hidden;
+
+  &:hover {
+    border-color: $card-border-color-hover;
+    box-shadow: 0 0 5px $card-border-color-hover;
+    background-color: #0f0f0f;
+    transform: scale(1.01);
+  }
+
+  svg {
+    vertical-align: middle;
+    width: 11.25rem;
+    height: 11.25rem;
+    padding: 1rem;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: $primary-background;
+  }
+
+  img {
+    vertical-align: middle;
+    width: 11.25rem;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: $primary-background;
+  }
+
+  img.pad {
+    height: 11.25rem;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: #e2e2e2;
+  }
+
+  p {
+    width: 11.25rem;
+    margin-bottom: 8px;
+    padding-top: 8px;
+    margin-top: 0px;
+    font-size: 0.8rem;
+    text-align: center;
+    font-family: "Arial", sans;
+    font-weight: bold;
+  }
+}
+
+.card {
+  margin: 10px;
+  border-radius: 2px;
+  border: 1px $card-border-color solid;
   background-color: $card-background;
-  -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-}
+  transition-property: background-color, transform, border-color, box-shadow;
+  transition-duration: 0.2s;
+  overflow: hidden;
 
-.element:hover {
-  box-shadow: inset 0 0 0 1000px $card-background-hover;
-  transform: scale(1.12);
-}
+  &:hover {
+    border-color: $card-border-color-hover;
+    box-shadow: 0 0 5px $card-border-color-hover;
+    background-color: #0f0f0f;
+    transform: scale(1.01);
+  }
 
-.element_downloads {
-  text-align: center;
-  font-family: "Arial", sans;
-  font-size: 0.8rem;
-  margin-bottom: 8px;
-  margin-top: 0px;
-}
+  .mod-card-downloads {
+    text-align: center;
+    font-family: "Arial", sans;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    margin-top: 0px;
+  }
 
-.element svg {
-  vertical-align: middle;
-  width: 11.25rem;
-  height: 11.25rem;
-  padding: 1rem;
-  margin: 0;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  background-color: $primary-background;
-}
+  svg {
+    vertical-align: middle;
+    padding: 1rem;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: $primary-background;
+  }
 
-.element:hover svg {
-  box-shadow: inset 0 0 0 1000px $card-hover-overlay;
-}
+  img {
+    vertical-align: middle;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: $primary-background;
+  }
 
-.element img.pad {
-  height: 11.25rem;
-  padding: 1rem;
-  margin: 0;
-}
+  img.pad {
+    padding: 1rem;
+    margin: 0;
+  }
 
-.element img {
-  vertical-align: middle;
-  width: 11.25rem;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  background-color: $primary-background;
-}
+  p {
+    width: 11.25rem;
+    margin-bottom: 8px;
+    padding-top: 8px;
+    margin-top: 0px;
+    font-size: 0.8rem;
+    text-align: center;
+    font-family: "Arial", sans;
+    font-weight: bold;
+  }
 
-.element:hover img {
-  box-shadow: inset 0 0 0 1000px $card-hover-overlay;
-}
+  .mod-card-title {
+    text-align: center;
+    font-family: "Arial", sans;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    padding-top: 8px;
+    margin-top: 0px;
+  }
 
-.element p {
-  width: 11.25rem;
-  margin-bottom: 8px;
-  padding-top: 8px;
-  margin-top: 0px;
-  font-size: 0.8rem;
-  text-align: center;
-  border-radius: 5px;
-  font-family: "Arial", sans;
-  font-weight: bold;
-}
+  .mod-card-sub-role {
+    text-align: center;
+    font-family: "Arial", sans;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0px;
+    font-size: 0.75rem;
+    font-style: italic;
+  }
 
-.element_text {
-  text-align: center;
-  font-family: "Arial", sans;
-  font-size: 0.8rem;
-  margin-bottom: 8px;
-  padding-top: 8px;
-  margin-top: 0px;
-}
+  .mod-card-sub-info {
+    text-align: center;
+    font-family: "Arial", sans;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0px;
+    font-size: 0.7rem;
+  }
 
-.element_subtext_role {
-  text-align: center;
-  font-family: "Arial", sans;
-  font-size: 0.8rem;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding: 0px;
-  font-size: 0.75rem;
-  font-style: italic;
-}
+  a {
+    text-decoration: none;
+    color: #e2e2e2;
+  }
 
-.element_subtext_info {
-  text-align: center;
-  font-family: "Arial", sans;
-  font-size: 0.8rem;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding: 0px;
-  font-size: 0.7rem;
+  .mod-card-cfbadge {
+    max-width: 90%;
+  }
+
+  .mod-card-sitebutton {
+    display: block;
+    width: 8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin: auto;
+    border: 1px solid #8c8c8c;
+    font-size: 1rem;
+    margin-top: 2px;
+    background-color: black;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: "Arial", sans;
+    &:hover {
+      border: 1px solid #ff7300;
+    }
+  }
 }
 
 .card-list {
@@ -103,80 +182,20 @@
   grid-template-columns: repeat(auto-fit, 12.65rem);
 }
 
-@media (max-width: 450px) {
-  .card-list {
-    grid-template-columns: repeat(auto-fit, 10rem);
-  }
-  .element svg {
-    width: 8.65rem;
-  }
-  .element img {
-    width: 8.65rem;
-  }
-  .element p {
-    width: 8.65rem;
-    font-size: 0.7rem;
-  }
-}
-
-@media (max-width: 350px) {
-  .card-list {
-    grid-template-columns: repeat(auto-fit, 9.5rem);
-  }
-  .element svg {
-    width: 8.05rem;
-  }
-  .element img {
-    width: 8.05rem;
-  }
-  .element p {
-    width: 8.05rem;
-    font-size: 0.65rem;
-  }
-}
-
 @media (max-width: 330px) {
   .card-list {
     grid-template-columns: repeat(auto-fit, 12.65rem);
   }
-  .element svg {
-    width: 11.25rem;
+  .card {
+    svg {
+      width: 11.25rem;
+    }
+    img {
+      width: 11.25rem;
+    }
+    p {
+      width: 11.25rem;
+      font-size: 0.8rem;
+    }
   }
-  .element img {
-    width: 11.25rem;
-  }
-  .element p {
-    width: 11.25rem;
-    font-size: 0.8rem;
-  }
-}
-
-.element a {
-  text-decoration: none;
-  color: #e2e2e2;
-}
-
-.cfbadge {
-  max-width: 90%;
-}
-
-.sitebutton {
-  display: block;
-  width: 8rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  margin: auto;
-  border: 1px solid #8c8c8c;
-  font-size: 1rem;
-  margin-top: 2px;
-  background-color: black;
-  -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  text-align: center;
-  margin-bottom: 5px;
-  font-family: "Arial", sans;
-}
-
-.sitebutton:hover {
-  border: 1px solid #ff7300;
 }

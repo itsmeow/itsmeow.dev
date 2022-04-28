@@ -6,7 +6,7 @@ import { Button } from "react-bootstrap"
 const NotFoundPage = () => (
   <Layout>
     <SEO title="404" description="The page linked doesn't exist!" image="/" />
-    <div class="center-item">
+    <div className="center-item">
       <h1>Error 404: Page not found</h1>
       <Link to="/" className="link-no-style">
         <Button variant="primary">Take me home!</Button>

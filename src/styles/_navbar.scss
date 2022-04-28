@@ -1,53 +1,65 @@
+@use "sass:math";
 #site-navbar {
-  background-color: $header-background;
+  background-color: $navbar-background;
   padding: 0;
   margin: 0;
   width: 100%;
+  font-size: 1.2rem;
+  border-bottom: 1px solid $navbar-border-color;
+  box-shadow: 0 0 5px $navbar-border-color;
+  min-height: $navbar-height;
+  transition: background-color 0.1s, border-bottom-color 0.1s;
+  transition-timing-function: linear, linear;
+  .navbar-brand {
+    height: $navbar-height;
+    line-height: $navbar-height;
+    color: $navbar-brand-color;
+  }
+  .navbar-nav {
+    .nav-item {
+      transition-property: background-color;
+      transition-duration: 0.1s;
+      &:hover {
+        background-color: $navbar-background-highlight;
+      }
+      .nav-link {
+        transition-duration: 0.1s;
+        transition-property: color;
+      }
+      .active {
+        background-color: $navbar-background;
+        font-weight: bold;
+      }
+    }
+  }
+  .navbar-toggle {
+    margin-top: math.div($navbar-height - 34px, 2);
+    padding: 9px 10px !important;
+  }
+  .dropdown {
+    .dropdown-menu {
+      top: calc(100% - 1px);
+      left: -1px;
+      margin: 0;
+      padding: 0;
+      .dropdown-item {
+        padding: 0;
+        margin: 0;
+        background-color: $navbar-background;
+        .nav-link {
+          padding: 0.5rem;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          &:hover:not(.active) {
+            background-color: $navbar-background-highlight;
+          }
+        }
+      }
+    }
+  }
 }
 
-.center-text {
-  text-align: center;
-}
-
-.nav-fill .nav-item {
-  -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-}
-
-.nav-fill .nav-item:hover {
-  background-color: $hover-box;
-}
-
-.nav-fill .nav-item .active {
-  font-weight: bold;
-  background-color: $header-background;
-}
-
-.dropdown-menu {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-.dropdown-item .nav-link {
-  padding: 0.5rem;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.dropdown-item {
-  padding: 0;
-  margin: 0;
-}
-
-.nav-fill .dropdown-item {
-  background-color: $header-background;
-}
-
-.nav-fill .dropdown-item a .nav-link:hover:not(.active) {
-  background-color: #202020;
-}
-
-.title {
-  height: 40px;
+#site-navbar.scrolled {
+  border-bottom-color: $navbar-border-color-scrolled;
+  box-shadow: none;
 }

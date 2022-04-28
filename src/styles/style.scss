@@ -1,31 +1,27 @@
+// Init
+@use "sass:math";
 @import "variables";
-$body-bg: $primary-background;
-$body-color: $text-color;
-$navbar-dark-color: $text-prehover-color;
-$navbar-dark-hover-color: $text-color;
-$navbar-dark-disabled-color: $text-disabled-color;
-$navbar-dark-active-color: $text-color;
-$dropdown-color: $text-color;
-$dropdown-bg: $header-background;
-$dropdown-border-radius: 0;
-$dropdown-link-color: $text-prehover-color;
-$dropdown-link-hover-color: $text-color;
-$dropdown-link-disabled-color: $text-disabled-color;
-$dropdown-link-hover-bg: $hover-box;
-$dropdown-link-disabled-bg: $header-background;
+// Assign bootstrap SCSS variables
+@import "bootstrap-mappings";
+// Get bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+// Bootstrap adjustments
 @media (max-width: map-get($grid-breakpoints, sm)) {
   .row:not(.no-gutters) {
-    margin-right: -$grid-gutter-width / 4;
-    margin-left: -$grid-gutter-width / 4;
+    margin-right: math.div(-$grid-gutter-width, 4);
+    margin-left: math.div(-$grid-gutter-width, 4);
   }
   .row:not(.no-gutters) > .col,
   .row:not(.no-gutters) > [class*="col-"] {
-    padding-right: $grid-gutter-width / 4;
-    padding-left: $grid-gutter-width / 4;
+    padding-right: math.div($grid-gutter-width, 4);
+    padding-left: math.div($grid-gutter-width, 4);
   }
 }
+.dropdown-menu[data-bs-popper] {
+  margin-top: 0;
+}
 
+// Component styles
 @import "navbar";
 @import "footer";
 @import "card";
@@ -38,5 +34,6 @@ $dropdown-link-disabled-bg: $header-background;
 @import "banner";
 @import "projects";
 @import "stylebutton";
-@import "../../node_modules/react-toastify/dist/ReactToastify.css";
 @import "replacetool";
+
+@import "../../node_modules/react-toastify/dist/ReactToastify.css";

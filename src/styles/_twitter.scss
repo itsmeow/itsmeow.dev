@@ -1,6 +1,15 @@
 .twitter {
-  height: 320px;
+  height: 318px;
   background-color: black;
+  border: 1px solid $box-border-color;
+  box-shadow: 0 0 5px $box-border-color;
+  transition-property: background-color, transform, border-color, box-shadow;
+  transition-duration: 0.2s;
+  &:hover {
+    border-color: $card-border-color-hover;
+    box-shadow: 0 0 5px $card-border-color-hover;
+  }
+
   .twitter-header {
     padding: 10px;
     height: 100px;
@@ -25,7 +34,7 @@
   }
   .tweets {
     width: 100%;
-    height: 220px;
+    height: 216px;
     overflow-y: scroll;
     overflow-x: hidden;
     background-color: #070707;

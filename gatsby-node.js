@@ -6,7 +6,7 @@ const projects = require("./src/data/json-data/projects.json")
 const evalImageId = (getNodesByType, image, folder) => {
   const localAbsolutePath = path.resolve(__dirname, "src/data/" + folder, image)
   let res = getNodesByType("File").find(
-    node =>
+    (node) =>
       node.absolutePath.replace(/\\/g, "/") ===
       localAbsolutePath.replace(/\\/g, "/")
   )
@@ -58,10 +58,10 @@ exports.sourceNodes = async ({
       type: "Project",
       contentDigest: createContentDigest(project),
     }
-    if (project.image) {
+    if (project.image_url) {
       node.image___NODE = evalImageId(
         getNodesByType,
-        project.image,
+        project.image_url,
         "project_image"
       )
     }
@@ -114,9 +114,9 @@ exports.sourceNodes = async ({
       }
       createNode(node)
       createParentChildLink({ parent: parentNode, child: node })
-      if (card.thumbnail) {
+      if (card.thumbnail_url) {
         let remoteNode = await createRemoteFileNode({
-          url: card.thumbnail,
+          url: card.thumbnail_url,
           parentNodeId: node.id,
           createNode,
           createNodeId,
@@ -126,12 +126,12 @@ exports.sourceNodes = async ({
         if (remoteNode) {
           node.thumbnail___NODE = remoteNode.id
         } else {
-          throw Error("COULD NOT CREATE REMOTE NODE FOR " + card.thumbnail)
+          throw Error("COULD NOT CREATE REMOTE NODE FOR " + card.thumbnail_url)
         }
-      } else if (card.thumbnail_local) {
+      } else if (card.thumbnail_url_local) {
         node.thumbnail_local___NODE = evalImageId(
           getNodesByType,
-          card.thumbnail_local,
+          card.thumbnail_url_local,
           "thumbnail_local"
         )
       }
@@ -199,7 +199,7 @@ exports.createSchemaCustomization = ({ actions: { createTypes } }) => {
     display_url: String!
     expanded_url: String!
     media_url_https: String!
-    media_sharp: File! @link(from: "media_sharp___NODE")
+    media_sharp: File @link(from: "media_sharp___NODE")
   }
   type ModCategory implements Node {
     name: String!
@@ -211,6 +211,8 @@ exports.createSchemaCustomization = ({ actions: { createTypes } }) => {
     title: String!
     role: String!
     info: String!
+    thumbnail_url: String
+    thumbnail_url_local: String
     thumbnail: File @link(from: "thumbnail___NODE")
     thumbnail_local: File @link(from: "thumbnail_local___NODE")
     sitelink: String
@@ -227,6 +229,7 @@ exports.createSchemaCustomization = ({ actions: { createTypes } }) => {
     download_link: String
     youtube_link: String
     external_link: String
+    image_url: String
     image: File @link(from: "image___NODE")
     image_gif: String
   }

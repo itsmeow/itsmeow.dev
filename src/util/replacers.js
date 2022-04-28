@@ -113,7 +113,7 @@ const modelRotateAngles = (text) => {
   return matches.join("\n")
 }
 const entityConstructorUpdater = (text) => {
-  let type = text.match(/(?<=public\ )Entity\w+(?=\(World)/gm)
+  let type = text.match(/(?<=public )Entity\w+(?=\(World)/gm)
   if (!type || type.length < 1) {
     return ""
   }
@@ -123,7 +123,7 @@ const entityConstructorUpdater = (text) => {
     "super(entityType, worldIn);"
   )
   text = text.replace(
-    /(?<=public\ Entity\w+\()World\ world(In)?(?=\)\ \{)/gm,
+    /(?<=public Entity\w+\()World world(In)?(?=\) \{)/gm,
     "EntityType<? extends " + type + "> entityType, World worldIn"
   )
   return text

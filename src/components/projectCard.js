@@ -1,4 +1,3 @@
-import React from "react"
 import { GatsbyImage } from "gatsby-plugin-image"
 import LinkButton from "../components/linkButton"
 import { FaGithub, FaGlobe, FaPlay } from "react-icons/fa"
@@ -101,7 +100,10 @@ const ProjectCard = ({
           </section>
           {links ? <section className="project-links">{links}</section> : <></>}
         </section>
-        <p>{description}</p>
+        <p>
+          <hr />
+          {description}
+        </p>
       </section>
     </section>
   )

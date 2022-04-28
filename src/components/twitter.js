@@ -76,8 +76,8 @@ const TwitterWidget = () => {
   tweets = tweets.edges
   twitterProfile = twitterProfile.user
 
-  let getText = node => {
-    let transform = t => he.decode(t).replace(/https?:\/\/t.co\/\w+/gm, "")
+  let getText = (node) => {
+    let transform = (t) => he.decode(t).replace(/https?:\/\/t.co\/\w+/gm, "")
     let text = []
     let raw = node.full_text
     let offset = 0
@@ -182,7 +182,7 @@ const TwitterWidget = () => {
           <div className="profile-text">
             <a
               href={twitterProfile.url}
-              className="twitter-name"
+              className="twitter-name link-no-style"
               target="_blank"
               rel="noopener noreferrer"
             >{`@${twitterProfile.screen_name}`}</a>

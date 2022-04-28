@@ -1,5 +1,5 @@
 import PropTypes from "prop-types"
-import { Formik, Form, Field, ErrorMessage, setFieldValue } from "formik"
+import { Formik, Form, Field, ErrorMessage } from "formik"
 
 const URL_REGEX = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/ // eslint-disable-line no-useless-escape
 
@@ -8,7 +8,7 @@ const ModForm = (props) => (
     <h1>Enter a project ID, slug, or URL</h1>
     <Formik
       initialValues={{ slug: "", daysMissed: 0 }}
-      onSubmit={(values, { setSubmitting, resetForm }) => {
+      onSubmit={(values, { setSubmitting }) => {
         if (values.slug.match(URL_REGEX)) {
           let url = values.slug
 

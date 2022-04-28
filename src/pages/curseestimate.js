@@ -31,7 +31,9 @@ const CurseEstimate = () => {
       <Container>
         <main>
           <>
-            <h1 align="center">Curse Point Estimator</h1>
+            <h1 align="center" style={{ marginTop: "10px" }}>
+              Curse Point Estimator
+            </h1>
             <p>
               Using highly advanced and top secret methods I have determined a
               way to estimate the Curse Points of a given project. Don't sue me,

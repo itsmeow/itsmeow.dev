@@ -1,13 +1,21 @@
 import { Navbar, Nav } from "react-bootstrap"
 import NavItem from "./navItem.js"
+import usePageScrolled from "../../hooks/usePageScrolled"
 import NavDropdownItem from "./navDropdownItem.js"
 import NavDropdown from "./navDropdown.js"
 import { StaticImage } from "gatsby-plugin-image"
 
 const CustomNavbar = ({ pageInfo }) => {
+  const scrolled = usePageScrolled()
   return (
-    <Navbar sticky="top" variant="dark" expand="lg" id="site-navbar">
-      <div className="title">
+    <Navbar
+      sticky="top"
+      variant="dark"
+      expand="lg"
+      id="site-navbar"
+      className={scrolled ? "scrolled" : ""}
+    >
+      <div className="navbar-brand">
         <StaticImage
           src={"./../../data/logos/text.png"}
           layout="fixed"

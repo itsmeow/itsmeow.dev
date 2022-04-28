@@ -84,18 +84,20 @@ main .rightbar {
 }
 
 .pebblebox {
-  -webkit-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  background-color: #121212;
-  border: 1px solid #323232;
+  transition-property: background-color, transform, border-color, box-shadow;
+  transition-duration: 0.2s;
+  background-color: #060606;
+  border: 1px solid $box-border-color;
   &:hover {
-    background-color: #161616;
-    transform: scale(1.05);
+    border-color: $box-border-color-hover;
+    box-shadow: 0 0 5px $box-border-color-hover;
+    background-color: #121212;
+    transform: scale(1.02);
   }
 }
 
 .pebblebox.center-item-2:hover {
-  transform: translateX(-50%) scale(1.05);
+  transform: translateX(-50%) scale(1.02);
 }
 
 .basecolor {

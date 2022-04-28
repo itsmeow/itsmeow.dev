@@ -1,5 +1,4 @@
 main.replace-page {
-  background-color: #121212;
   color: white;
   font-family: Verdana;
   overflow: hidden;
@@ -23,7 +22,7 @@ textarea.output-area {
   width: 100%;
   background-color: black;
   color: white;
-  border: 1px solid #202020;
+  border: 1px solid $box-border-color;
   border-radius: 10px;
   resize: none;
   padding: 10px;
@@ -36,7 +35,7 @@ textarea.input-area-half {
   height: 70%;
   background-color: black;
   color: white;
-  border: 1px solid #202020;
+  border: 1px solid $box-border-color;
   border-radius: 10px;
   resize: none;
   padding: 10px;

@@ -1,19 +1,46 @@
-$header-background: #0c0c0c;
-$footer-background: #0c0c0c;
-$primary-background: #121212;
+// Body colors
+$primary-background: black;
+
+// Text colors
 $text-color: #e8e8e8;
-$text-prehover-color: #d0d0d0;
-$text-disabled-color: #565656;
-$hover-box: #202020;
-$footer-border-top-color: black;
+$link-color: #ff0000; //#00ff00; //#007bff;
+$link-color-hover: #ff00aa;
+$link-color-glow: #ff0000aa;
+$hr-color: #ff0000cc; //rgba(130, 130, 130, 0.75);
+$text-color-half: #a1a1a1;
+$text-color-disabled: #818181;
+$box-border-color: #ff000075; //rgba(130, 130, 130, 0.25)
+$box-border-color-hover: #ff0000cc;
+
+// Footer Colors
+$footer-border-top-color: $hr-color;
+$footer-background: #090909;
+$footer-bottom-background: $footer-background;
 $footer-text-color: #9b9b9b;
-$blue-link-color: #007bff;
+
+// Footer Sizing
 $footer-top-height: 80px;
 $footer-bottom-height: 40px;
 $footer-height: $footer-top-height + $footer-bottom-height;
-$header-height: 40px;
+$footer-github-width: 100px;
+
+// Navbar
+$navbar-background: #000000;
+$navbar-border-color: $hr-color;
+$navbar-height: 44.8px;
+$navbar-border-color-scrolled: transparent;
+$navbar-brand-color: $link-color; //#00ff00;
+$navbar-background-highlight: #121212;
+
+// Bootstrap
+$bootstrap-sm: 768px;
+$bootstrap-md: 992px;
+$bootstrap-lg: 1200px;
+
+// Card
 $card-background: black;
 $card-background-hover: rgba(200, 200, 200, 0.2);
 $card-hover-overlay: rgba(255, 255, 255, 0.2);
-$footer-github-width: 100px;
-$footer-bottom-background: $footer-background;
+$card-border-color: $box-border-color;
+$card-border-color-hover: $box-border-color-hover;
+$card-basic-background: #0f0f0f;
