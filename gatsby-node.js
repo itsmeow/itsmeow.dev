@@ -18,7 +18,12 @@ const evalImageId = (getNodesByType, image, folder) => {
 }
 
 exports.sourceNodes = async ({
-  actions: { createRedirect, createNode, createParentChildLink },
+  actions: {
+    createRedirect,
+    createNode,
+    createNodeField,
+    createParentChildLink,
+  },
   createNodeId,
   createContentDigest,
   cache,
@@ -86,16 +91,8 @@ exports.sourceNodes = async ({
     }
 
     for (card of list) {
-      const {
-        name,
-        title,
-        role,
-        info,
-        sitelink,
-        customid,
-        url,
-        spigoturl,
-      } = card
+      const { name, title, role, info, sitelink, customid, url, spigoturl } =
+        card
       const node = {
         name,
         title,
@@ -124,16 +121,20 @@ exports.sourceNodes = async ({
           store,
         })
         if (remoteNode) {
-          node.thumbnail___NODE = remoteNode.id
+          createNodeField({ node, name: "thumbnail", value: remoteNode.id })
         } else {
           throw Error("COULD NOT CREATE REMOTE NODE FOR " + card.thumbnail_url)
         }
       } else if (card.thumbnail_url_local) {
-        node.thumbnail_local___NODE = evalImageId(
-          getNodesByType,
-          card.thumbnail_url_local,
-          "thumbnail_local"
-        )
+        createNodeField({
+          node,
+          name: "thumbnail_local",
+          value: evalImageId(
+            getNodesByType,
+            card.thumbnail_url_local,
+            "thumbnail_local"
+          ),
+        })
       }
     }
   }
@@ -213,8 +214,8 @@ exports.createSchemaCustomization = ({ actions: { createTypes } }) => {
     info: String!
     thumbnail_url: String
     thumbnail_url_local: String
-    thumbnail: File @link(from: "thumbnail___NODE")
-    thumbnail_local: File @link(from: "thumbnail_local___NODE")
+    thumbnail: File @link(from: "fields.thumbnail")
+    thumbnail_local: File @link(from: "fields.thumbnail_local")
     sitelink: String
     customid: String
     url: String
