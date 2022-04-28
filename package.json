@@ -58,6 +58,9 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "deploy": "gatsby build && git commit -m \"Changes\" && git push origin source"
   },
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/itsmeow/itsmeow.dev"
