@@ -6,10 +6,12 @@ const Banner = ({ image }) => {
     <>
       <div className="banner-pane">
         <div className="banner-container">
-          <div className="banner">
+          <div className="title-wrapper">
             <div className="title-front">
               <Avatar />
             </div>
+          </div>
+          <div className="banner">
             <div className="image-wrapper">
               <GatsbyImage
                 image={image}

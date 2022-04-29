@@ -24,8 +24,8 @@ const Mods = () => {
                 thumbnail {
                   childImageSharp {
                     gatsbyImageData(
-                      width: 180
                       placeholder: BLURRED
+                      layout: FULL_WIDTH
                       quality: 100
                     )
                   }
@@ -33,8 +33,8 @@ const Mods = () => {
                 thumbnail_local {
                   childImageSharp {
                     gatsbyImageData(
-                      width: 180
                       placeholder: BLURRED
+                      layout: FULL_WIDTH
                       quality: 100
                     )
                   }
