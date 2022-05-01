@@ -3,6 +3,7 @@
     {
       "name": "mods",
       "title": "Mods",
+      "index": 0,
       "list": [
         {
           "name": "betteranimalsplus",
@@ -187,6 +188,7 @@
     {
       "name": "commissions",
       "title": "Completed & Public Commissions",
+      "index": 1,
       "list": [
         {
           "name": "toad-terror",
@@ -241,6 +243,7 @@
     {
       "name": "plugins",
       "title": "Plugins",
+      "index": 2,
       "list": [
         {
           "name": "donationgoals",
@@ -255,6 +258,7 @@
     {
       "name": "contributor",
       "title": "Contributor For",
+      "index": 3,
       "list": [
         {
           "name": "bewitchment-legacy",

@@ -7,7 +7,7 @@ const Mods = () => {
   const { allModCategory } = useStaticQuery(
     graphql`
       query {
-        allModCategory {
+        allModCategory(sort: { fields: index }) {
           nodes {
             name
             title

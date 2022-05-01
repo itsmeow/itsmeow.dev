@@ -205,6 +205,7 @@ exports.createSchemaCustomization = ({ actions: { createTypes } }) => {
   type ModCategory implements Node {
     name: String!
     title: String!
+    index: Int!
     children: [Mod]
   }
   type Mod implements Node {
