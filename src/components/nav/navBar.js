@@ -47,9 +47,6 @@ const CustomNavbar = ({ pageInfo }) => {
             <NavDropdownItem to="/cursedark" eventKey="cursedark">
               Curse Dark Theme
             </NavDropdownItem>
-            <NavDropdownItem to="/curseestimate" eventKey="curseestimate">
-              Curse Point Estimator
-            </NavDropdownItem>
             <NavDropdownItem to="/replacetool" eventKey="replacetool">
               Replace Tool
             </NavDropdownItem>
