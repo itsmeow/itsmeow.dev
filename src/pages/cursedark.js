@@ -76,7 +76,7 @@ const CurseDark = () => {
     }
   }
   return (
-    <Layout pageInfo={{ pageName: "cursedark" }}>
+    <Layout eventkey="cursedark">
       <SEO title="Curse Dark Theme" description="Dark Theme for Curse" />
       <main id="darkmain">
         <div id="installer-div">

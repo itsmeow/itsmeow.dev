@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import { Button } from "react-bootstrap"
 
 const NotFoundPage = () => (
-  <Layout>
+  <Layout eventkey="404">
     <SEO title="404" description="The page linked doesn't exist!" image="/" />
     <div className="center-item">
       <h1>Error 404: Page not found</h1>

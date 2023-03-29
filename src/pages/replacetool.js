@@ -9,18 +9,18 @@ const ReplaceTool = () => {
   const [outText, setOutText] = useState("")
   const [getReplacer, setReplacer] = useState("1.15 Render Updater")
   const textAreaRef = useRef(null)
-  const updateIn = val => {
+  const updateIn = (val) => {
     setInText(val)
     updateOut(val, getReplacer)
   }
   const updateOut = (val, replacer) => {
     setOutText(Methods()[`${replacer}`](val))
   }
-  const updateReplacer = event => {
+  const updateReplacer = (event) => {
     setReplacer(event.target.value)
     updateOut(inText, event.target.value)
   }
-  const copyToClipboard = e => {
+  const copyToClipboard = (e) => {
     if (window !== undefined) {
       textAreaRef.current.select()
       document.execCommand("copy")
@@ -36,7 +36,7 @@ const ReplaceTool = () => {
     )
   }
   return (
-    <Layout pageInfo={{ pageName: "replacetool" }}>
+    <Layout eventkey="replacetool">
       <SEO
         title="Replace Tool"
         description="A thing to mess around with Regex"
@@ -57,7 +57,7 @@ const ReplaceTool = () => {
           <textarea
             className="input-area"
             value={inText}
-            onChange={event => updateIn(event.target.value)}
+            onChange={(event) => updateIn(event.target.value)}
           ></textarea>
           <div className="output-container">
             <textarea

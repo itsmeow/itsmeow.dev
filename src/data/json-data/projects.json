@@ -1,6 +1,14 @@
 {
   "list": [
     {
+      "name": "BeeStation",
+      "github": "BeeStation/BeeStation-Hornet",
+      "download_type": "github-source",
+      "description": "Maintainer for a fork of the game 'Space Station 13' - over 500 PRs reviewed and over 150 PRs submitted. The game is very large, and has a lot of outdated code, so reviewing and keeping it up to date is a major undertaking. I've contributed many major improvements to the game.",
+      "uses": "DreamMaker, JavaScript, SCSS, React, Python",
+      "image_url": "beestation.png"
+    },
+    {
       "name": "HP OMEN Mindframe Control",
       "github": "itsmeow/HPOmenMindframeControl",
       "download_type": "github-release",
@@ -15,6 +23,13 @@
       "description": "Implements Spotify Canvas (a mobile app exclusive feature that adds short, looping video to the background of a track) on the desktop client using Spicetify.",
       "uses": "spicetify-cli, Spotify, JavaScript, Protobuf, Chromium Embedded Framework, CSS",
       "image_gif": "SpicetifyCanvas.gif"
+    },
+    {
+      "name": "MapDiffBot-DMM",
+      "github": "itsmeow/MapDiffBot-DMM",
+      "download_type": "github-source",
+      "description": "A GitHub integration bot for generating DMM file diffs in DMM format. DMM is a map file format for 'Space Station 13'.",
+      "uses": "Python, Flask, WSGI"
     },
     {
       "name": "Upload to CurseForge (GitHub Action)",

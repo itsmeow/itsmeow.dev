@@ -43,7 +43,7 @@ const ProjectPage = () => {
     />
   ))
   return (
-    <Layout pageInfo={{ pageName: "projects" }}>
+    <Layout eventkey="projects">
       <SEO
         title="Projects"
         description="A list of public software projects by itsmeowdev"

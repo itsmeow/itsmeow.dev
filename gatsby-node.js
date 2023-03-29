@@ -56,7 +56,7 @@ exports.sourceNodes = async ({
     isPermanent: true,
   })
 
-  for (project of projects.list) {
+  for (let project of projects.list) {
     let node = project
     node.id = createNodeId(`project-${project.name}`)
     node.internal = {
@@ -73,7 +73,7 @@ exports.sourceNodes = async ({
     createNode(node)
   }
 
-  for (category of mods.categories) {
+  for (let category of mods.categories) {
     const { list } = category
     let parentNode
     {
@@ -90,7 +90,7 @@ exports.sourceNodes = async ({
       createNode(parentNode)
     }
 
-    for (card of list) {
+    for (let card of list) {
       const { name, title, role, info, sitelink, customid, url, spigoturl } =
         card
       const node = {
@@ -184,7 +184,7 @@ exports.createSchemaCustomization = ({ actions: { createTypes } }) => {
   type twitterStatusesUserTimelineTweetsEntitiesUserMentions {
     id: ID!
     id_str: String!
-    indicies: [Int]!
+    indices: [Int]!
     name: String!
     screen_name: String!
   }

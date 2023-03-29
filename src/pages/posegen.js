@@ -59,7 +59,7 @@ const PoseGen = () => {
     }
   }
   return (
-    <Layout pageInfo={{ pageName: "posegen" }}>
+    <Layout eventkey="posegen">
       <SEO
         title="Pose Generator"
         description="Generates pose functions for Entity models from model files."

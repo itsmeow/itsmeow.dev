@@ -28,7 +28,7 @@ const IndexPage = () => {
     }
   `)
   return (
-    <Layout pageInfo={{ pageName: "index" }}>
+    <Layout eventkey="index">
       <SEO
         title="Home"
         keywords={[

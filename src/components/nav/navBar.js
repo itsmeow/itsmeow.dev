@@ -5,7 +5,7 @@ import NavDropdownItem from "./navDropdownItem.js"
 import NavDropdown from "./navDropdown.js"
 import { StaticImage } from "gatsby-plugin-image"
 
-const CustomNavbar = ({ pageInfo }) => {
+const CustomNavbar = ({ eventkey }) => {
   const scrolled = usePageScrolled()
   return (
     <Navbar
@@ -26,11 +26,7 @@ const CustomNavbar = ({ pageInfo }) => {
       </div>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav
-          fill
-          className="mr-auto w-100"
-          activeKey={pageInfo && pageInfo.pageName}
-        >
+        <Nav fill className="mr-auto w-100" activeKey={eventkey}>
           <NavItem to="/" eventKey="index">
             Home
           </NavItem>

@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 const ModdingLicensePage = () => {
   return (
-    <Layout pageInfo={{ pageName: "moddinglicense" }}>
+    <Layout eventkey="moddinglicense">
       <SEO
         title="Modding License"
         description="its_meow's Modding License"

@@ -15,7 +15,7 @@ const AboutPage = () => {
     }
   `)
   return (
-    <Layout pageInfo={{ pageName: "about" }}>
+    <Layout eventkey="about">
       <SEO title="About" description="About itsmeow" />
       <main>
         <Banner image={image.childImageSharp.gatsbyImageData} />

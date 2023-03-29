@@ -9,12 +9,14 @@ module.exports = {
     node: true,
     browser: true,
   },
-  extends: ["eslint:recommended", "plugin:react/recommended"],
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+  ],
   rules: {
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
-    "no-anonymous-exports-page-templates": "warn",
-    "limited-exports-page-templates": "warn",
     "react/prop-types": "off",
     "no-unused-vars": "warn",
     "react/no-unescaped-entities": "off",

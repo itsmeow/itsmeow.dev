@@ -7,7 +7,7 @@ const Mods = () => {
   const { allModCategory } = useStaticQuery(
     graphql`
       query {
-        allModCategory(sort: { fields: index }) {
+        allModCategory(sort: { index: ASC }) {
           nodes {
             name
             title
@@ -48,7 +48,7 @@ const Mods = () => {
   )
 
   return (
-    <Layout pageInfo={{ pageName: "mods" }}>
+    <Layout eventkey="mods">
       <SEO title="Mods" description="its_meow's mod list and info" />
       <Container>
         <main style={{ paddingTop: "10px" }}>
