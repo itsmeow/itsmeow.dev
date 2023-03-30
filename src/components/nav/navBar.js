@@ -30,7 +30,7 @@ const CustomNavbar = ({ eventkey }) => {
           <NavItem to="/" eventKey="index">
             Home
           </NavItem>
-          <NavItem to="/about" evenyKey="about">
+          <NavItem to="/about" eventKey="about">
             About
           </NavItem>
           <NavItem to="/mods" eventKey="mods">
