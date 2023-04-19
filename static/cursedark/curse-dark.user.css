@@ -2,12 +2,12 @@
 @name           Curse Dark
 @namespace      https://itsmeow.dev/cursedark
 @updateURL      https://itsmeow.dev/cursedark/curse-dark.user.css
-@version        1.2.1
-@description    Adds a dark theme to curseforge
+@version        1.2.2
+@description    Adds a dark theme to curseforge legacy
 @author         its_meow
 ==/UserStyle== */
 
-@-moz-document domain("www.curseforge.com") {
+@-moz-document domain("legacy.curseforge.com") {
   main {
     background: #202020 !important;
     color: #e0e0e0 !important;
@@ -181,7 +181,8 @@
     * {
     background: none !important;
   }
-  a.top-nav__nav-link[href="https://account-transfer.curseforge.com/"] {
+  a.top-nav__nav-link[href="https://account-transfer.curseforge.com/"]
+  {
     color: #fabc3c !important;
   }
   html
@@ -928,32 +929,44 @@
     background-image: linear-gradient(to bottom, #202020, #262626);
   }
   #site
-    table.b-table-a:not(.forum-listing):not(.project-listing):not(.forum-thread-listing):not(.conversation-listing)
+    table.b-table-a:not(.forum-listing):not(.project-listing):not(
+      .forum-thread-listing
+    ):not(.conversation-listing)
     tr:nth-child(2n + 1),
   #site
     .b-shoutbox-a
     .shoutbox-messages
-    > table.listing:not(.forum-listing):not(.project-listing):not(.forum-thread-listing):not(.conversation-listing)
+    > table.listing:not(.forum-listing):not(.project-listing):not(
+      .forum-thread-listing
+    ):not(.conversation-listing)
     tr:nth-child(2n + 1),
   .b-shoutbox-a
     #site
     .shoutbox-messages
-    > table.listing:not(.forum-listing):not(.project-listing):not(.forum-thread-listing):not(.conversation-listing)
+    > table.listing:not(.forum-listing):not(.project-listing):not(
+      .forum-thread-listing
+    ):not(.conversation-listing)
     tr:nth-child(2n + 1) {
     background: #202020;
   }
   #site
-    table.b-table-a:not(.forum-listing):not(.project-listing):not(.forum-thread-listing):not(.conversation-listing)
+    table.b-table-a:not(.forum-listing):not(.project-listing):not(
+      .forum-thread-listing
+    ):not(.conversation-listing)
     tr,
   #site
     .b-shoutbox-a
     .shoutbox-messages
-    > table.listing:not(.forum-listing):not(.project-listing):not(.forum-thread-listing):not(.conversation-listing)
+    > table.listing:not(.forum-listing):not(.project-listing):not(
+      .forum-thread-listing
+    ):not(.conversation-listing)
     tr,
   .b-shoutbox-a
     #site
     .shoutbox-messages
-    > table.listing:not(.forum-listing):not(.project-listing):not(.forum-thread-listing):not(.conversation-listing)
+    > table.listing:not(.forum-listing):not(.project-listing):not(
+      .forum-thread-listing
+    ):not(.conversation-listing)
     tr {
     background: #171717;
   }
@@ -1076,7 +1089,9 @@
   .b-social-google,
   .b-social-youtube,
   .b-social-reddit,
-  .b-userAction-a:not(.u-dropDownMenu):not(.user-actions-post):not(.user-actions-user-pm)
+  .b-userAction-a:not(.u-dropDownMenu):not(.user-actions-post):not(
+      .user-actions-user-pm
+    )
     .b-userAction-item
     > a,
   .p-notifications-a header .user-actions a,
@@ -1212,7 +1227,8 @@
   /* End comment box CSS */
 }
 
-@-moz-document url("https://authors.curseforge.com/") {
+@-moz-document url("https://authors.curseforge.com/")
+{
   body.body-home .ec-featured-sites .featured-site-info-container {
     background-color: #202020;
   }

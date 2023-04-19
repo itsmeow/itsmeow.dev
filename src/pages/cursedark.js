@@ -77,7 +77,7 @@ const CurseDark = () => {
   }
   return (
     <Layout eventkey="cursedark">
-      <SEO title="Curse Dark Theme" description="Dark Theme for Curse" />
+      <SEO title="Curse Dark Theme" description="Dark Theme for CurseForge Legacy" />
       <main id="darkmain">
         <div id="installer-div">
           <div id="center-screen">
@@ -86,7 +86,7 @@ const CurseDark = () => {
               className={titleVisible ? "show" : ""}
               align="center"
             >
-              Curse Dark Theme
+              CurseForge Legacy Dark Theme
             </h1>
             <div
               style={{
