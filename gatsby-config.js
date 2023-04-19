@@ -36,28 +36,6 @@ module.exports = {
         path: `./src/data/`,
       },
     },
-    {
-      resolve: `gatsby-source-twitter`,
-      options: {
-        credentials: {
-          consumer_key: process.env.TWITTER_CONSUMER_KEY,
-          consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
-          bearer_token: process.env.TWITTER_BEARER_TOKEN,
-        },
-        queries: {
-          Tweets: {
-            endpoint: `statuses/user_timeline`,
-            params: {
-              screen_name: `itsmeowdev`,
-              include_rts: false,
-              exclude_replies: true,
-              tweet_mode: `extended`,
-              count: 30,
-            },
-          },
-        },
-      },
-    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-sass`,

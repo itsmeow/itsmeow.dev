@@ -140,68 +140,8 @@ exports.sourceNodes = async ({
   }
 }
 
-exports.onCreateNode = async ({
-  actions: { createNode },
-  node,
-  createNodeId,
-  cache,
-  store,
-}) => {
-  if (node.internal.type === "twitterStatusesUserTimelineTweets") {
-    if (node.entities && node.entities.media) {
-      for (let i in node.entities.media) {
-        let media = node.entities.media[i]
-        let remoteNode = await createRemoteFileNode({
-          url: media.media_url_https,
-          parentNodeId: node.id,
-          createNode,
-          createNodeId,
-          cache,
-          store,
-        })
-        if (remoteNode) {
-          node.entities.media[i].media_sharp___NODE = remoteNode.id
-        } else {
-          throw Error(
-            "COULD NOT CREATE REMOTE NODE FOR " + media.media_url_https
-          )
-        }
-      }
-    }
-  }
-}
 exports.createSchemaCustomization = ({ actions: { createTypes } }) => {
   createTypes(`
-  type twitterStatusesUserTimelineTweets implements Node {
-    entities: twitterStatusesUserTimelineTweetsEntities
-  }
-  type twitterStatusesUserTimelineTweetsEntities {
-    urls: [twitterStatusesUserTimelineTweetsEntitiesUrls]
-    media: [twitterStatusesUserTimelineTweetsEntitiesMedia]
-    hashtags: [twitterStatusesUserTimelineTweetsEntitiesHashtags]
-    user_mentions: [twitterStatusesUserTimelineTweetsEntitiesUserMentions]
-  }
-  type twitterStatusesUserTimelineTweetsEntitiesUserMentions {
-    id: ID!
-    id_str: String!
-    indices: [Int]!
-    name: String!
-    screen_name: String!
-  }
-  type twitterStatusesUserTimelineTweetsEntitiesHashtags {
-    indices: [Int]!
-    text: String!
-  }
-  type twitterStatusesUserTimelineTweetsEntitiesUrls {
-    display_url: String!
-    expanded_url: String!
-  }
-  type twitterStatusesUserTimelineTweetsEntitiesMedia {
-    display_url: String!
-    expanded_url: String!
-    media_url_https: String!
-    media_sharp: File @link(from: "media_sharp___NODE")
-  }
   type ModCategory implements Node {
     name: String!
     title: String!

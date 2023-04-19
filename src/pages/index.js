@@ -1,6 +1,5 @@
 import { Card, CardList } from "../components/card"
 import PatreonButton from "../components/patreon"
-import TwitterWidget from "../components/twitter"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -12,9 +11,7 @@ import { FaGithub, FaTwitter, FaTwitch, FaDiscord } from "react-icons/fa"
 import { GoFlame } from "react-icons/go"
 import YouTube from "../data/logos/svg/YouTube.svg"
 import Instagram from "../data/logos/svg/Instagram.svg"
-import PebbleHost from "../components/pebblehost"
 import Banner from "../components/banner"
-import ClientOnly from "../components/clientonly"
 import { useStaticQuery, graphql } from "gatsby"
 
 const IndexPage = () => {
@@ -98,22 +95,6 @@ const IndexPage = () => {
               <img className="pad" src={Instagram} alt="Instagram Logo" />
             </Card>
           </CardList>
-          <div className="flex-list" style={{ marginTop: "10px" }}>
-            <div
-              className="flex-list-item scale-big"
-              style={{ height: "320px" }}
-            >
-              <ClientOnly style={{ width: "100%", maxWidth: "600px" }}>
-                <TwitterWidget width="100%" />
-              </ClientOnly>
-            </div>
-            <div
-              className="flex-list-item scale-big"
-              style={{ height: "320px" }}
-            >
-              <PebbleHost />
-            </div>
-          </div>
         </section>
       </main>
     </Layout>

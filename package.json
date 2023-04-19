@@ -21,7 +21,6 @@
     "gatsby-plugin-sass": "^6.4.0",
     "gatsby-plugin-sharp": "^5.4.0",
     "gatsby-source-filesystem": "^5.4.0",
-    "gatsby-source-twitter": "^4.0.1",
     "gatsby-transformer-json": "^5.4.0",
     "gatsby-transformer-sharp": "^5.4.0",
     "he": "^1.2.0",
