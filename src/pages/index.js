@@ -74,7 +74,7 @@ const IndexPage = () => {
             </Card>
             <Card
               link="https://discord.itsmeow.dev/"
-              text="Discord - its_meow#6903"
+              text="Discord - itsmeowdev"
             >
               <IconContext.Provider value={{ color: "#7289DA" }}>
                 <FaDiscord />
