@@ -10,7 +10,7 @@
     "bootstrap": "^5.2.3",
     "diff": "^5.0.0",
     "formik": "^2.2.9",
-    "gatsby": "^5.4.0",
+    "gatsby": "^5.9.1",
     "gatsby-plugin-gtag": "^1.0.13",
     "gatsby-plugin-image": "^3.4.0",
     "gatsby-plugin-manifest": "^5.4.0",
