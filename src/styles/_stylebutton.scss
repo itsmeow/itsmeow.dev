@@ -1,6 +1,23 @@
-button.stylebutton-c {
+.style-button {
   border-radius: 20px;
   border: none;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
   transition-duration: 200ms;
+  vertical-align: baseline;
+  line-height: 20px;
+  padding: 0 12px;
+  .style-button-inner {
+    display: inline-block;
+    .style-button-icon {
+      display: inline-block;
+      margin-right: 5px;
+      height: 16px;
+      width: 16px;
+    }
+    .style-button-text {
+      vertical-align: middle;
+    }
+  }
 }
+
+

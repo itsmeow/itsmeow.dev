@@ -96,7 +96,7 @@ const CurseDark = () => {
             >
               <button
                 id="installbutton"
-                className="stylebutton"
+                className="style-button-custom"
                 style={installButtonStyle}
                 onClick={onClickButton}
               >

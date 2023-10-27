@@ -1,18 +1,3 @@
-.stylebutton {
-  text-decoration: none;
-  background-color: #303030;
-  color: white;
-  border-radius: 12px;
-  border: none;
-  box-shadow: 0 6px #252525;
-  -webkit-transition-duration: 0.1s;
-  transition-duration: 0.1s;
-  cursor: pointer;
-  width: 10rem;
-  height: 100%;
-  font-size: 1.3rem;
-}
-
 #darktitle {
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
@@ -26,15 +11,6 @@
 .bottom-text-nice.show {
   opacity: 1;
   visibility: visible;
-}
-
-.stylebutton:hover {
-  background-color: #353535;
-}
-
-.stylebutton:active {
-  transform: translateY(4px);
-  box-shadow: 0 4px #252525;
 }
 
 .bottom-text-nice {
@@ -63,4 +39,28 @@
 #center-screen {
   margin-top: calc(50vh - 80px);
   transform: translateY(-50%);
+}
+
+#installbutton {
+  text-decoration: none;
+  background-color: #303030;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 6px #252525;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  width: 10rem;
+  height: 100%;
+  font-size: 1.3rem;
+}
+
+#installbutton:hover {
+  background-color: #353535;
+}
+
+#installbutton:active {
+  transform: translateY(4px);
+  box-shadow: 0 4px #252525;
 }

@@ -7,10 +7,10 @@ const LinkButton = ({ className, href, children, blank, ...rest }) => {
       href={href}
       target={blank === true ? "_blank" : null}
       rel={blank === true ? "noopener noreferrer" : null}
-      className="linkbuttonouter"
+      className="link-button-wrapper"
     >
       <StyledButton
-        className={className ? `linkbutton ${className}` : "linkbutton"}
+        className={className ? `link-button ${className}` : "link-button"}
         {...rest}
       >
         {children}

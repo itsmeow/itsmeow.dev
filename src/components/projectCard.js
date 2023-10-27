@@ -26,18 +26,17 @@ const ProjectCard = ({
             ? download_link
             : "https://github.com/" + github + "/releases"
         }
+        icon={<FaGlobe />}
         blank
       >
-        <FaGlobe />
-        <span> Get</span>
+        Get
       </LinkButton>
     )
   }
   if (external_link) {
     links.push(
-      <LinkButton key="external" href={external_link} blank>
-        <FaGlobe />
-        <span> Visit</span>
+      <LinkButton key="external" href={external_link} icon={<FaGlobe />} blank>
+        Visit
       </LinkButton>
     )
   }
@@ -49,9 +48,9 @@ const ProjectCard = ({
         blank
         color="#FF0000"
         hoverColor="#FF7777"
+        icon={<FaPlay />}
       >
-        <FaPlay />
-        <span> Watch</span>
+        Watch
       </LinkButton>
     )
   }
@@ -63,9 +62,9 @@ const ProjectCard = ({
         blank
         color="#202020"
         hoverColor="#323232"
+        icon={<FaGithub />}
       >
-        <FaGithub />
-        <span> GitHub</span>
+        GitHub
       </LinkButton>
     )
   }

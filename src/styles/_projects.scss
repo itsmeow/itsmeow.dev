@@ -94,7 +94,7 @@
     .project-links {
       float: left !important;
       clear: both;
-      .linkbutton {
+      .style-button {
         margin-top: 0;
       }
     }
@@ -114,7 +114,7 @@
   }
 
   /*@media (max-width: 550px) {
-    .project-links .linkbutton {
+    .project-links .style-button {
       span {
         display: none;
       }

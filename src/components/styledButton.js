@@ -9,6 +9,7 @@ const StyledButton = ({
   hoverColor,
   style,
   children,
+  icon,
   ...rest
 }) => {
   const styles = {
@@ -25,10 +26,13 @@ const StyledButton = ({
   return (
     <button
       {...rest}
-      className={className ? `stylebutton-c ${className}` : "stylebutton-c"}
+      className={className ? `style-button ${className}` : "style-button"}
       style={[styles.base, style]}
     >
-      {children}
+      <span className="style-button-inner">
+        {icon && <span className="style-button-icon">{icon}</span>}
+        <span className="style-button-text">{children}</span>
+      </span>
     </button>
   )
 }
@@ -41,6 +45,7 @@ StyledButton.propTypes = {
   height: PropTypes.string,
   children: PropTypes.element,
   textColor: PropTypes.string,
+  icon: PropTypes.element,
 }
 
 StyledButton.defaultProps = {
