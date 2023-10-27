@@ -84,7 +84,7 @@ const Mods = () => {
 }
 
 export const Head = () => (
-  <SEO title="Mods" description="its_meow's mod list and info" />
+  <SEO title="Mods" description="itsmeowdev's mod list and info" />
 )
 
 export default Mods

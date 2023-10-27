@@ -1,3 +1,3 @@
 # itsmeow.dev
 
-its_meow's website. https://itsmeow.dev/
+itsmeowdev's portfolio website. https://itsmeow.dev/

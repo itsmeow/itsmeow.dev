@@ -100,10 +100,8 @@ const ProjectCard = ({
           </section>
           {links ? <section className="project-links">{links}</section> : <></>}
         </section>
-        <p>
-          <hr />
-          {description}
-        </p>
+        <hr />
+        <p>{description}</p>
       </section>
     </section>
   )

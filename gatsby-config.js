@@ -14,7 +14,7 @@ module.exports = {
   pathPrefix: "/",
   siteMetadata: {
     title: `itsmeow.dev`,
-    description: `its_meow's Website`,
+    description: `itsmeowdev's Portfolio`,
     author: `itsmeow`,
   },
   flags: {

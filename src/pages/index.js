@@ -96,9 +96,9 @@ export const Head = () => (
   <SEO
     title="Home"
     keywords={[
-      `its_meow`,
-      `itsmeow`,
       `itsmeowdev`,
+      `itsmeow`,
+      `its_meow`,
       `minecraft`,
       `mod developer`,
       `developer`,

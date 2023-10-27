@@ -19,13 +19,14 @@ const ModdingLicensePage = () => {
           />
           <p
             style={{
-              color: "#ffffff20",
+              color: "#ffffff60",
               textalign: "center",
               fontsize: "0.6rem",
             }}
           >
             Note: this is for satire purposes only and is not in any way
-            endorsed by or by Curse, Forge, Mojang, or Minecraft.
+            endorsed by or by CurseForge, Forge, Mojang, Microsoft, or
+            Minecraft.
           </p>
         </main>
       </Container>
@@ -36,7 +37,7 @@ const ModdingLicensePage = () => {
 export const Head = () => (
   <SEO
     title="Modding License"
-    description="its_meow's Modding License"
+    description="itsmeowdev's Modding License"
     image={ModdingLicense}
   />
 )
