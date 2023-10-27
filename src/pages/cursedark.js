@@ -77,7 +77,6 @@ const CurseDark = () => {
   }
   return (
     <Layout eventkey="cursedark">
-      <SEO title="Curse Dark Theme" description="Dark Theme for CurseForge Legacy" />
       <main id="darkmain">
         <div id="installer-div">
           <div id="center-screen">
@@ -125,5 +124,12 @@ const CurseDark = () => {
     </Layout>
   )
 }
+
+export const Head = () => (
+  <SEO
+    title="Curse Dark Theme"
+    description="Dark Theme for CurseForge Legacy"
+  />
+)
 
 export default CurseDark

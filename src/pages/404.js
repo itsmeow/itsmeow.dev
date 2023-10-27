@@ -5,7 +5,6 @@ import { Button } from "react-bootstrap"
 
 const NotFoundPage = () => (
   <Layout eventkey="404">
-    <SEO title="404" description="The page linked doesn't exist!" image="/" />
     <div className="center-item">
       <h1>Error 404: Page not found</h1>
       <Link to="/" className="link-no-style">
@@ -24,6 +23,10 @@ const NotFoundPage = () => (
       </Button>
     </div>
   </Layout>
+)
+
+export const Head = () => (
+  <SEO title="404" description="The page linked doesn't exist!" image="/" />
 )
 
 export default NotFoundPage

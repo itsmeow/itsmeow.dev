@@ -16,7 +16,6 @@ const AboutPage = () => {
   `)
   return (
     <Layout eventkey="about">
-      <SEO title="About" description="About itsmeow" />
       <main>
         <Banner image={image.childImageSharp.gatsbyImageData} />
         <section
@@ -97,5 +96,7 @@ const AboutPage = () => {
     </Layout>
   )
 }
+
+export const Head = () => <SEO title="About" description="About itsmeow" />
 
 export default AboutPage

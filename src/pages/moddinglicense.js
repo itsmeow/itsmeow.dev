@@ -6,11 +6,6 @@ import SEO from "../components/seo"
 const ModdingLicensePage = () => {
   return (
     <Layout eventkey="moddinglicense">
-      <SEO
-        title="Modding License"
-        description="its_meow's Modding License"
-        image={ModdingLicense}
-      />
       <Container>
         <main>
           <img
@@ -37,5 +32,13 @@ const ModdingLicensePage = () => {
     </Layout>
   )
 }
+
+export const Head = () => (
+  <SEO
+    title="Modding License"
+    description="its_meow's Modding License"
+    image={ModdingLicense}
+  />
+)
 
 export default ModdingLicensePage

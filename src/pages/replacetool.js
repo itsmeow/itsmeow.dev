@@ -37,10 +37,6 @@ const ReplaceTool = () => {
   }
   return (
     <Layout eventkey="replacetool">
-      <SEO
-        title="Replace Tool"
-        description="A thing to mess around with Regex"
-      />
       <Container>
         <main className="replace-page">
           <label htmlFor="replace-select" className="replace-select-label">
@@ -77,5 +73,9 @@ const ReplaceTool = () => {
     </Layout>
   )
 }
+
+export const Head = () => (
+  <SEO title="Replace Tool" description="A thing to mess around with Regex" />
+)
 
 export default ReplaceTool

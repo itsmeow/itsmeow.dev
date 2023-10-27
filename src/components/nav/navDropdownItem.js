@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 
 const NavDropdownItem = ({ to, eventKey, children }) => {
   return (
-    <Dropdown.Item>
+    <Dropdown.Item as="div">
       <Link to={to} className="link-no-style">
         <Nav.Link as="span" eventKey={eventKey}>
           {children}

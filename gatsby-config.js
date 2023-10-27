@@ -36,7 +36,6 @@ module.exports = {
         path: `./src/data/`,
       },
     },
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-sass`,
       options: {

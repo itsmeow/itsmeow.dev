@@ -1,16 +1,8 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import PropTypes from "prop-types"
-import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import icon from "./../data/icon.png"
 
-function SEO({ description, lang, meta, keywords, title, image }) {
+function SEO({ description, lang, keywords, title, image }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -25,67 +17,33 @@ function SEO({ description, lang, meta, keywords, title, image }) {
     `
   )
   const imageDef = image === "/" ? "" : image || icon
+  const metaTitle = `${title || site.siteMetadata.title}`
   const metaDescription = description || site.siteMetadata.description
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={`${site.siteMetadata.title}/%s`}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `og:image`,
-          content: imageDef,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-        {
-          name: `twitter:image`,
-          content: imageDef,
-        },
-      ]
-        .concat(
-          keywords.length > 0
-            ? {
-                name: `keywords`,
-                content: keywords.join(`, `),
-              }
-            : []
-        )
-        .concat(meta)}
-    />
+    <>
+      {lang && <html lang={lang} />}
+      {metaTitle && <title>{metaTitle}</title>}
+      {metaDescription && <meta name="description" content={metaDescription} />}
+      {keywords.length && (
+        <meta name="keywords" content={keywords.concat(",")} />
+      )}
+      {metaTitle && <meta name="og:title" content={metaTitle} />}
+      {metaDescription && (
+        <meta name="og:description" content={metaDescription} />
+      )}
+      <meta name="og:type" content="website" />
+      {imageDef && <meta name="og:image" content={imageDef} />}
+      {metaTitle && <meta name="twitter:title" content={metaTitle} />}
+      {metaDescription && (
+        <meta name="twitter:description" content={metaDescription} />
+      )}
+      <meta name="twitter:card" content="summary" />
+      {imageDef && <meta name="twitter:image" content={imageDef} />}
+      {site.siteMetadata.author && (
+        <meta name="twitter:creator" content={site.siteMetadata.author} />
+      )}
+    </>
   )
 }
 
@@ -101,7 +59,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   keywords: PropTypes.arrayOf(PropTypes.string),
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
 }
 
 export default SEO

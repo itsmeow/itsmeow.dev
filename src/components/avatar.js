@@ -15,7 +15,7 @@ const Avatar = ({ className, ...remainder }) => {
           alt="itsmeow Avatar"
         />
       </div>
-      <p align="center" className="avatar-text">
+      <div align="center" className="avatar-text">
         <hr style={{ maxWidth: "500px" }} />
         Hobbyist Minecraft Mod Developer
         <br />
@@ -43,7 +43,7 @@ const Avatar = ({ className, ...remainder }) => {
           </a>
         </span>
         <hr style={{ maxWidth: "500px" }} />
-      </p>
+      </div>
     </div>
   )
 }

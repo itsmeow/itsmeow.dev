@@ -49,7 +49,6 @@ const Mods = () => {
 
   return (
     <Layout eventkey="mods">
-      <SEO title="Mods" description="its_meow's mod list and info" />
       <Container>
         <main style={{ paddingTop: "10px" }}>
           <noscript align="center">
@@ -83,5 +82,9 @@ const Mods = () => {
     </Layout>
   )
 }
+
+export const Head = () => (
+  <SEO title="Mods" description="its_meow's mod list and info" />
+)
 
 export default Mods

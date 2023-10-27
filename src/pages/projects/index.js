@@ -44,10 +44,6 @@ const ProjectPage = () => {
   ))
   return (
     <Layout eventkey="projects">
-      <SEO
-        title="Projects"
-        description="A list of public software projects by itsmeowdev"
-      />
       <main>
         <h1 align="center" style={{ marginTop: "10px" }}>
           Projects
@@ -64,5 +60,12 @@ const ProjectPage = () => {
     </Layout>
   )
 }
+
+export const Head = () => (
+  <SEO
+    title="Projects"
+    description="A list of public software projects by itsmeowdev"
+  />
+)
 
 export default ProjectPage

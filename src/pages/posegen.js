@@ -60,10 +60,6 @@ const PoseGen = () => {
   }
   return (
     <Layout eventkey="posegen">
-      <SEO
-        title="Pose Generator"
-        description="Generates pose functions for Entity models from model files."
-      />
       <Container>
         <main className="replace-page">
           <textarea
@@ -93,5 +89,12 @@ const PoseGen = () => {
     </Layout>
   )
 }
+
+export const Head = () => (
+  <SEO
+    title="Pose Generator"
+    description="Generates pose functions for Entity models from model files."
+  />
+)
 
 export default PoseGen

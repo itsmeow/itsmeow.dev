@@ -8,9 +8,9 @@ import { IconContext } from "react-icons"
 
 import { FaGithub, FaTwitter, FaTwitch, FaDiscord } from "react-icons/fa"
 
-import { GoFlame } from "react-icons/go"
 import YouTube from "../data/logos/svg/YouTube.svg"
 import Instagram from "../data/logos/svg/Instagram.svg"
+import CurseForge from "../data/logos/svg/CurseForge.svg"
 import Banner from "../components/banner"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -26,17 +26,6 @@ const IndexPage = () => {
   `)
   return (
     <Layout eventkey="index">
-      <SEO
-        title="Home"
-        keywords={[
-          `its_meow`,
-          `itsmeow`,
-          `itsmeowdev`,
-          `minecraft`,
-          `mod developer`,
-          `developer`,
-        ]}
-      />
       <main>
         <Banner image={image.childImageSharp.gatsbyImageData} />
         <section className="pad">
@@ -62,9 +51,11 @@ const IndexPage = () => {
               link="https://www.curseforge.com/members/itsmeowdev/projects"
               text="CurseForge - itsmeowdev"
             >
-              <IconContext.Provider value={{ color: "#DE6A3B" }}>
-                <GoFlame />
-              </IconContext.Provider>
+              <img
+                className="pad"
+                src={CurseForge}
+                alt="CurseForge Anvil Logo"
+              />
             </Card>
             <Card
               link="https://www.youtube.com/user/hiotewdew"
@@ -100,5 +91,19 @@ const IndexPage = () => {
     </Layout>
   )
 }
+
+export const Head = () => (
+  <SEO
+    title="Home"
+    keywords={[
+      `its_meow`,
+      `itsmeow`,
+      `itsmeowdev`,
+      `minecraft`,
+      `mod developer`,
+      `developer`,
+    ]}
+  />
+)
 
 export default IndexPage
