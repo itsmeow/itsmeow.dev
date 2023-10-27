@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 let isFirefox = false
-let isChrome = false
+let isChromium = false
 
 const CurseDark = () => {
   const [buttonText, setButtonText] = useState("Detect Browser")
@@ -18,16 +18,15 @@ const CurseDark = () => {
     isFirefox =
       typeof InstallTrigger !== "undefined" ||
       navigator.userAgent.toLowerCase().includes("firefox")
-    isChrome =
-      !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime)
+    isChromium = !!window.chrome
   })
   const onClickButton = () => {
     setTitleVisible(false)
     if (installPhase === "detect") {
       setTimeout(() => {
-        if (!isFirefox && !isChrome) {
+        if (!isFirefox && !isChromium) {
           setNotifText(
-            "Unsupported browser. Supported browsers: Firefox and Chrome"
+            "Unsupported browser. Supported browsers: Firefox and Chromium-based browsers"
           )
           setNotifVisible(true)
         } else {
@@ -46,7 +45,7 @@ const CurseDark = () => {
         if (isFirefox) {
           window.location =
             "https://addons.mozilla.org/firefox/downloads/file/3374955/stylus-1.5.5-fx.xpi?src=dp-btn-primary"
-        } else if (isChrome) {
+        } else if (isChromium) {
           window.open(
             "https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne",
             "_blank"
