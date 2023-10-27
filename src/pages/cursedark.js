@@ -15,7 +15,9 @@ const CurseDark = () => {
   const [installPhase, setInstallPhase] = useState("detect")
 
   useEffect(() => {
-    isFirefox = typeof InstallTrigger !== "undefined"
+    isFirefox =
+      typeof InstallTrigger !== "undefined" ||
+      navigator.userAgent.toLowerCase().includes("firefox")
     isChrome =
       !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime)
   })
