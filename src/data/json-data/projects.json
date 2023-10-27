@@ -29,7 +29,8 @@
       "github": "itsmeow/MapDiffBot-DMM",
       "download_type": "github-source",
       "description": "A GitHub integration bot for generating DMM file diffs in DMM format. DMM is a map file format for 'Space Station 13'.",
-      "uses": "Python, Flask, WSGI"
+      "uses": "Python, Flask, WSGI",
+      "image_url": "mdb-dmm.png"
     },
     {
       "name": "Upload to CurseForge (GitHub Action)",
