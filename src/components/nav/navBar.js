@@ -20,7 +20,7 @@ const CustomNavbar = ({ eventkey }) => {
           src={"./../../data/logos/text.png"}
           layout="fixed"
           height={40}
-          align="center"
+          className="center-text"
           alt="itsmeow"
         />
       </div>

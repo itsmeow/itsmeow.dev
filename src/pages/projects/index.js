@@ -45,10 +45,12 @@ const ProjectPage = () => {
   return (
     <Layout eventkey="projects">
       <main>
-        <h1 align="center" style={{ marginTop: "10px" }}>
+        <h1 className="center-text" style={{ marginTop: "10px" }}>
           Projects
         </h1>
-        <p align="center">A list of public software projects I've created</p>
+        <p className="center-text">
+          A list of public software projects I've created
+        </p>
         <div className="center-item-2" style={{ maxWidth: "1500px" }}>
           <hr />
         </div>

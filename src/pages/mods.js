@@ -51,13 +51,13 @@ const Mods = () => {
     <Layout eventkey="mods">
       <Container>
         <main style={{ paddingTop: "10px" }}>
-          <noscript align="center">
+          <noscript className="center-text">
             This page will not load properly without Javascript enabled.
           </noscript>
 
           {allModCategory.nodes.map((modCategory) => (
             <section key={modCategory.name} id={modCategory.name}>
-              <h2 key={"header" + modCategory.name} align="center">
+              <h2 key={"header" + modCategory.name} className="center-text">
                 {modCategory.title}
               </h2>
               <div key={modCategory.name} className="card-list">

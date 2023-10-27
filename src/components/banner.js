@@ -16,7 +16,7 @@ const Banner = ({ image }) => {
               <GatsbyImage
                 image={image}
                 alt="Banner"
-                align="center"
+                className="center-text"
               ></GatsbyImage>
             </div>
           </div>

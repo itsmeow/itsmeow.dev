@@ -82,8 +82,7 @@ const CurseDark = () => {
           <div id="center-screen">
             <h1
               id="darktitle"
-              className={titleVisible ? "show" : ""}
-              align="center"
+              className={titleVisible ? "center-text show" : "center-text"}
             >
               CurseForge Legacy Dark Theme
             </h1>

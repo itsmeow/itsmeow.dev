@@ -29,7 +29,7 @@ const IndexPage = () => {
       <main>
         <Banner image={image.childImageSharp.gatsbyImageData} />
         <section className="pad">
-          <h2 align="center" style={{ margintop: "20px" }} id="links">
+          <h2 className="center-text" style={{ margintop: "20px" }} id="links">
             Links
           </h2>
           <div className="center-item-x">

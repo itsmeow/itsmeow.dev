@@ -15,7 +15,7 @@ const Avatar = ({ className, ...remainder }) => {
           alt="itsmeow Avatar"
         />
       </div>
-      <div align="center" className="avatar-text">
+      <div className="avatar-text center-text">
         <hr style={{ maxWidth: "500px" }} />
         Hobbyist Minecraft Mod Developer
         <br />
