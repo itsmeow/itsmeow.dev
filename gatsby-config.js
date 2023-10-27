@@ -55,7 +55,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-image`,
-    `gatsby-plugin-netlify`,
     `babel-preset-gatsby`,
     {
       resolve: `gatsby-plugin-manifest`,
