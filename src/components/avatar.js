@@ -17,21 +17,23 @@ const Avatar = ({ className, ...remainder }) => {
       </div>
       <div className="avatar-text center-text">
         <hr style={{ maxWidth: "500px" }} />
-        Hobbyist Minecraft Mod Developer
+        <strong>itsmeowdev</strong>
+        <br />
+        Mod Developer, Software Engineer
         <br />
         <span
           style={{
             position: "relative",
-            left: "0.28rem",
-            fontWeight: "bold",
+            left: "0.35rem",
+            fontSize: "0.8rem",
           }}
         >
           they/them{" "}
           <a
-            href="https://www.mypronouns.org/"
+            href="https://www.pronouns.org/"
             style={{
               position: "relative",
-              top: "5px",
+              top: "4px",
               fontSize: "0.6rem",
             }}
             title="what's this?"
