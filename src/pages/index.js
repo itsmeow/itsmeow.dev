@@ -36,12 +36,17 @@ const IndexPage = () => {
             <PatreonButton userid="28256207" />
           </div>
           <CardList>
-            <Card link="https://github.com/itsmeow/" text="GitHub - itsmeow">
+            <Card
+              link="https://github.com/itsmeow/"
+              text="GitHub"
+              lowerText="itsmeow"
+            >
               <FaGithub />
             </Card>
             <Card
               link="https://twitter.com/itsmeowdev"
-              text="Twitter - @itsmeowdev"
+              text="Twitter"
+              lowerText="@itsmeowdev"
             >
               <IconContext.Provider value={{ color: "#1DA1F2" }}>
                 <FaTwitter />
@@ -49,7 +54,8 @@ const IndexPage = () => {
             </Card>
             <Card
               link="https://www.curseforge.com/members/itsmeowdev/projects"
-              text="CurseForge - itsmeowdev"
+              text="CurseForge"
+              lowerText="itsmeowdev"
             >
               <img
                 className="pad"
@@ -59,13 +65,15 @@ const IndexPage = () => {
             </Card>
             <Card
               link="https://www.youtube.com/user/hiotewdew"
-              text="YouTube - itsmeowdev"
+              text="YouTube"
+              lowerText="itsmeowdev"
             >
               <img className="pad" src={YouTube} alt="YouTube Logo" />
             </Card>
             <Card
               link="https://discord.itsmeow.dev/"
-              text="Discord - itsmeowdev"
+              text="Discord"
+              lowerText="itsmeowdev"
             >
               <IconContext.Provider value={{ color: "#7289DA" }}>
                 <FaDiscord />
@@ -73,7 +81,8 @@ const IndexPage = () => {
             </Card>
             <Card
               link="https://www.twitch.tv/itsmeowdev"
-              text="Twitch - itsmeowdev"
+              text="Twitch"
+              lowerText="itsmeowdev"
             >
               <IconContext.Provider value={{ color: "#9146FF" }}>
                 <FaTwitch />
@@ -81,7 +90,8 @@ const IndexPage = () => {
             </Card>
             <Card
               link="https://www.instagram.com/itsmeowdev"
-              text="Instagram - @itsmeowdev"
+              text="Instagram"
+              lowerText="@itsmeowdev"
             >
               <img className="pad" src={Instagram} alt="Instagram Logo" />
             </Card>

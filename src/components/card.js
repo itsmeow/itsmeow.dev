@@ -3,7 +3,15 @@ const Card = (props) => {
     <div className="card-basic">
       <a rel="noopener noreferrer" target="_blank" href={props.link}>
         {props.children}
-        <p>{props.text}</p>
+        <div>
+          {props.text}
+          {props.lowerText && (
+            <>
+              <br />
+              <span className="lower-text">{props.lowerText}</span>
+            </>
+          )}
+        </div>
       </a>
     </div>
   )

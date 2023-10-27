@@ -46,7 +46,7 @@
     color: #e2e2e2;
   }
 
-  p {
+  div {
     width: 11.25rem;
     margin-bottom: 8px;
     padding-top: 8px;
@@ -55,6 +55,9 @@
     text-align: center;
     font-family: "Arial", sans;
     font-weight: bold;
+    .lower-text {
+      font-weight: normal;
+    }
   }
 }
 
