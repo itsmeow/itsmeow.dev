@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Methods from "../util/replacers"
+import { Link } from "gatsby"
 
 const ReplaceTool = () => {
   const [inText, setInText] = useState("")
@@ -50,6 +51,7 @@ const ReplaceTool = () => {
           >
             {selectOptions}
           </select>
+
           <textarea
             className="input-area"
             value={inText}
@@ -68,6 +70,7 @@ const ReplaceTool = () => {
               </button>
             </div>
           </div>
+          <Link to="/posegen">Model Pose Generator</Link>
         </main>
       </Container>
     </Layout>
