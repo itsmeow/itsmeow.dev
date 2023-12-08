@@ -91,8 +91,19 @@ exports.sourceNodes = async ({
     }
 
     for (let card of list) {
-      const { name, title, role, info, sitelink, customid, url, spigoturl } =
-        card
+      const {
+        name,
+        title,
+        role,
+        info,
+        sitelink,
+        customid,
+        url,
+        curseforge,
+        curseforge_game,
+        spigot,
+        thunder,
+      } = card
       const node = {
         name,
         title,
@@ -101,7 +112,10 @@ exports.sourceNodes = async ({
         sitelink,
         customid,
         url,
-        spigoturl,
+        curseforge,
+        curseforge_game,
+        spigot,
+        thunder,
         id: createNodeId(`project-category-${parentNode.name}-project-${name}`),
         parent: parentNode.id,
         internal: {
@@ -159,8 +173,11 @@ exports.createSchemaCustomization = ({ actions: { createTypes } }) => {
     thumbnail_local: File @link(from: "fields.thumbnail_local")
     sitelink: String
     customid: String
+    curseforge: Boolean
+    curseforge_game: String
+    spigot: Boolean
+    thunder: Boolean
     url: String
-    spigoturl: String
   }
   type Project implements Node {
     name: String!

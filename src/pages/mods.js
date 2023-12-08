@@ -4,48 +4,49 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 const Mods = () => {
-  const { allModCategory } = useStaticQuery(
-    graphql`
-      query {
-        allModCategory(sort: { index: ASC }) {
-          nodes {
-            name
-            title
-            children {
-              ... on Mod {
-                customid
-                name
-                info
-                role
-                title
-                url
-                sitelink
-                spigoturl
-                thumbnail {
-                  childImageSharp {
-                    gatsbyImageData(
-                      placeholder: BLURRED
-                      layout: FULL_WIDTH
-                      quality: 100
-                    )
-                  }
+  const { allModCategory } = useStaticQuery(graphql`
+    query {
+      allModCategory(sort: { index: ASC }) {
+        nodes {
+          name
+          title
+          children {
+            ... on Mod {
+              customid
+              name
+              info
+              role
+              title
+              url
+              sitelink
+              curseforge
+              curseforge_game
+              spigot
+              thunder
+              thumbnail {
+                childImageSharp {
+                  gatsbyImageData(
+                    placeholder: BLURRED
+                    layout: FULL_WIDTH
+                    quality: 100
+                  )
                 }
-                thumbnail_local {
-                  childImageSharp {
-                    gatsbyImageData(
-                      placeholder: BLURRED
-                      layout: FULL_WIDTH
-                      quality: 100
-                    )
-                  }
+              }
+              thumbnail_local {
+                childImageSharp {
+                  gatsbyImageData(
+                    placeholder: BLURRED
+                    layout: FULL_WIDTH
+                    quality: 100
+                  )
                 }
               }
             }
           }
         }
       }
-    `
-  )
+    }
+  `)
 
   return (
     <Layout eventkey="mods">

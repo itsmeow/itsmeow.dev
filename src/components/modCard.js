@@ -1,4 +1,5 @@
 import { GatsbyImage } from "gatsby-plugin-image"
+import ThunderDownloads from "./thunderDownloads"
 
 const ModCard = ({
   customid,
@@ -8,20 +9,33 @@ const ModCard = ({
   title,
   url,
   sitelink,
-  spigoturl,
+  curseforge,
+  curseforge_game,
+  spigot,
+  thunder,
   image,
 }) => {
+  let href = null
+  if (spigot) {
+    href = "https://www.spigotmc.org/resources/" + url
+  } else if (thunder) {
+    let parts = url.split(":")
+    href = `https://thunderstore.io/c/${parts[0]}/p/${parts[1]}`
+  } else if (curseforge) {
+    href = `https://curseforge.com/${
+      curseforge_game || "minecraft/mc-mods"
+    }/${name}`
+  } else {
+    href = url
+  }
+
   return (
     <div className="card" id={name}>
       <a
         className="mod-card-link"
         rel="noopener noreferrer"
         target="_blank"
-        href={
-          spigoturl
-            ? "https://www.spigotmc.org/resources/" + spigoturl
-            : url || "https://curseforge.com/minecraft/mc-mods/" + name
-        }
+        href={href}
       >
         <GatsbyImage
           className="mod-card-img"
@@ -29,7 +43,7 @@ const ModCard = ({
           alt="Project thumbnail"
         />
         <h5 className="mod-card-title">{title}</h5>
-        {!spigoturl ? (
+        {curseforge ? (
           <div className="mod-card-downloads">
             <img
               className="mod-card-cfbadge"
@@ -40,6 +54,10 @@ const ModCard = ({
               }
               alt="CurseForge download count badge"
             />
+          </div>
+        ) : thunder ? (
+          <div className="mod-card-downloads">
+            <ThunderDownloads id={url} />
           </div>
         ) : (
           <></>
