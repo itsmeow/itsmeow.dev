@@ -1,5 +1,4 @@
 import { Card, CardList } from "../components/card"
-import PatreonButton from "../components/patreon"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -32,9 +31,6 @@ const IndexPage = () => {
           <h2 className="center-text" style={{ margintop: "20px" }} id="links">
             Links
           </h2>
-          <div className="center-item-x">
-            <PatreonButton userid="28256207" />
-          </div>
           <CardList>
             <Card
               link="https://github.com/itsmeow/"

@@ -36,11 +36,6 @@ exports.sourceNodes = async ({
     isPermanent: true,
   })
   createRedirect({
-    fromPath: "/patreon",
-    toPath: "https://patreon.itsmeow.dev/",
-    isPermanent: true,
-  })
-  createRedirect({
     fromPath: "/discord",
     toPath: "https://discord.itsmeow.dev/",
     isPermanent: true,
